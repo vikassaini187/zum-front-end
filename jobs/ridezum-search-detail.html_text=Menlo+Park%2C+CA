@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ridezum | search detail</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <!---- custom css ---->
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+        <link href="custom-css/style.css" rel="stylesheet" type="text/css"/>
+        <!---- // custom css ---->
+        <script src="bootstrap-3.3.6-dist/js/jquery.min.js" type="text/javascript"></script>
+        <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <script>
+            function call_script() {
+//                alert(cityName);
+                var org01 = $('#org').text();
+//                alert(abc);
+                if (org01 == "Orange County")
+                {
+                    window.open("https://www.onboardiq.com/zum/apply/zumer-driver-for-kids");
+
+                }
+                else
+                {
+                    window.open("https://www.onboardiq.com/zum/apply/zum-applicants");
+                }
+
+            }
+
+
+
+        </script>
+        <!--- header ------>
+        <nav class="navbar navbar-default navbar-fixed-top main-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 zum-space">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <!--                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                                            <span class="sr-only">Toggle navigation</span>
+                                                            <span class="icon-bar"></span>
+                                                            <span class="icon-bar"></span>
+                                                            <span class="icon-bar"></span>
+                                                        </button>-->
+                            <a class="navbar-brand zum-logo" href="https://www.ridezum.com"><img src="img/zum_logo.png" alt=""/></a>
+
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <!--                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                            <ul class="nav navbar-nav">
+                                                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                                                <li><a href="#">Link</a></li>
+                                            </ul>
+                                            <form class="navbar-form navbar-left" role="search">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Search">
+                                                </div>
+                                                <button type="submit" class="btn btn-default">Submit</button>
+                                            </form>
+                                            <ul class="nav navbar-nav navbar-right">
+                                                <li><a href="#">Link</a></li>
+                                                <li class="dropdown">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Action</a></li>
+                                                        <li><a href="#">Another action</a></li>
+                                                        <li><a href="#">Something else here</a></li>
+                                                        <li role="separator" class="divider"></li>
+                                                        <li><a href="#">Separated link</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div> /.navbar-collapse -->
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </nav>
+        <!--- /header ------>
+
+        <!--- main header ------>
+        <section class="main-header" style="background-color: rgb(255, 255, 255); margin-top: 60px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 zum-space">
+                        <div class="search-detail">
+                            <div class="row">
+                                <div class="col-md-8 search-detail-head">
+                                    <h1>Kids' Driver and Child Care Provider
+                                    </h1>
+                                    <p id="org" class="seach-small-text">
+                                        San Jose, CA
+                                    </p>
+                                </div>
+                                <div class="col-md-4">
+                                    <button onclick="call_script('');" class="btn btn-default apply-btn-for">apply for this job</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--- main content ------>
+        <section class="main-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 zum-space">
+                        <br>
+                        <h5>About Zum</h5>  
+                        <br>
+                        <p>
+                            At Zum, you will become part of one of the fastest growing on-demand child care and kids' rides service provider network trusted by thousands of parents in the bay area. 
+                            As a “ Zumer”, you are more than a nanny, babysitter, driver, or child care provider.  You are part of a larger purpose: to support better parenting through caring for a family’s wellbeing and empowering working moms to excel in their professional and family lives. 
+                            Zumers serve families by driving their kids to school/ activities and providing care. We stand for great service for families and high earnings for our child care providers.
+                        </p>
+                        <br>
+                        <br>
+                        <h5>Who are Zumers ?</h5> 
+                        <br>
+                        <p>Zumers are excellent Nanny/ Babysitter/ Child Care providers who want to earn really well while retaining flexibility and control
+                            of their schedule. This is a very important job and we only hire the best and pay them the highest in the industry. Our typical Zumers are professional nanny/ babysitter/ child care providers, graduate students, stay home moms and part time professionals (musicians, teachers, coaches, artists, etc).  Zumers who work with us make at least $20 - $40 per hour based on their commitment and availability.
+                        </p>
+                        <br>
+                        <br>
+                        <h4>Application Requirement
+                        </h4>
+                        <ul>
+                            <li>21+ Age </li>
+                            <li>2008 or newer car (4 door)</li>
+                            <li>Child care / education / teaching experience</li>
+                            <li>Have a California driving license with clean driving record</li>
+                            <li>Two professional references</li>
+                            <li>Have an iPhone or Android phone device</li>
+                            <li>Pass a background check</li>
+                            <li>Job with a Difference</li>
+                        </ul>
+                        <br>
+                        <p>Zum is more than a well-paying nanny or babysitting job at your own terms. We stand for making a positive difference in life of a busy mom and a kid. At Zum, 
+                            we supply our childcare providers with cutting-edge technology and service support. Our mobile app will help you match with a babysitter/ nanny or driving job and deliver it with ease. 
+                            You always have visibility of pay when you take a job and what else, you are part of a tight-knit Zum family where we care for each other.</p>
+                    </div>
+                    <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 apply-for-job">
+                        <button target="_blank" onclick="call_script('');" class="btn btn-default apply-btn-for">apply for this job</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--- footer ------>
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-offset-2 col-sm-8 col-xs-10 col-xs-offset-1">
+                        <div class="footer-text">
+                            <p> <a href="#">ridezum</a></p>
+                            <p class="job-link">
+                                <a href="https://www.ridezum.com">
+                                    Jobs powered by
+                                    <img style="height: 30px;" src="img/zum_logo.png" alt=""/>
+                                </a>
+                            </p>
+                            <p class="address">Zum Services, Inc. 55E 3rd Ave San Mateo, CA 94401
+                                <br>
+                                <span>
+                                    Copyright © 2015 Zum Services, Inc., All rights reserved.
+                                </span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--- // footer ------>
+        <script>
+            location.queryString = {};
+            location.search.substr(1).split("&").forEach(function (pair) {
+                if (pair === "")
+                    return;
+                var parts = pair.split("=");
+                location.queryString[parts[0]] = parts[1] && decodeURIComponent(parts[1].replace(/\+/g, " "));
+                $("p.seach-small-text").text(location.queryString[parts[0]]);
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+       
+
+        <title>Zum</title>
+        <link href="css/boostrap_popup.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/MyFontsWebfontsKit.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="css/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery-1.11.3.min.js"></script>  
+        <script src="js/bootstrap.js" type="text/javascript"></script>
+        <script src="js/jquery.timepicker-12am-pm.js" type="text/javascript"></script>
+        <!--<script src="js/jquery.datetimepicker.full.js" type="text/javascript"></script>-->
+        <link href="css/jquery.timepicker.css" rel="stylesheet" type="text/css"/> 
+        <!--<link href="css/jquery.datetimepicker.css" rel="stylesheet" type="text/css"/>--> 
+        <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery.fancybox.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function () {
+                $(window).scrollTop(0);
+                return false;
+            });
+            function signUp() {
+                window.location = './sign-up.html';
+            }
+        </script>
+      
+    </head>
+    <body onload="initialize();            initPhoneNumber();">
+        <style>
+            header form input,section.send_btn form input{
+                -webkit-border-bottom-colors: none;
+                -webkit-border-left-colors: none;
+                -webkit-border-right-colors: none;
+                -webkit-border-top-colors: none;
+
+                -moz-border-bottom-colors: none;
+                -moz-border-left-colors: none;
+                -moz-border-right-colors: none;
+                -moz-border-top-colors: none;
+                border-style: solid;
+                border-width: 1px 0px 1px 1px;
+                border-color: #b0bec5;
+                border-image: none;
+                -moz-border-top-right-radius: 0;
+                -moz-border-bottom-right-radius: 0;
+                -webkit-border-top-right-radius: 0;
+                -webkit-border-bottom-right-radius: 0;
+                border-radius: 2px 0px 0px 2px;
+                color:#000;
+                /*  color: #90a4ae;*/
+                font-size: 18px;
+                height: 56px;
+                margin-bottom: 50px;
+                outline: medium none;
+                padding-left: 0px;
+                text-align: center;
+                /*  padding-left: 20px;*/
+                width: 225px;
+            }
+            .add-plus > div {
+                margin-bottom: 20px;
+                margin-top: -30px;
+            }
+            #fancybox-wrap, #fancybox-wrap *{
+                -webkit-box-sizing: content-box;
+                -moz-box-sizing: content-box;
+                box-sizing: content-box;
+            }
+
+            @media(max-width: 800px)
+            {
+                .add-on
+                {
+                    padding: 21px 8px 18px;
+                }
+            }
+        </style>
+        <nav>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="index.html"><div class='zumLogo' src="images/zum_logo.png" alt="Zum"></div></a>
+                </div> <!-- End Logo -->
+                <img class='mobile' src="images/menu-icon.png" alt="">
+
+                <div class="mainNav">
+                    <ul class='mainNavList'>
+                        <li>
+                            <a href="our-services.html">our services</a>
+                        </li>
+                        <!--- dropdown menu --->
+                        <!--                    <li>
+                                                <a href="#">our services <i class="fa fa-angle-down fare_aero"></i></a>
+                                                <ul class="dropdown">
+                                                    <li><a href="../our-services.html" target="_blank">how it works</a></li>
+                                                    <li><a href="../zum_seniors.html" target="_blank">Senior Rides</a></li>
+                                                </ul>
+                                            </li>-->
+                        <li><a href="Trust&Safety.html">Trust & Safety</a></li>
+                        <li><a class="active" href="pricing.html">Pricing</a></li>
+                        <li><a href="drive.html">drive for zum</a></li>
+                        <li><a href="our-story.html">our story</a></li>
+                        <!--  <li><a href="zum_seniors.html">Senior Rides</a></li>-->
+                        <!--<li class="last_li" data-toggle="modal" data-target="#gridSystemModal"><a>join now</a></li>-->
+                    </ul> <!-- End Of MainNavList -->
+                </div> <!-- End Of Main Nav -->
+                <ul class='phone_rbtn'>
+                    <li>
+                        <div class="phoneNumber">
+                            <p><img class='phoneNumberShape1' src="images/Shape-10.png" alt="">(180)-201-1200</p>
+                            <a href="tel:+19095543833"><img class='phoneNumberShape' src="images/Shape-10.png" alt=""></a>
+                        </div> <!-- End of phone number -->
+                    </li>
+                    <li><button class="nav_join" data-toggle="modal" data-target="#gridSystemModal">join now</button></li>
+                </ul>
+
+            </div> <!-- End Of Wrapper -->
+        </nav> <!-- End Of Nav -->
+
+        <div class="fare_p60">
+            <div class="wrapper">
+
+                
+
+                <div class="fare_map">
+                    <div class="map" id="map"></div>
+                </div>
+                
+                <div class="fare_estimate">
+                    <!--<form>-->
+                    <div class="fare_esth1">
+                        <h1 class="FrutigerLTCom-Light">Fare Estimator</h1>
+                    </div>
+                    <div class="fare_orange_p">
+                        <p>
+                            We currently serve all of <span>Orange County</span> and these counties in the <span>San Francisco Bay Area</span> - San Francisco, San Mateo, Santa Clara, Marin (Novato/San Rafael), Contra Costa (excluding Richmond) and Alameda.  
+                        </p>
+
+                    </div>
+                    <div class="fare_input fare_inp01">
+                        <div class="fare_form">
+                            <img style="top: 2px; padding: 10px; width: 24px;" src="images/fare_time.png" alt=""/>
+                            <input class="time" id="basicExample" type="text"  placeholder="Select Time" >
+                            <!--<img class="fare_drpaero" src="images/fare_drpaero.png" alt=""/>-->
+                        </div>
+
+                        <!--                        <div class="InputAddOn">
+                                                        <img src="images/fare_maporange.png" alt=""/>
+                                                        <input class="InputAddOn-field fare_inp01" type="text"  name="end" id="end"  placeholder="Enter a destination location" />
+                                                        <button type="submit" value="Calculate Route" onclick="calcRoute()" class="InputAddOn-item">Go</button>
+                                                    </div>-->
+                        <script>
+                            $(function () {
+                                $('#basicExample').timepicker({step: 5, timeFormat: 'h:i a'});
+////                                $('#basicExample').datetimepicker({
+//                                    datepicker: false,
+//                                    format: 'h:i a',                                   
+//                                    step: 5
+//                                });
+                            });
+                        </script>
+                    </div>
+                    <div class="fare_input">
+                        <div class="fare_form">
+                            <input name="start" id="start" type="text" placeholder="Enter an origin location" >
+                            <img src="images/fare_mapgreen.png" alt=""/>
+                        </div>
+                    </div>
+                    <div class="fare_input">
+                        <div class="fare_form fare_inp03">
+                            <div class="InputAddOn">
+                                <img src="images/fare_maporange.png" alt=""/>
+                                <input class="InputAddOn-field" type="text"  name="end" id="end"  placeholder="Enter a destination location" />
+                                <button type="submit" value="Calculate Route" onclick="calcRoute()" class="InputAddOn-item">Go</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fare_tdolllar">
+                        <h4 class="FrutigerLTCom-Roman">fare estimate*<span id="fare_dollav"></span></h4>
+                        <p>* Fare is a best approximation of price based on the information provided. Actual price is displayed in the App before booking confirmation.</p>
+                        <p>Wait times beyond 5 minutes are charged at $6/15 min increment.</p>
+                        <p>Carpool pricing is available in the App. Carpools start from $8/child per ride. Share rider profiles with your friends through the App to start carpooling! </p>
+                        <p>Toll charges, where applicable, will be charged in actual amounts and is shown in the quoted fare through the App.</p>
+                    </div>
+                    <div class="fare_input">
+                        <p class="FrutigerLTCom-Light" style="color:#4e4d50; font-size: 18px; margin-bottom: 8px;">Yes! Send me a link to the App now.</p>
+                        <div class="fare_form fare_inp03">
+                            <div class="InputAddOn" style="margin-bottom: 5px;" >
+                                <img src="images/fare_mapmobile.png" alt=""/>
+                                <input class="InputAddOn-field phone_valid FrutigerLTCom-Light" name="phone" id="phone_input" maxlength="14" pattern="([0-9]{10})|(\([0-9]{3}\)\s+[0-9]{3}\-[0-9]{4})" type="text" onkeypress="clearInformationLabel('spnPhoneStatus')" placeholder="(123)-456-7890" >
+                                <button style="padding: 5px 20px;" class="InputAddOn-item" id="btnSendLink" onclick="sendSMS(this, 'spnPhoneStatus');                                        return false;"><i class="fa fa-2x fa-caret-right"></i></button>
+                            </div>
+
+                        </div>
+                        <div class="error_msg"> <span style="font-size: 16px;" id="spnPhoneStatus"></span></div>
+                    </div>
+                    <!--</form>-->
+                </div>
+                
+            </div> <!-- End Of Wrapper -->
+        </div>
+
+        <div class="talkToUs_1">
+            <div class="wrapper">
+            <h1 class='FrutigerLTCom-Light'>Talk to us. We'd love to hear from you.</h1>
+            <div class="talkToUs_1Divs talkToUs_1Divs1" style="margin-top:0px;">
+                <img src="images/talk_us1.png" alt="">
+                <h2 class='FrutigerLTCom-Roman'>Call us</h2>
+                <p class='FrutigerLTCom-Light'>(180)-201-1200</p>
+            </div>  
+            <div class="talkToUs_1Divs moreThanDivs2">
+                <img src="images/talk_us2.png" alt="">
+                <h2 class='FrutigerLTCom-Roman'>Write to us</h2>
+                <p class='FrutigerLTCom-Light moreThanDivsP2'>support@myapp.com</p>
+            </div>  
+            <div class="talkToUs_1Divs talkToUs_1Divs3">
+                <img src="images/talk_us3.png" alt="">
+                <h2 class='FrutigerLTCom-Roman'>Talk to us</h2>
+                <p class='FrutigerLTCom-Light'><a onclick="Intercom('showMessages');" style="color:#009fe3;cursor: pointer;">Chat online</a></p>
+            </div>  
+        </div> <!-- End of Wrapper -->
+        </div> 
+        <!-- End of Talk To Us -->
+        <footer>
+        <div class="wrapper">
+            <div class="logoFooter">
+                <a href="index.html"><img src="images/zumLogoFooter.png" alt=""></a>
+            </div> <!-- End of logo footer -->
+            <div class="middleFooter">
+                <ul>
+                    <!--<li><a class='FrutigerLTCom-Roman' href="our-story.html">About Us</a></li>-->
+                    <li><a class='FrutigerLTCom-Roman' href="news.html">Press</a></li>
+                    <li><a class='FrutigerLTCom-Roman' href="faq.html">FAQ</a></li>
+                    <li><a class='FrutigerLTCom-Roman' href="your-privacy.html">Privacy Policy</a></li>
+                    <li><a class='FrutigerLTCom-Roman' href="terms-condition.html">Terms of Service</a></li>
+                    <li><a class='FrutigerLTCom-Roman' href="zero_tolerance_policy.html">Zero Tolerance</a></li>
+                    <li><a class='FrutigerLTCom-Roman' href="#">Blog</a></li>
+                </ul>
+            </div> <!-- End of middle footer -->
+            <div class="socialsFooter">
+                <a href="https://www.facebook.com/"><img src="images/facebookForFooter.png" alt="www.facebook.com"></a>
+                <a href="http://instagram.com/"><img src="images/instagramForFooter.png" alt="www.instagram.com"></a>
+                <a href="https://twitter.com/"><img src="images/twitterForFooter.png" alt="www.twitter.com"></a>
+            </div> <!-- End of socials footer -->
+        </div> <!-- End of wrapper -->
+    </footer> <!-- End of footer -->
+
+        <!------------- model get the link --------------->
+        <div id="gridSystemModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="gridModalLabel">Join Now</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Enter Phone to get the link</h4>
+                        <form  class="desktop-link" >
+                            <div class="model_detail" >
+                                <input class='phone_valid FrutigerLTCom-Light' name="phone" id="phone_input" maxlength="14" pattern="([0-9]{10})|(\([0-9]{3}\)\s+[0-9]{3}\-[0-9]{4})" type="text" onkeypress="clearInformationLabel('spnPhoneStatus')" placeholder="Enter Phone Number" >
+                                <div class="error_msg"> <span id="spnPhoneStatus1"></span></div>
+                                <div class="model-btn">
+                                    <button id="btnSendLink" onclick="sendSMS(this, 'spnPhoneStatus1');                                            return false;">Get the Link</button>
+                                </div>
+                                <p class="apollo-seperator"> or </p>
+
+                            </div>
+                            <div class="model-link-an-ios">
+                                <a>Download App Now</a>
+                            </div>
+                            <div class="model-link1">
+                                <a href="https://itunes.apple.com/us/app/zum/id1076430968?mt=8"><img src="css/images/appstorebtn_new01.png" alt=""/></a>
+                                <a href="https://play.google.com/store/apps/details?id=com.ridezum.zum"><img src="css/images/google-play-btn01.png" alt=""/></a>
+                            </div>
+                        </form>
+                    </div>
+                    <!--  <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>-->
+                </div>
+            </div>
+        </div>
+        <script src="js/scale.fix.js" type="text/javascript"></script>
+        <script src="js/formatter.js" type="text/javascript"></script>
+
+        <script src="js/jquery.geocomplete.js" type="text/javascript"></script>
+        <!--<script src="js/bootstrap-timepicker.js" type="text/javascript"></script>-->
+        <script src="js/logger.js" type="text/javascript"></script>
+        <script src='js/jquery.js'></script>
+        <script type="text/javascript">
+                                        var directionDisplay;
+                                        var directionsService;
+                                        var map;
+
+                                        function initialize() {
+                                            $('#start, #end').val('');
+                                            directionsDisplay = new google.maps.DirectionsRenderer();
+                                            var melbourne = new google.maps.LatLng(37.511636, -122.307019);
+                                            //              var melbourne = new google.maps.LatLng(23.022505, 72.5713621);
+
+                                            var myOptions = {
+                                                zoom: 17,
+                                                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                                                center: melbourne
+                                            }
+
+                                            map = new google.maps.Map(document.getElementById("map"), myOptions);
+                                            directionsDisplay.setMap(map);
+                                        }
+
+                                        function calcRoute() {
+                                            directionsService = new google.maps.DirectionsService();
+                                            var start = document.getElementById("start").value;
+                                            var end = document.getElementById("end").value;
+                                            var distanceInput = document.getElementById("distance");
+
+                                            var request = {
+                                                origin: start,
+                                                destination: end,
+                                                travelMode: google.maps.DirectionsTravelMode.DRIVING
+                                            };
+
+                                            directionsService.route(request, function (response, status) {
+                                                if (status == google.maps.DirectionsStatus.OK) {
+                                                    directionsDisplay.setDirections(response);
+
+                                                    //distanceInput.value = response.routes[0].legs[0].distance.value / 1609.3444979;
+                                                    calculate_fair(response.routes[0].legs[0].distance.value / 1609.3444979);
+                                                }
+                                            });
+
+                                        }
+
+                                        function initMap() {
+                                            var origin_place_id = null;
+                                            var destination_place_id = null;
+                                            var travel_mode = 'WALKING';
+                                            var map = new google.maps.Map(document.getElementById('map'), {
+                                                mapTypeControl: false,
+                                                center: {lat: 37.511636, lng: -122.307019},
+                                                zoom: 17
+                                            });
+                                            directionsService = new google.maps.DirectionsService;
+                                            directionsDisplay = new google.maps.DirectionsRenderer;
+                                            directionsDisplay.setMap(map);
+
+                                            var origin_input = document.getElementById('start');
+                                            var destination_input = document.getElementById('end');
+                                            // var modes = document.getElementById('mode-selector');
+
+                                            //map.controls[google.maps.ControlPosition.TOP_LEFT].push(origin_input);
+                                            //map.controls[google.maps.ControlPosition.TOP_LEFT].push(destination_input);
+                                            // map.controls[google.maps.ControlPosition.TOP_LEFT].push(modes);
+
+                                            var origin_autocomplete = new google.maps.places.Autocomplete(origin_input);
+                                            origin_autocomplete.bindTo('bounds', map);
+                                            var destination_autocomplete =
+                                                    new google.maps.places.Autocomplete(destination_input);
+                                            destination_autocomplete.bindTo('bounds', map);
+
+                                            // Sets a listener on a radio button to change the filter type on Places
+                                            // Autocomplete.
+                                            // function setupClickListener(id, mode) {
+                                            //   var radioButton = document.getElementById(id);
+                                            //   radioButton.addEventListener('click', function() {
+                                            //     travel_mode = mode;
+                                            //   });
+                                            // }
+                                            // setupClickListener('changemode-walking', 'WALKING');
+                                            // setupClickListener('changemode-transit', 'TRANSIT');
+                                            // setupClickListener('changemode-driving', 'DRIVING');
+
+                                            function expandViewportToFitPlace(map, place) {
+                                                if (place.geometry.viewport) {
+                                                    map.fitBounds(place.geometry.viewport);
+                                                } else {
+                                                    map.setCenter(place.geometry.location);
+                                                    map.setZoom(17);
+                                                }
+                                            }
+
+                                            origin_autocomplete.addListener('place_changed', function () {
+                                                var place = origin_autocomplete.getPlace();
+                                                if (!place.geometry) {
+//                                                    window.alert("Autocomplete's returned place contains no geometry");
+                                                    return;
+                                                }
+                                                expandViewportToFitPlace(map, place);
+
+                                                // If the place has a geometry, store its place ID and route if we have
+                                                // the other place ID
+                                                origin_place_id = place.place_id;
+                                                route(origin_place_id, destination_place_id, travel_mode,
+                                                        directionsService, directionsDisplay);
+                                            });
+
+                                            destination_autocomplete.addListener('place_changed', function () {
+                                                var place = destination_autocomplete.getPlace();
+                                                if (!place.geometry) {
+//                                                    window.alert("Autocomplete's returned place contains no geometry");
+                                                    return;
+                                                }
+                                                expandViewportToFitPlace(map, place);
+
+                                                // If the place has a geometry, store its place ID and route if we have
+                                                // the other place ID
+                                                destination_place_id = place.place_id;
+                                                route(origin_place_id, destination_place_id, travel_mode,
+                                                        directionsService, directionsDisplay);
+                                            });
+
+                                            function route(origin_place_id, destination_place_id, travel_mode,
+                                                    directionsService, directionsDisplay) {
+                                                if (!origin_place_id || !destination_place_id) {
+                                                    return;
+                                                }
+                                                directionsService.route({
+                                                    origin: {'placeId': origin_place_id},
+                                                    destination: {'placeId': destination_place_id},
+                                                    travelMode: travel_mode
+                                                }, function (response, status) {
+                                                    if (status === 'OK') {
+                                                        directionsDisplay.setDirections(response);
+                                                    } else {
+//                                                        window.alert('Directions request failed due to ' + status);
+                                                    }
+                                                });
+                                            }
+                                        }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgMwKIfVuEjO6TTDkOSx87M76vQTqq9GQ&libraries=places&callback=initMap"
+        async defer></script>
+        <!--        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2dc9QuiCpsIzRgpUmZuWqJ8Y7knice0I&libraries=places&callback=initMap"
+                async defer></script>-->
+        <script>
+                                        var base = 6;
+                                        var multiple = 1.8;
+
+                                        var additional_base = 8;
+                                        var multiple_base = 2;
+
+                                        $('#fair_amount').hide();
+                                        $(function () {
+                                            var options = {
+                                                map: ".map_canvas",
+                                                location: "NYC"
+                                            };
+                                            $("#start").geocomplete(options);
+                                            $("#end").geocomplete(options);
+                                        });
+                                        function calculate_fair(distance)
+                                        {
+                                            //alert(distance);                             
+                                            if (typeof $('#basicExample').val() != 'undefined' && $('#basicExample').val() != '') {
+                                                var time = $('#basicExample').val();
+                                            } else {
+                                                $('#basicExample').focus();
+                                                return false;
+                                            }
+                                            var fair = 0;
+                                            var final_fair = 0;
+                                            var additionalfair = 0;
+                                            var real_time = time.split(' ');
+                                            time = real_time[0];
+                                            time = time.replace(':', '');
+                                            time = Number(time);
+
+                                            switch (true) {
+                                                case (distance <= 3):
+                                                    fair = 18;
+                                                    if ((time > '745' && time < '900') || (time > '1630' && time < '1830'))
+                                                    {
+                                                        additionalfair = 0;
+                                                    }
+                                                    break;
+                                                case (distance > 3 && distance <= 4):
+                                                    fair = 20;
+                                                    if ((time > '745' && time < '900') || (time > '1630' && time < '1830'))
+                                                    {
+                                                        additionalfair = 0;
+                                                    }
+                                                    break;
+                                                case (distance > 4 && distance <= 5):
+                                                    fair = 20;
+                                                    if ((time > '745' && time < '900') || (time > '1630' && time < '1830'))
+                                                    {
+                                                        additionalfair = 2;
+                                                    }
+                                                    break;
+                                                case (distance > 5 && distance <= 6):
+                                                    fair = 21;
+                                                    if ((time > '745' && time < '900') || (time > '1630' && time < '1830'))
+                                                    {
+                                                        additionalfair = 2;
+                                                    }
+                                                    break;
+                                                case (distance > 6 && distance <= 7):
+                                                    fair = 22;
+                                                    if ((time > '745' && time < '900') || (time > '1630' && time < '1830'))
+                                                    {
+                                                        additionalfair = 2;
+                                                    }
+                                                    break;
+                                                case (distance > 7 && distance <= 8):
+                                                    fair = 23;
+                                                    if ((time > '745' && time < '900') || (time > '1630' && time < '1830'))
+                                                    {
+                                                        additionalfair = 2;
+                                                    }
+                                                    break;
+                                                case (distance > 8 && distance <= 9):
+                                                    fair = 24;
+                                                    if ((time > '745' && time < '900') || (time > '1630' && time < '1830'))
+                                                    {
+                                                        additionalfair = 2;
+                                                    }
+                                                    break;
+                                                case (distance > 9):
+                                                    fair = 22;
+                                                    final_fair = (base + (distance * multiple));
+                                                    if ((time > '745' && time < '900') || (time > '1630' && time < '1830'))
+                                                    {
+                                                        additionalfair = 2;
+                                                        final_fair = (additional_base + (distance * multiple_base));
+                                                    } else {
+                                                    }
+                                                    break;
+                                            }
+                                            final_fair = (final_fair != '') ? final_fair : fair + additionalfair;
+                                            final_fair = final_fair.toFixed(2);
+                                            $('#fare_dollav').text("$" + final_fair);
+                                            $('#fair_amount').show();
+                                        }
+        </script>
+        <script>
+
+            function initPhoneNumber() {
+
+                var phoneInput = document.getElementById('phone_input');
+                phoneInput.value = "";
+//                var phoneInput1 = document.getElementById('phone_input1');
+//                phoneInput1.value = "";
+//                window.scrollTo(0);
+            }
+            function clearInformationLabel(id) {
+
+                $('#' + id).html('');
+                $('#' + id).css('color', 'green');
+            }
+            //                                function phonenumber(inputtxt)
+            //                                {
+            //                                    //                                alert(inputtxt.value);
+            //                                    var phoneno = \([2 - 9]\d{2}\)\d{3} - \d{4}$ | ^ \(_{3}\)\ _{3}-_
+            //                                    {4}$;
+            //                                    if (inputtxt.value.match(phoneno))
+            //                                    {
+            //                                        return true;
+            //                                    }
+            //                                    else
+            //                                    {
+            //                                        alert("Enter valid number");
+            //                                        return false;
+            //                                    }
+            //                                }
+            var phoneInput = document.getElementById('phone_input');
+//            var phoneInput1 = document.getElementById('phone_input1');
+            new Formatter(phoneInput, {
+                'pattern': '({{999}}) {{999}}-{{9999}}',
+                'persistent': true,
+            });
+//            new Formatter(phoneInput1, {
+//                'pattern': '({{999}}) {{999}}-{{9999}}',
+//                'persistent': true,
+//            });
+        </script>
+        <script type="text/javascript">
+            // send app link code
+            (function (b, r, a, n, c, h, _, s, d, k) {
+                if (!b[n] || !b[n]._q) {
+                    for (; s < _.length; )
+                        c(h, _[s++]);
+                    d = r.createElement(a);
+                    d.async = 1;
+                    d.src = "https://cdn.branch.io/branch-latest.min.js";
+                    k = r.getElementsByTagName(a)[0];
+                    k.parentNode.insertBefore(d, k);
+                    b[n] = h
+                }
+            })(window, document, "script", "branch", function (b, r) {
+                b[r] = function () {
+                    b._q.push([r, arguments])
+                }
+            }, {_q: [], _v: 1}, "addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setIdentity track validateCode".split(" "), 0);
+            branch.init('key_live_nmcWswFGgRHIEj4KwLz3rldlvwaWCQj0');
+
+            function sendSMS(form, id) {
+                var phone = '+91' + $('#phone_input').val();
+                var linkData = {
+                    tags: [],
+                    channel: 'Website',
+                    feature: 'TextMeTheApp',
+                    data: {
+                        'foo': 'bar'
+                    }
+                };
+                var options = {};
+                var callback = function (err, result) {
+                    if (err) {
+                        $('#' + id).html('<img border="0" src="images/close.png" /> Please check your Phone number.');
+                        $('#' + id).css('color', '#d4001e');
+                        //                                        alert("Sorry, something went wrong.");
+                    }
+                    else {
+                        $('#' + id).html('<img border="0" src="images/right.png" /> Please check your phone, a download link should be arriving soon.');
+                        $('#' + id).css('color', '#92c53c');
+                        //                                        alert("SMS sent!");
+                    }
+                };
+                branch.sendSMS(phone, linkData, options, callback);
+                $("#phone_input").val('');
+            }
+
+        </script>
+
+        <script>
+            window.intercomSettings = {
+                app_id: "yfhkly83"
+            };
+        </script>
+        <script>
+            // intercom code
+            (function () {
+                var w = window;
+                var ic = w.Intercom;
+                if (typeof ic === "function") {
+                    ic('reattach_activator');
+                    ic('update', intercomSettings);
+                } else {
+                    var d = document;
+                    var i = function () {
+                        i.c(arguments)
+                    };
+                    i.q = [];
+                    i.c = function (args) {
+                        i.q.push(args)
+                    };
+                    w.Intercom = i;
+                    function l() {
+                        var s = d.createElement('script');
+                        s.type = 'text/javascript';
+                        s.async = true;
+                        s.src = 'https://widget.intercom.io/widget/yfhkly83';
+                        var x = d.getElementsByTagName('script')[0];
+                        x.parentNode.insertBefore(s, x);
+                    }
+                    if (w.attachEvent) {
+                        w.attachEvent('onload', l);
+                    } else {
+                        w.addEventListener('load', l, false);
+                    }
+                }
+            })()
+        </script>
+        <script>
+            $(function () {
+                $("#btnSendLink").on("click", function () {
+                    // alert("run");
+                    $("script#ga_script02").remove();
+                    $("script#ga_script01").remove();
+                    var s = document.createElement('script');
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = 'js/ga_script01.js';
+                    s.id = "ga_script01";
+                    var x = document.getElementsByTagName('head')[0];
+                    x.appendChild(s);
+                });
+                $(".sendSMSlinkcls").on("click", function () {
+                    //  alert("run");
+                    $("script#ga_script02").remove();
+                    $("script#ga_script01").remove();
+                    var s = document.createElement('script');
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = 'js/ga_script02.js';
+                    s.id = "ga_script02";
+                    var x = document.getElementsByTagName('head')[0];
+                    x.appendChild(s);
+                });
+            });
+        </script>
+
+
+    </body>
+</html>

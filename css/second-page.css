@@ -1,0 +1,519 @@
+body {
+    background-color: #f3f3f3;  
+}
+/************************* HEADER ***********************/
+header {
+    background-image: url(../images/startedZum.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;    
+    padding-bottom: 30px;
+    text-align: center;
+}
+header h1 {
+    font-size: 46px;
+    color: #fff;
+    font-weight: 300;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+.firstPHeader {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 40px;
+    line-height: 32.24px;
+}
+header h6 {
+    font-size: 20px;
+    color: #37474f;
+    padding-bottom: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.firstHeaderDiv1 {
+    margin-right: 15px;   
+}
+.firstHeaderDiv {
+    width: 460px;
+    background-color: #fff;
+    border: 1px solid #455a64;
+    display: inline-block;
+}
+.firstHeaderDiv img:first-child {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.firstHeaderDiv h4 {
+    font-size: 20px;
+    color: #37474f;
+    margin-bottom: 5px;
+    line-height: 28px;
+}
+.firstHeaderDiv p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #37474f;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    line-height: 32px;
+}
+header .secondDivIcons {
+    margin-bottom: 40px;
+    margin-right: 25px;
+}
+header .secondDivIconsLast {
+    margin-right: 0px;
+}
+/*********************** HOW IT WORKS ************************/
+.howItWorks {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 70px;
+}
+.howItWorks h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #37474f;
+    padding-top: 60px;
+    margin-bottom: 60px;
+}
+.howItWorks p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #37474f;
+    margin-top: 30px;
+    margin-right: 65px;
+    margin-left: 65px;
+    margin-bottom: 70px;
+    line-height: 32px;
+}
+.howItWorksDivs {
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 45px;
+}
+.howItWorksDivsLast {
+    margin-right: 0; 
+    position: relative;
+    top: 31px;
+}
+.howItWorksDivs h2 {
+    font-size: 20px;
+    color: #546e7a;
+    margin-top: 30px;
+    margin-bottom: 17px;
+}
+.howItWorksDivs p {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #546e7a;
+    margin: 0;
+    margin-top: 20px;
+}
+.howItWorksDivs p span {
+    line-height: 14px;
+    color: #ff8b44;
+    cursor: pointer;
+}
+/***************** OUR MAGIC *****************/
+.ourMagic {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #f3f3f3;
+    text-align: center;
+}
+.ourMagic h1 {
+    font-size: 42px;
+    font-weight: 300;
+    color: #37474f;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.ourMagic p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #546e7a;
+    margin-top: 30px;
+    margin-right: 120px;
+    margin-left: 120px;
+    padding-bottom: 50px;
+    line-height: 32px;
+}
+.schedule {
+    background-image: url(../images/schedule.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #f3f3f3;
+    max-width: 1199px;
+    height: 710px;
+    background-size: cover;
+    margin: 0 auto;
+}
+/*************************** SAFETY ******************************/
+.safety {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+}
+.safety h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #37474f;
+    padding-top: 70px;
+    margin-bottom: 15px;
+}
+.safety p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #546e7a;
+    margin: 0 100px;
+    margin-top: 30px;
+    padding-bottom: 80px;
+    line-height: 32px;
+}
+.safetyImg1, .safetyImg2 {
+    float: right;
+    margin-top: 60px;
+    margin-right: 60px;
+}
+.ourDrivers {
+    width: 458px;
+    text-align: left;
+    padding-bottom: 50px;
+    display: inline-block;
+    margin-right: 50px;
+    /*letter-spacing: 1px;*/
+}
+.ourDrivers h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ff871d;
+    margin-bottom: 30px;
+}
+.threeDivsSafety h6 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #546e7a;
+    margin-bottom: 10px;
+}
+.threeDivsSafety p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 30px;
+    color: #546e7a;
+    margin-bottom: 45px;
+    font-weight: 500;
+    line-height: 28px;
+
+}
+.safetyImage {
+    display: inline-block;
+    position: relative;
+    top: -50px;
+}
+.secondDivSafety, .thirdDivSafety {
+    padding-top: 90px;   
+}
+.secondDivSafety .ourDrivers {
+    margin: 0;   
+    margin-left: 65px;
+}
+/************************** PRICING ************************/
+.pricing {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(../images/workedOut2.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;    
+    padding-bottom: 50px;
+}
+.pricing h1 {
+    font-size: 42px;
+    color: #37474f;
+    font-weight: 300;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.pricing h6 {
+    font-size: 20px;
+    color: #37474f;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-weight: 100;
+    margin: 0 100px;
+    line-height: 32px;
+}
+.firstPricingDiv1 {
+    margin-right: 15px;   
+}
+.firstPricingDiv {
+    width: 460px;
+    background-color: #fff;
+    border: 1px solid #455a64;
+    display: inline-block;
+    vertical-align: top;
+}
+.firstPricingDiv img:first-child {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.firstPricingDiv h4 {
+    font-size: 28px;
+    font-weight: 300;
+    color: #37474f;
+    margin-bottom: 5px;
+}
+.firstPricingDiv h5 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 15px;
+    color: #37474f;
+}
+.firstPricingDiv p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #37474f;
+    margin-top: 15px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    line-height: 32px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.firstPricingDiv2 p {
+    margin-bottom: 60px;   
+}
+.pricing .secondDivIcons {
+    margin-bottom: 40px;
+    margin-right: 25px;
+}
+.pricing .secondDivIconsLast {
+    margin-right: 0px;
+}
+.firstPricingDiv2 p {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+/***************** RESPONSIVE ****************/
+@media(max-width: 1120px) {
+    .schedule {
+        height: 650px;   
+    }
+}
+
+@media(max-width: 1020px) {
+    .schedule {
+        height: 600px;   
+    }
+}
+@media(max-width: 960px) {
+    .firstHeaderDiv {
+        margin: 0;  
+        margin-bottom: 20px;
+    }
+    .firstPricingDiv {
+        margin: 0 auto; 
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 940px) {
+    .schedule {
+        height: 550px;   
+    }
+}
+@media(max-width: 923px) {
+    .safetyImg1, .safetyImg2 {
+        margin: 0 auto;
+        float: none;
+        display: block;
+        margin-top: 20px;
+    }
+}
+@media(max-width:901px) {
+    .howItWorksDivs2 {
+        margin-right: 0;   
+    }
+    .howItWorksDivsLast {
+        display: block;   
+        margin: 0 auto;
+        margin-top: 30px;
+        position: static;
+    }
+}
+@media(max-width: 840px) {
+    .schedule {
+        height: 500px;  
+    }
+}
+@media(max-width: 790px) {
+    .schedule {
+        height: 450px;   
+    }
+}
+@media(max-width: 700px) {
+    .schedule {
+        height: 400px;   
+    }
+}
+@media(max-width: 680px) {
+    .schedule {
+        height: 350px;
+    }
+    .zumers p {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+@media(max-width: 575px) {
+    .howItWorksDivs {
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 40px;
+    }
+    .schedule {
+        height: 300px;   
+    }
+}
+@media(max-width: 560px) {
+    .pricing h6 {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+@media(max-width: 540px) {
+    .firstPricingDiv {
+        margin-left: 5px;
+        width: 88%;
+    }
+}
+@media(max-width: 539px) {
+    .firstHeaderDiv   {
+        width: 90%;
+        margin-left: 5px;
+    }
+    .ourMagic h1 {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .ourMagic p {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .safety h1 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .safety p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .threeDivsSafety {
+        text-align: center;
+    }
+    .threeDivsSafety p {
+        margin: 0;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }    
+    .ourDrivers, .secondDivSafety .ourDrivers {
+        text-align: center;  
+        width: 100%;
+        margin: 0 auto;
+    }
+    .threeDivsSafetyLast {
+        margin-bottom: 20px;   
+    }
+}
+@media(max-width: 500px) {
+    header h1, .howItWorks h1, .ourMagic h1, .safety h1, .pricing h1 {
+        font-size: 30px;   
+    }
+}
+@media(max-width: 510px) {
+    .schedule {
+        height: 250px;
+    }
+}
+@media(max-width: 415px) {
+     .schedule {
+        height: 200px;
+    }   
+}
+@media(max-width: 475px) {
+    .firstPricingDiv p {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+@media(max-width: 375px) {
+    header {
+        margin-top: 0;   
+    }
+    header h1 {
+        font-size: 23px;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    .firstPHeader {
+        font-size: 12px;
+        margin-right: 100px;
+        margin-left: 100px;
+        margin-bottom: 15px;
+    }
+    .firstHeaderDiv p {
+        font-size: 14px;   
+    }
+    .firstHeaderDiv h4 {
+        font-size: 18px;   
+    }
+    .howItWorks h1 {
+        font-size: 23px;   
+    }
+    .howItWorksDivs h2, .howItWorksDivs p {
+        font-size: 14px;   
+    }
+    .ourMagic h1 {
+        font-size: 23px;   
+    }
+    .ourMagic p {
+        font-size: 14px;   
+    }
+    .safety h1, .pricing h1 {
+        font-size: 23px;   
+    }
+    .safety p, .pricing h6 {
+        font-size: 14px;   
+    }
+    .threeDivsSafety p {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .firstPricingDiv h4 {
+        font-size: 18px;   
+    }
+    .firstPricingDiv h5 {
+        font-size: 16px;   
+    }
+    .firstPricingDiv p {
+        font-size: 14px;   
+    }
+}
+@media(max-width: 350px) {
+    .safetyImage img {
+       width: 90%;
+       margin-left: 5px;
+    }
+    
+}

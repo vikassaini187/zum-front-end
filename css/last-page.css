@@ -1,0 +1,316 @@
+header {
+    background-image: url(../images/232322.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    height: 600px;
+    text-align: left;
+    padding-bottom: 0;
+}
+header .wrapper {
+    overflow: visible;
+}
+header img {
+    float: left; 
+    width: 154px;
+    height: 3px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    clear: both;
+}
+header h1 {
+    width: 485px;0
+    font-size: 46px; font-weight:bold !important;
+    line-height: 50px;/*64.24px;*/
+    color: #fff;
+    margin-top: 230px;
+    margin-right: 80px;
+    float: left;
+}
+header .zumBirth {
+    float: left; 
+    width: 520px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 32px;
+}
+header .ritu {
+    margin-top: 120px;
+    margin-bottom: -70px;
+    background-image: url(../images/Ritu-Narayan.png);
+    background-size: cover;
+    background-position: center center;
+    width: 462px;
+    height: 570px;
+    background-repeat: no-repeat;
+    float: right;
+    position: relative;
+}
+.leftDivHeader {
+    float: left; 
+    width: 520px;
+}
+header .ritu h4 {
+    position: absolute;
+    bottom: 65px;
+    right: 20px;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #009fe3;
+}
+header .ritu p {
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    color: #009fe3;
+    font-weight: 500px;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+/********************* STAND FOR ***********************/
+.standFor {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+}
+.standFor h1 {
+    font-size: 42px;
+    font-weight: 300;
+    color: #37474f;
+    padding-top: 140px;
+    padding-bottom: 5px;
+}
+.firstPStandForP {
+    font-size: 20px;
+    font-weight: 300;
+    color: #37474f;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    line-height: 32px;
+    margin-right: 110px;
+    margin-left: 110px;
+}
+.leftDivStandFor {
+    width: 277px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-right: 120px;
+}
+.zumsPhil {
+    background-image: url(../images/zumsPhil.png);
+    width: 269px;
+    height: 286px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+}
+.zumsPhil h2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #37474f;
+    padding-top: 130px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+.leftDivStandFor p {
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 28px;
+    color: #37474f;
+    margin-top: 20px;
+}
+.leftDivStandFor p span {
+    color: #ff871d;   
+}
+.rightDivStandFor {
+    margin: 0 auto;
+    display: inline-block;
+    width: 439px;
+    position: relative;
+    top: -50px;
+}
+.rightDivStandFor h4{
+    font-size: 20px;
+    color: #ff871d;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.rightDivStandFor p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #37474f;
+    text-align: left;
+    margin-top: 10px;
+    line-height: 30px;
+}
+/****************** MEET TEAM ************************/
+.meetTeam {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(224, 224, 224, 0.4);
+}
+.meetTeam h1 {
+    font-size: 42px;
+    font-weight: 300;
+    color: #37474f;
+    padding-top: 60px;
+    padding-bottom: 5px;
+}
+.meetTeam p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #37474f;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    margin-right: 120px;
+    margin-left: 120px;
+    line-height: 32px;
+}
+.membersOurTeam {
+    margin: 0 auto;
+    display: inline-block;
+    margin-right: 19px;
+    margin-bottom: 19px;
+}
+/*********** RESPOSNIVE ***************/
+@media(max-width: 1088px) {
+    header h1 {
+        margin: 0 auto;
+        padding-top: 80px;
+        float: none;
+        padding-bottom: 30px;
+    }
+    header {
+        text-align: center; 
+    }
+    header .ritu {
+        margin-top: 80px;   
+    }
+    header img {
+        margin: 0 auto;
+        float: none;
+    }   
+    header img {
+        margin: 20px 0;   
+    }
+}
+@media(max-width: 1048px) {
+    header h1 {
+        position: static;
+        margin: 0 auto;
+    }
+}
+@media(max-width: 998px) {
+    header {
+        height: 1000px;       
+    }
+    header .ritu, .leftDivHeader {
+        margin: 0 auto;
+        float: none;
+    }
+    .leftDivHeader {
+        margin-bottom: 170px;   
+    }
+}
+@media(max-width: 918px) {
+    header img {
+        margin-top: 20px;   
+    }
+}
+@media(max-width: 857px) {
+    .leftDivStandFor {
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+@media(max-Width: 540px) {
+     header .ritu {
+        width: 90%;   
+     }
+    header .zumBirth {
+        width: 100%;   
+    }
+    header {
+        height: 1100px;   
+    }
+}
+@media(max-width: 500px) {
+    header h1 {
+        margin-right: 20px;
+        margin-left: 20px;
+        width: 90%;
+    }
+    .leftDivHeader {
+        width: 90%;   
+    }
+    .standFor h1 {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .standFor p {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    .rightDivStandFor {
+        width: 90%; 
+    }
+    .rightDivStandFor p {
+        padding-bottom: 10px;   
+    }
+    .meetTeam h1 {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .meetTeam p {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .standFor h1, .meetTeam h1 {
+        font-size: 30px;
+    }
+    .standFor h1 {
+        padding-top: 40px;   
+    }
+    header .ritu {
+        height: 450px;   
+    }
+}
+@media(max-width: 436px) {
+    header {
+        padding-bottom: 80px;   
+    }
+}    
+@media(max-width: 375px) {
+    header {
+        margin-top: 0;
+        padding-bottom: 0;
+        height: 950px;
+    }
+    header h1 {
+        font-size: 23px;
+        padding-bottom: 0;
+    }
+    header .zumBirth {
+        font-size: 14px;   
+    }
+    .standFor h1, .meetTeam h1 {
+        font-size: 23px;   
+    }
+    .standFor p, .meetTeam p {
+        font-size: 14px;   
+    }
+    .rightDivStandFor h4 {
+        margin-top: 20px;   
+    }
+}
+@media(max-width: 320px) {
+    header {
+        height: 950px;   
+    }
+}

@@ -1,0 +1,89 @@
+.ui-timepicker-wrapper {
+    overflow-y: auto;
+    height: 150px;
+    /*	width: 6.5em;*/
+    width: 209px;
+    background: #fff;
+    border: 1px solid #ddd;
+    -webkit-box-shadow:0 5px 10px rgba(0,0,0,0.2);
+    -moz-box-shadow:0 5px 10px rgba(0,0,0,0.2);
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+    outline: none;
+    z-index: 10001;
+    margin: 0;
+}
+
+.ui-timepicker-wrapper.ui-timepicker-with-duration {
+    width: 13em;
+}
+
+.ui-timepicker-wrapper.ui-timepicker-with-duration.ui-timepicker-step-30,
+.ui-timepicker-wrapper.ui-timepicker-with-duration.ui-timepicker-step-60 {
+    width: 11em;
+}
+
+.ui-timepicker-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ui-timepicker-duration {
+    margin-left: 5px; color: #888;
+}
+
+.ui-timepicker-list:hover .ui-timepicker-duration {
+    color: #888;
+}
+
+.ui-timepicker-list li {
+    /*    padding: 3px 0 3px 5px;*/
+    padding: 5px 0 5px 5px;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    color: #000;
+    list-style: none;
+    margin: 0;
+}
+
+.ui-timepicker-list:hover .ui-timepicker-selected {
+    background: #fff; color: #000;
+}
+
+li.ui-timepicker-selected,
+.ui-timepicker-list li:hover,
+.ui-timepicker-list .ui-timepicker-selected:hover {
+    /*    background: #1980EC; */
+    background: #e7790e;
+    color: #fff;
+}
+
+li.ui-timepicker-selected .ui-timepicker-duration,
+.ui-timepicker-list li:hover .ui-timepicker-duration {
+    color: #ccc;
+}
+
+.ui-timepicker-list li.ui-timepicker-disabled,
+.ui-timepicker-list li.ui-timepicker-disabled:hover,
+.ui-timepicker-list li.ui-timepicker-selected.ui-timepicker-disabled {
+    color: #888;
+    cursor: default;
+}
+
+.ui-timepicker-list li.ui-timepicker-disabled:hover,
+.ui-timepicker-list li.ui-timepicker-selected.ui-timepicker-disabled {
+    background: #f2f2f2;
+}
+
+@media(max-width: 1024px) {.ui-timepicker-wrapper{ width:233px;} }
+@media(max-width: 980px) {.ui-timepicker-wrapper{ width:193px;} }
+@media(max-width: 800px) {.ui-timepicker-wrapper{ width:373px;} }
+@media(max-width: 768px) {.ui-timepicker-wrapper{ width:356px;} }
+@media(max-width: 600px) {.ui-timepicker-wrapper{ width:272px;} }
+@media(max-width: 580px) {.ui-timepicker-wrapper{ width:262px;} }
+@media(max-width: 480px) {.ui-timepicker-wrapper{ width:211px;} }
+@media(max-width: 414px) {.ui-timepicker-wrapper{ width:186px;} }
+@media(max-width: 375px) {.ui-timepicker-wrapper{ width:167px;} }
+@media(max-width: 360px) {.ui-timepicker-wrapper{ width:159px;} }
+@media(max-width: 320px) {.ui-timepicker-wrapper{ width:167px;} }

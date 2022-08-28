@@ -1,0 +1,9295 @@
+/************ This is custom CSS ********************/
+* {
+	margin: 0;
+	padding: 0;
+}
+body, h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+}
+p {
+	font-family: 'Arimo', sans-serif;
+}
+.wrapper {
+	max-width: 1050px;
+	margin: 0 auto;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+}
+.highlighted {
+	border-bottom: 2px solid #99ca40;
+}
+/*-------- intercom chatting code ---------*/
+#intercom-container .intercom-launcher-button {
+	background-color: #92C53C !important;
+	border: 1px solid #92C53C !important;
+}
+.FrutigerLTCom-Bold {
+	font-family: FrutigerLTCom-Bold;
+	font-weight: normal;
+	font-style: normal;
+}
+.FrutigerLTCom-Roman {
+	font-weight: normal;
+	font-style: normal;
+}
+.FrutigerLTCom-Light {
+	font-weight: normal;
+	font-style: normal;
+}
+/****************** NAV **************/
+nav {
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: left;
+	background-color: #fff;
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: -10px;
+	z-index: 10;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);/*    box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);*/
+
+}
+nav .zumLogo {
+	float: left;
+	background-image: url(../images/zum_logo.png);
+	width: 110px;
+	height: 37px;
+}
+nav .logo {
+	padding-top: 40px;
+	padding-bottom: 27px;
+	background-color: #fff;
+}
+nav .mainNav {
+	float: left;
+	/*        margin-left: 36px;
+        margin-top: -15px;
+        margin-bottom: 35px;
+    */
+    margin-bottom: 20px;
+	margin-left: 36px;
+	margin-top: -30px;
+}
+nav .mainNavList li {
+	float: left;
+	list-style: none;
+	/*    margin-right: 45px;*/
+    margin-right: 25px;
+	padding: 14px 0;
+}
+nav .mainNavList li:last-child {
+	margin-right: 0;
+}
+nav .mainNavList li a {
+	text-decoration: none;
+	color: #37474f;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-family: 'Open Sans', sans-serif;
+	padding-bottom: 10px;
+	font-weight:600;
+}
+nav .mainNavList li a:hover, nav .mainNavList li a:focus, .mainNavList li a.active {
+	color:#009fe3;/*     cursor: pointer; */
+}
+ul.mainNavList li:hover {
+	display: block;
+}
+ul.mainNavList li ul.dropdown {
+	/*                min-width: 100%;  Set width of the dropdown */
+    background: #fff;
+	display: none;
+	position: absolute;
+	z-index: 999;
+	margin-top: 3px;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-moz-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+ul.mainNavList li:hover ul.dropdown {
+	display: block;	/* Display the dropdown */
+}
+ul.mainNavList li ul.dropdown li {
+	display: block;
+	float: none;
+	padding: 10px 18px;
+	margin: 6px;
+}
+ul.mainNavList li ul.dropdown li:hover {
+	background: #dedcdc;
+}
+ul.mainNavList li ul.dropdown li a:hover {
+	border: none;
+}
+/***** nav join btn *******/
+.phone_rbtn {
+	text-decoration: none;
+	list-style-type: none;
+	float: right;
+	margin-top: -30px;
+}
+.phone_rbtn li {
+	display: inline-block;
+}
+.nav_join {
+	background-color: #009fe3;
+	color: #fff;
+	padding: 14px 25px;
+	border: 1px solid #009fe3;
+	font-size: 13px;
+	outline: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-left: 10px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+.nav_join.reservebtn {
+	display: none;
+}
+.phone_rbtn li div.phoneNumber {
+	float: none;
+	margin-top: 0;
+}
+/*nav .mainNavList li.last_li {
+    background-color: #009fe3;
+    padding: 13px 26px !important;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px; font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}*/
+/*nav .mainNavList li.become_btn { background-color: #ff871d !important; }*/
+/*nav .mainNavList li.last_li:hover {
+    cursor: pointer; 
+    
+} */
+/*nav .mainNavList li.last_li a { color: #fff;  }
+nav .mainNavList li.last_li  a:hover {
+    border: none;
+
+}*/
+nav .phoneNumber {
+	float: right;
+	margin-top: -30px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	color: #009fe3;
+}
+nav .phoneNumberShape1 {
+	margin-right: 11px;
+	margin-bottom: -5px;
+}
+nav .phoneNumber p {
+	padding-right: 18px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 18px;
+	border: 1px solid #009fe3;
+	border-radius: 5px;
+}
+/************** HEADER ****************/
+header {
+	background-color: #eceff1;
+	background-image: url("images/header.jpg");
+	background-position: -2px -80px;
+	background-repeat: no-repeat;
+	background-size: 111% auto;
+	margin: 90px auto 0;
+	max-width: 100%;
+	padding-bottom: 165px;
+	text-align: left;
+}
+header.boy {
+	background-color: #eceff1;
+	/*background-image: url("images/header_new01.jpg");*/
+    background-image: url("images/header_old_new.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	margin: 90px auto 0;
+	padding-bottom: 195px;
+	padding-top: 0px;
+	text-align: left;
+}
+header.sequoibenefits {
+	padding-bottom: 0;
+}
+header.boy .mainContent {
+	margin-left: 0;
+	width: 60%;
+}
+header .mainContent {
+	width: 60%;
+	margin-left: 0px;/*width: 100%;*/   
+}
+header .mainContent.drive {
+	width: 90%;
+}
+header .mainContent h1 {
+	color: #fff;
+	font-size: 55px;
+	font-weight: bold;
+	padding-top: 190px;
+}
+header .mainContent p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 18px;
+	color: #c7c7c7;
+	margin-top: 25px;
+	padding-bottom: 38px;
+}
+.mainContent button {
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	width: 180px;
+	height: 50px;
+	letter-spacing: 1px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	color: #009fe3;
+	background-color: #fff;
+	border: 1px solid #fff;
+	margin-bottom: 60px;
+	text-transform: uppercase;
+}
+.mainContent button:hover {
+	color: #fff;
+	background-color: #009fe3;
+	border: 1px solid #009fe3;
+}
+header form input {
+	width: 323px;
+	height: 56px;
+	outline: none;
+	border: none;
+	border: 1px solid #b0bec5;
+	border-radius: 2px;
+	padding-left: 20px;
+	font-size: 18px;
+	color: #90a4ae;
+	margin-bottom: 50px;
+}
+header form button, section.send_btn form button {
+	border: none;
+	outline: none;
+	border: 1px solid #009fe3;
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-radius:0 2px 2px 0;
+	border-radius: 0 2px 2px 0;
+	background-color: #009fe3;
+	width: 175px;
+	height: 58px;
+	margin-left: -5px;
+	font-family: 'Open Sans', sans-serif;
+	color: #ffffff;
+	font-size: 20px;
+	position: relative;
+	bottom: -2px;
+}
+button[disabled] {
+	opacity: 0.65;
+	cursor: not-allowed;
+}
+.link-an-ios a {
+	color: #909090;
+	font-size: 20px;
+	text-decoration: none;
+}
+.mobile-link img {
+	width: 30%;
+}
+/*.link-an-ios a:hover
+{
+    color:#ccc;
+}*/
+.mobile {
+	float: right;
+	display: none;
+}
+.our_story_p15 {
+	padding-bottom: 40px;
+}
+/****************let us help***************/
+.let_us_help {
+	background-color: #f6f8fa;
+	margin: 0 auto;
+	max-width: 100%;
+	text-align: center;
+	padding-bottom: 40px;
+	padding-top: 60px;
+}
+.firstDivlet_us_help {
+	padding-top: 90px;
+}
+.let_us_helpImage {
+	display: inline-block;
+	position: relative;
+	top: -50px;
+	float: left;
+	margin-left: 50px;
+}
+.let_us_helpright {
+	display: inline-block;
+	/*  letter-spacing: 1px;
+      margin-right: 50px;*/
+    padding-bottom: 50px;
+	text-align: left;
+	width: 458px;
+}
+.let_us_helpright h2 {
+	color: #009fe3;
+	font-size: 45px;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+.secondDivlet_us_help h6 {
+	color: #424242;
+	font-size: 18px;
+	font-weight: 100;
+	line-height: 31px;
+	margin: 0 0 45px;
+	padding-right: 142px;
+	text-transform: uppercase;
+}
+.mobile-link {
+	display: none;
+}
+.mobile-link1 img {
+	float: left;
+	width: 40%;
+	display: block;
+}
+.mobile-link img.mobile_appbtn {
+	margin-bottom: 40px;
+	width: 22%;
+}
+/**************** STARTED ZUM *************/
+.startedZum {
+	width: 100%;
+	margin: 0 auto;
+	background-image: url(../images/startedZum.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+.startedZum h1 {
+	font-size: 42px;
+	color: #fff;
+	padding-top: 65px;
+	margin-bottom: 30px;
+	font-weight: bold;
+	font-style: normal;
+}
+.startedZum p {
+	font-size: 17px;
+	color: #fff;
+	margin-top: 23px;
+	margin-bottom: 50px;
+	line-height: 1.5;
+	margin-right: 40px;
+	margin-left: 40px;
+}
+.startedZum button {
+	border: none;
+	outline: none;
+	border-radius: 2px;
+	width: 141px;
+	height: 39px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #009fe3;
+	/* ---old----    border: 1px solid #b0bec5;
+          background-color: #ff871d;*/
+    background-color: #fff;
+	border: 1px solid #fff;
+	margin-bottom: 60px;
+}
+/*************** WHY WE DIFFER ********************/
+.whyWeDiffer {
+	margin: 0 auto;
+	max-width: 100%;
+	background-color: #f3f3f3;
+	text-align: center;
+}
+.whyWeDiffer h1 {
+	font-size: 42px;
+	color: #37474f;
+	padding-top: 65px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+.whyWeDifferFirstP {
+	font-size: 17px;
+	color: #37474f;
+	margin-top: 23px;
+	margin-bottom: 50px;
+	margin-right: 50px;
+	margin-left: 50px;
+	line-height: 1.5;
+}
+.firstDivWhyWeDiffer {
+	margin-bottom: 40px;
+	text-align: center;
+}
+.secondDivWhyWeDiffer, .thirdDivWhyWeDiffer {
+	margin-bottom: 40px;
+}
+.firstDivWhyWeDiffer .leftDivInner {
+	background-color: #e7790e;
+	width: 285px;
+	height: 99px;
+	text-align: center;
+	margin: 0 auto;
+	display: inline-block;
+	margin-right: 25px;
+	vertical-align: top;
+}
+.secondDivWhyWeDiffer .leftDivInner {
+	background-color: #009fe3;
+	width: 285px;
+	height: 99px;
+	text-align: center;
+	margin: 0 auto;
+	display: inline-block;
+	margin-right: 25px;
+	vertical-align: top;
+}
+.thirdDivWhyWeDiffer .leftDivInner {
+	background-color: #fcb121;
+	width: 285px;
+	height: 99px;
+	text-align: center;
+	margin: 0 auto;
+	display: inline-block;
+	margin-right: 25px;
+	vertical-align: top;
+}
+.thirdDivWhyWeDiffer .leftDivInner p, .secondDivWhyWeDiffer .leftDivInner p, .firstDivWhyWeDiffer .leftDivInner p {
+	font-size: 26px;
+	color: #ffffff;
+	padding-top: 30px;
+}
+.thirdDivWhyWeDiffer .rightDivInner, .secondDivWhyWeDiffer .rightDivInner, .firstDivWhyWeDiffer .rightDivInner {
+	display: inline-block;
+	width: 600px;
+	margin: 0 auto;
+	text-align: left;
+}
+.firstDivWhyWeDiffer .rightDivInner h4 {
+	font-size: 20px;
+	color: #37474f;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #b0bec5;
+	width: 178px;
+	transform: scale(1, 0.999);
+}
+.secondDivWhyWeDiffer .rightDivInner h4 {
+	font-size: 20px;
+	color: #37474f;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #b0bec5;
+	width: 145px;
+	transform: scale(1, 0.999);
+}
+.thirdDivWhyWeDiffer .rightDivInner h4 {
+	font-size: 20px;
+	color: #37474f;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #b0bec5;
+	width: 295px;
+	transform: scale(1, 0.999);
+}
+.thirdDivWhyWeDiffer .rightDivInner p, .secondDivWhyWeDiffer .rightDivInner p, .firstDivWhyWeDiffer .rightDivInner p {
+	font-size: 16px;
+	color: #263238;
+	transform: scaleY(0.999);
+	font-weight: 300;
+	margin-top: 20px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+/**************** MORE THAN ***************/
+.moreThan {
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: #99ca40;
+	text-align: center;
+}
+.moreThan h1 {
+	padding-top: 60px;
+	font-size: 42px;
+	color: #ffffff;
+	padding-bottom: 30px;
+}
+.moreThan p {
+	font-size: 17px;
+	color: #ffffff;
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	line-height: 1.5;
+}
+.moreThanDivs {
+	display: inline-block;
+	width: 340px;
+	vertical-align: top;
+}
+.moreThanDivs1 {
+	margin-top: 20px;
+}
+.moreThanDivs img {
+	margin-bottom: 20px;
+}
+.moreThanDivs h2 {
+	font-size: 20px;
+	color: #fff;
+	line-height: 28px;
+}
+.moreThanDivs p {
+	font-size: 14px;
+	color: #fff;
+	margin-bottom: 60px;
+	width: 310px;
+	line-height: 30px;
+	padding-top: 15px;
+}
+/*********************** CUSTOMERS ************************/
+.customers {
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.customers .wrapper {
+	position: relative;
+}
+.customers h1 {
+	font-size: 42px;
+	font-weight: bold;
+	color: #37474f;/*#455a64;*/
+	padding-top: 55px;
+	padding-bottom: 55px;
+}
+.customers img {
+	width: 100%;
+	height: 252px;
+	border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	-o-border-radius: 4px 4px 0 0;
+}
+.customers img.how_our {
+	border-radius: 50%;
+	display: table;
+	height: 230px;
+	margin: 0 auto;
+	padding: 26px 0;
+	vertical-align: middle;
+	width: 80%;
+}
+.firstDivCustomers, .secondDivCustomers {
+	margin-right: 30px;
+	margin-bottom: 30px;/*    box-shadow: 1px 1px 1px #b0bec5;*/
+}
+.firstDivCustomers, .secondDivCustomers {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	width: 298px;
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	/*    border: 1px solid #b0bec5;*/
+    border: 1px solid #eceff1;
+}
+.firstDivCustomers h4, .secondDivCustomers h4 {
+	font-size: 24px;
+	font-weight: normal;
+	color: #ff871d;
+	margin-top: 35px;
+	margin-bottom: 30px;
+}
+.firstDivCustomers div, .secondDivCustomers div {
+	width: 100%;
+	display: table;
+}
+.firstDivCustomers div h5, .secondDivCustomers div h5 {
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ff871d;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: 32px;
+	letter-spacing: 1px;
+	margin-left: 0px;
+	height: 60px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.firstDivCustomers p, .secondDivCustomers p {
+	font-size: 15px;
+	color: #546e7a;
+	transform: scale(0.999, 1.001);
+	margin-right: 5px;
+	padding-bottom: 30px;
+	line-height: 1.8;
+	padding-left: 20px;
+	padding-right: 10px;
+	/*    border-top: 1px solid #eceff1;*/
+    padding-top: 10px;
+}
+.lineImgSafety {
+	display: block;
+	margin: 0 auto;
+}
+.customers ul li {
+	list-style: none;
+	display: inline-block;
+}
+/********************************** CUSTOMERS SAYING *****************************/
+.customersSaying {
+	margin: 0 auto;
+	max-width: 100%;
+	text-align: center;
+	background-color: #e3ec91;
+}
+.customersSaying h1 {
+	font-size: 42px;
+	color: #455a64;
+	margin-top: 65px;
+	margin-bottom: 60px;
+}
+.read_watch_btn {
+	text-align: center;
+	display: inline-block;
+}
+.read_watch_btn button {
+	background-color: transparent;
+	border: medium none;
+	border-radius: 2px;
+	color: #455a64;
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	height: 39px;
+	letter-spacing: 2px;
+	margin-bottom: 21px;
+	outline: medium none;
+	width: 141px;
+	margin-right: 10px;
+}
+.read_watch_btn button.active {
+	background-color: #009fe3;
+	color: #fff;
+}
+.threeDivsCustomersSaying {
+	display: inline-block;
+	width: 260px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	margin-right: 60px;
+}
+.threeDivsCustomersSaying div {
+	position: relative;
+}
+.threeDivsCustomersSaying div .video_btn {
+	background: url("../images/video_btn.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+	bottom: 30%;
+	display: table-cell;
+	height: 100px;
+	left: 31%;
+	margin: 0 auto;
+	position: absolute;
+	right: 31%;
+	top: 30%;
+	width: 100px;
+}
+.threeDivsCustomersSaying div .video_btn:hover {
+	background: url("../images/video_btn_active.png") repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+}
+.threeDivsCustomersSayingLast {
+	margin-right: 0;
+}
+.threeDivsCustomersSaying h4 {
+	font-size: 20px;
+	color: #ff871d;
+	margin-top: 40px;
+	padding-bottom: 20px;
+}
+.threeDivsCustomersSaying h4.school_h4_c {
+	color:#37474f;
+}
+/*----- 31/3/2016   || vishal*/
+.threeDivsCustomersSaying h4 a {
+	color: #546e7a;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+.threeDivsCustomersSaying h4 span {
+	font-size: 16px;
+	color: #455a64;
+}
+.threeDivsCustomersSaying p {
+	font-size: 17px;
+	color: #546e7a;
+	margin-top: 30px;
+	line-height: 36px;
+}
+.roundThreeDivsCustomers {
+	border-radius: 100%;
+	width: 260px;
+	height: 260px;
+	background-position: center center;
+}
+/***************************** SECTION ******************/
+section {
+	max-width: 100%;
+	margin: 0 auto;
+	/*    background-color: #fff;*/
+    /*    background-color: #009fe3;*/
+    background-color: rgba(220, 231, 117, 0.2);
+	text-align: center;
+	font-weight: 300;
+}
+section h1 {
+	font-size: 42px;
+	/*    color: #546e7a;*/
+    color: #455a64;
+	padding-top: 60px;
+	padding-bottom: 50px;
+	line-height: 62px;
+}
+section form input {
+	width: 323px;
+	height: 56px;
+	outline: none;
+	border: none;
+	border: 1px solid #b0bec5;
+	border-radius: 2px;
+	padding-left: 20px;
+	font-family: Frutiger;
+	font-size: 21px;
+	color: #90a4ae;
+	margin-bottom: 50px;
+}
+section form button {
+	border: none;
+	outline: none;
+	border: 1px solid #b0bec5;
+	background-color: #ff871d;
+	width: 141px;
+	height: 58px;
+	border-radius: 2px;
+	margin-left: -5px;
+	font-family: 'Open Sans', sans-serif;
+	color: #ffffff;
+	font-size: 20px;
+	position: relative;
+	bottom: -1px;
+}
+/******************** Featured in *********************/
+/*------ 1/4/2016  || vishal start*/
+.feature_in {
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+.feature_in h1 {
+	padding-top: 60px;
+	font-size: 42px;
+	color: #37474f;
+	padding-bottom: 30px;
+	text-align: center;
+}
+.feature_inDivs {
+	display: inline-block;
+	margin-bottom: 50px;
+	margin-left: 45px;
+	vertical-align: top;
+	width: 440px;
+}
+.feature_inDivs img {
+	border: 1px solid #cecece;
+	float: left;
+	margin-bottom: 20px;
+	margin-right: 40px;
+	width: 160px;
+}
+.feature_headtext {
+	height: 138px;
+	overflow: hidden;
+}
+.feature_inDivs h2 {
+	color: #37474f;
+	font-size: 20px;
+	line-height: 28px;
+	padding-bottom: 10px;
+	padding-top: 0;
+	/*    text-overflow: clip;*/
+    text-transform: uppercase;/*    white-space: nowrap;*/
+}
+.feature_inDivs p {
+	color: #818e94;
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 0;
+	/*    padding-bottom: 50px;*/
+    padding-top: 0;/*    height: 50px;*/
+}
+.feature_inDivs a {
+	color: #e7790e;
+	  font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	text-decoration: none;
+}
+/*------ 1/4/2016  || vishal*/
+
+/************ TALK TO US *******************/
+/*------ 1/4/2016  || vishal start*/
+.talkToUs_1 {
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: #fdfefe;
+}
+.talkToUs_1 h1 {
+	padding-top: 60px;
+	font-size: 42px;
+	color: #455a64;
+	padding-bottom: 30px;
+	text-align: center;
+}
+.talkToUs_1 p {
+	font-size: 20px;
+	color: #ffffff;
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	letter-spacing: 1px;
+}
+.talkToUs_1Divs {
+	display: inline-block;
+	margin-left: 45px;
+	vertical-align: top;
+	width: 290px;
+}
+.talkToUs_1Divs1 {
+	margin-top: 20px;
+}
+.talkToUs_1Divs img {
+	float: left;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	width: 100px;
+}
+.talkToUs_1Divs h2 {
+	color: #37474f;
+	font-size: 20px;
+	line-height: 28px;
+	padding-top: 20px;
+	text-transform: uppercase;
+}
+.talkToUs_1Divs p {
+	font-size: 16px;
+	color: #37474f;
+	margin-bottom: 30px;
+	/*    width: 310px;*/
+    line-height: 30px;
+	padding-top: 0px;
+}
+/*------ 1/4/2016  || vishal*/
+
+
+.talkToUs {
+	max-width: 100%;
+	background-color: rgba(220, 231, 117, 0.2);
+	margin: 0 auto;
+	overflow: auto;
+}
+.talkToUsImages {
+	float: left;
+	margin-left: 70px;
+}
+.talkToUsImages img:first-child {
+	padding-top: 75px;
+	padding-right: 55px;
+}
+.talkToUsImages img:nth-child(2) {
+ margin-bottom: 15px;
+ padding-right: 43px;
+}
+.talkToUsImages img:last-child {
+	margin-bottom: 12px;
+}
+.talkToUsText {
+	float: left;
+	margin-left: 80px;
+	margin-bottom: 80px;
+}
+.talkToUsText h2 {
+	font-size: 32px;
+	color: #455a64;
+	padding-top: 85px;
+	margin-bottom: 25px;
+	font-weight: 400;
+	line-height: 32px;
+}
+.talkToUsText p {
+	font-size: 20px;
+	color: #37474f;
+	font-weight: 400;
+}
+/******************** FOOTER *********************/
+footer {
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: #455a64;
+}
+.logoFooter {
+	float: left;
+	margin: 50px 20px 35px;
+}
+.middleFooter ul {
+	list-style: none;
+	float: left;
+	margin-left: 25px;
+}
+.middleFooter ul li {
+	display: inline-block;
+	margin-top: 57px;
+	margin-right: 25px;
+}
+.middleFooter ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+}
+.socialsFooter {
+	float: right;
+}
+.socialsFooter img {
+	margin-right: 15px;
+	margin-top: 40px;
+}
+.socialsFooter a:last-child img {
+	margin-right: 80px;
+}
+.phoneNumber .phoneNumberShape {
+	display: none;
+}
+.next, .previous {
+	display: none;
+}
+.hidden-shown {
+	display: none;
+}
+/************ activityhero page *******************/
+.easy_scl_get_text {
+	padding-bottom: 17px;
+	padding-top: 25px;
+	text-align: center;
+}
+.easy_active_line {
+	color: #fff;
+ // display: inline-block;
+	font-size: 27px;
+	font-weight: 500;
+	padding-bottom: 10px;
+	text-align: center;
+}
+.easy_scl_get_text h1 {
+	color: #fff;
+ //display: inline-block;
+	text-align: center;
+	font-size: 30px;
+}
+.easy_scl_get_text p {
+	color: #fff;
+	font-size: 22px;
+	padding-bottom: 10px;
+	padding-top: 15px;
+}
+/************ surfcamppacifica  page *******************/
+.phoneNumber.phone_btm {
+	margin-bottom: 35px;
+}
+/************ school page *******************/
+
+header.school_bg {
+	/*        text-align: center;*/
+    max-width: 100%;
+	background-color: #eceff1;
+	background-image: url("../images/school_header.png");
+	/*background:linear-gradient(to bottom, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 1) 100%) repeat scroll 0 0%, url(../images/school_header.png) repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+    background-position:0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 0px;
+	margin: 0 auto;
+	padding-top: 658px;
+}
+header.mathnasium {
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: #eceff1;
+	background-image: url("../images/school_header.png");
+	background-position: 0 90px;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	padding-bottom: 0px;
+	padding-top: 840px;
+}
+header.teachrocks {
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: #eceff1;
+	background-image: url("../images/school_header.png");
+	background-position: 0 90px;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	padding-bottom: 0px;
+	padding-top: 840px;
+}
+header.mercy {
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: #eceff1;
+	background-image: url("../images/mercy_bg.jpeg");
+	background-position: 0 -70px;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	padding-bottom: 0px;
+	padding-top: 640px;
+}
+header.girlsms_bg {
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: #eceff1;
+	background-image: url("images/header.jpg");
+	background-position: 0 40px;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	padding-bottom: 0px;
+	padding-top: 640px;
+}
+/***** footsteps page *******/
+header.footsteps {
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: #eceff1;
+	background-image: url("../images/school_header.png");
+	background-position: 0 -40px;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	padding-bottom: 0px;
+	padding-top: 650px;
+}
+header.servitehs_bg, header.jserra_bg {
+	/*        text-align: center;*/
+    max-width: 100%;
+	background-color: #eceff1;
+	/*background:linear-gradient(to bottom, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 1) 100%) repeat scroll 0 0%, url(../images/school_header.png) repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+    background-position:0 60px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding-bottom: 0px;
+	margin: 0 auto;
+	padding-top: 678px;
+}
+header.servitehs_bg {
+	background-image: url("../images/servite_header.jpg");
+}
+header.jserra_bg {
+	background-image: url("../images/JSerra.jpg");
+	background-position: 0 -140px;
+}
+header.school_bg.activityhero {
+	padding-top: 518px;
+}
+.school_zummer_img {
+	float: right;
+	margin-bottom: 20px;
+	margin-top: -30px;
+	width: 628px;
+}
+.school_zummer_img img {
+	margin-left: 20px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border: 1px solid #545554;
+	float:right;
+}
+.school_zummer_img h3 {
+	color: #37474f;
+	font-size: 16px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	/*    margin: 0px 50px 50px;*/
+    text-align: right;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+.school_zummer_img p {
+	color: #009fe3;
+	font-size: 16px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	/*    margin: 0px 50px 50px;*/
+    text-align: right;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-style: italic;
+}
+/*- - - - -  - school model - - - - -  -*/
+.modal-dialog.school_model {
+	width: 660px;
+}
+.modal-body.school_pad_body {
+	padding:40px;
+	height: auto;
+}
+.school_form {
+	text-align: left;
+	margin-bottom: 25px;
+	float: left;
+	width: 279px;
+	height: 105px;
+}
+.school_form.form_right1 {
+	margin-left: 20px;
+}
+.school_form label {
+	color: #818e94;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+	font-weight: 300;
+}
+.school_form div {
+	position: relative;
+}
+.school_form div img {
+	background-color: #fff;
+	display: block;
+	float: right;
+	padding: 10px 15px 10px 10px;
+	position: absolute;
+	right: -1px;
+	top: 17px;
+	width: 17px;
+}
+/*- - - - --  school table - - - -  -*/
+.school_table {
+	width: 100%;
+	float: left;
+	padding-bottom: 20px;
+}
+.school_table table tr {
+	border-bottom: 1px solid #e8ebed;
+	border-collapse: collapse;
+}
+.school_table table tr:last-child {
+	border-bottom: 0px;
+}
+.school_no_kid {
+	padding-bottom: 35px;
+}
+.school_no_kid-left {
+	float: left;
+	margin-top: 10px;
+	width: 330px;
+}
+.school_no_kid-left label {
+	color: #818e94;
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	margin-top: 15px;
+	padding-right: 10px;
+	text-align: left;
+	width: 121px;
+}
+/*- - - - -  - placeholder color change - - - - - - -*/ 
+.school_pls::-webkit-input-placeholder {
+color: #d4d4d4;
+}
+.school_pls::-moz-placeholder {
+color: #d4d4d4;
+}
+.school_pls:-ms-input-placeholder {
+color: #d4d4d4;
+}
+.school_no_kid-left input {
+	border: 1px solid #e8ebed;
+	border-radius: 5px;
+	color: #4e4d50;
+	font-size: 18px;
+	height: 60px;
+	margin-bottom: 0;
+	outline: medium none;
+	text-indent: 0px;
+	text-align: center;
+	width: 100%;
+	margin-top: 0px;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px;
+}
+.school_no_kid-right {
+	width: 174px;
+	float: right;
+	padding-top: 26px;
+}
+.school_no_kid-right label a.s_terms {
+	border-bottom: 1px solid #d4d6d8;
+	color: #4e4d50;
+	display: initial;
+	float: right;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	margin-top: 5px;
+	padding-left: 0;
+	text-align: left;
+	text-decoration: none;
+}
+.school_submit_btn button {
+	background-color: #009fe3;
+	border: 1px solid #009fe3;
+	border-radius: 3px;
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	height: 50px;
+	letter-spacing: 1px;
+	margin: 35px 0 0;
+	outline: medium none;
+	text-transform: uppercase;
+	width: 100%;
+}
+.thank_you_close {
+	background-color: #009fe3;
+	border: 1px solid #009fe3;
+	border-radius: 3px;
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	height: 50px;
+	letter-spacing: 1px;
+	margin: 0 auto;
+	outline: medium none;
+	text-transform: uppercase;
+	width: 50%;
+}
+/*- - - - --  end school table - - - -  -*/
+.school_table table th, td {
+	border: 1px solid #e8ebed;
+	color: #4e4d50;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 20px 40px;
+	text-align: left;
+}
+.checkbox.checkbox-success.checkbox-circle.day_select {
+	margin-top: -40px;
+	padding-left: 34px;
+}
+.school_form input {
+	border: 1px solid #e8ebed;
+	border-radius: 5px;
+	color: #4e4d50;
+	font-size: 18px;
+	height: 56px;
+	margin-bottom: 0;
+	outline: medium none;
+	text-indent: 20px;
+	text-align: left;
+	width: 100%;
+	margin-top: 10px;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px;/*    font-weight: 300;*/
+}
+.school_easy_pool_bg {
+	background-color: rgba(0, 0, 0, 0.85);
+}
+.school_easy_pool {
+	height: auto;/*    padding: 20px 0;*/
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	cursor: pointer;
+}
+button, select {
+	text-transform: none;
+}
+button, input {
+	line-height: normal;
+}
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: 100%;
+	margin: 0;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	cursor: pointer;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+.school_easy_pool {
+	text-align: center;
+}
+header {
+	text-align: left;
+}
+html {
+	font-family: sans-serif;
+}
+.school_easy_pool > ul {
+	list-style: outside none none;
+	text-decoration: none;
+}
+.school_easy_pool ul li {
+	display: inline-block;
+	margin: 24px 0px;
+	vertical-align: middle;
+}
+.school_easy_pool img {
+	border-radius: 50%;
+	height: 140px;
+	width: 140px;
+}
+.school_easy_pool h1 {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 60px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	line-height: 1.5;
+	padding: 0 50px;
+}
+.school_easy_pool button {
+	background-color: #e7790e;
+	border: 1px solid #e7790e;
+	border-radius: 3px;
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	height: 60px;
+	letter-spacing: 2px;
+	outline: medium none;
+	text-transform: uppercase;
+	width: 140px;
+}
+.feature_school {
+	color: #37474f;
+	font-size: 19px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	margin: 0px 50px 50px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+.feature_inschool {
+	display: inline-block;
+	margin-bottom: 25px;
+	margin-left: 25px;
+}
+.feature_inschool img {
+	border: 1px solid #cecece;
+	float: left;
+	margin-bottom: 35px;
+	margin-right: 40px;
+	width: 160px;
+}
+.feature_in.feature_school {
+	margin-bottom: 0;
+	background-color: #f6f8fa;
+}
+.feature_in.feature_school h1 {
+	letter-spacing: 2px;
+}
+.school_who {
+	background-color:#ffffff;
+	margin: 0 auto;
+	max-width: 100%;
+}
+.school_who h1 {
+	color: #37474f;
+	font-size: 42px;
+	font-weight: 300;
+	padding-bottom: 60px;
+	padding-top: 55px;
+	text-align: center;
+}
+.membersDiv_school_who {
+	display: inline-block;
+	margin: 0 115px 30px 80px;
+	vertical-align: top;
+	width: 280px;
+	text-align: center;
+	float: left;
+}
+.membersDiv_school_who h1 {
+	color: #009fe3;
+	font-size: 20px;
+	padding-bottom: 15px;
+	padding-top: 40px;
+}
+.membersDiv_school_who p {
+	color: #37474f;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	line-height: 26px;
+	margin-top: 10px;
+	transform: scale(0.999, 1.002);
+	letter-spacing: 1px;
+	font-weight: 300;
+}
+.membersDiv_school_who img {
+	margin: 0 auto;
+	width: 205px;
+}
+.memberDiv_school_right {
+	padding-top: 40px;
+	width: 492px;
+	float: left;
+}
+.threeDivs_1 {
+	margin-bottom: 60px;
+}
+.threeDivs_1 img {
+	float: left;
+	margin-right: 60px;
+	margin-bottom: 15px;
+}
+.threeDivs_1 p {
+	color: #37474f;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	line-height: 26px;
+	margin: 0 0 45px;
+	padding: 0;
+}
+.school_why_should {
+	background-color: #f6f8fa;
+	margin: 0 auto;
+	max-width: 100%;
+}
+.school_why_should h1 {
+	color: #37474f;
+	font-size: 42px;
+	padding-bottom: 30px;
+	padding-top: 80px;
+	text-align: center;
+}
+.school_why_should p {
+	color: #37474f;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 21px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	padding-bottom: 75px;
+	text-align: center;
+}
+.school_why_should_round {
+	background-color: #fff;
+	border-radius: 50%;
+	color: #37474f;
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	margin-bottom: 85px;
+	padding: 45px 5px;
+	text-align: center;
+	width: 260px;
+}
+.school_why_should_round.familes_m {
+	margin: 0 110px;
+}
+.school_why_should_round p {
+	color: #37474f;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	padding-bottom: 0px;
+	text-align: center;
+}
+.school_why_should_round > img {
+	padding: 25px 0;
+}
+.school_why_should_round h4 {
+	color: #37474f;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 22px;
+}
+.school_dot_see {
+	background-color: #009fe3;
+	margin: 0 auto;
+	max-width: 100%;
+}
+.school_dot_see h1 {
+	color: #ffffff;
+	font-size: 42px;
+	padding-bottom: 30px;
+	padding-top: 80px;
+	text-align: center;
+}
+.school_dot_see p {
+	color: #37474f;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	padding-bottom: 75px;
+	text-align: center;
+}
+.school_dot_see p a {
+	color: #37474f;
+	text-decoration: none;
+	border-bottom: 1px solid;
+}
+.school_why_carpool {
+	background-color: #fff;
+	padding-bottom: 70px;
+}
+.school_why_carpool h1 {
+	color: #37474f;
+	font-size: 42px;
+	font-weight: 300;
+	padding-bottom: 60px;
+	padding-top: 55px;
+	text-align: center;
+}
+.school_why_detail {
+	padding-left: 2px;
+	width: 260px;
+	float: left;
+}
+.school_round {
+	border-radius: 50%;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	padding: 70px 5px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 160px;
+	/*    margin-bottom: 45px;*/
+    margin: 0 auto 45px;
+}
+.school_round.easy {
+	background-color: #e7790e;
+}
+.school_round.safe {
+	background-color: #009fe3;
+}
+.school_round.flexible {
+	background-color: #37474f;
+}
+.school_round.reliable {
+	background-color: #fcb121;
+}
+.easy_disc {
+	color: #e7790e;
+}
+.safe_disc {
+	color: #009fe3;
+}
+.flexible_disc {
+	color: #37474f;
+}
+.reliable_disc {
+	color: #fcb121;
+}
+.school_why_detail ul {
+	list-style-type: none;
+}
+.school_why_detail p {
+	color: #818e94;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	line-height: 26px;
+	padding: 0 10px;
+	text-align: center;
+	min-height: 200px;
+}
+.school_why_detail ul li:before {
+	content: "·";
+	font-size: 30px;
+	line-height: 35px;
+	padding: 21px 15px 20px;
+	vertical-align: middle;
+}
+.school_why_detail ul li span {
+	color: #818e94;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	line-height: 26px;
+}
+.school_confirm_msg h1 {
+	/*    color: #009fe3;
+        font-size: 50px;
+        font-weight: 400;
+        margin: 100px 0;
+        text-align: center;*/
+    color: #009fe3;
+	font-size: 50px;
+	font-weight: 400;
+	line-height: 70px;
+	margin: 40px 70px;
+	text-align: center;
+}
+.has-success input {
+	border-color: #009fe3 !important;
+}
+.has-error_text input {
+	border-color:#f44336 !important;
+}
+.carpool_formDropLeft label.has-error {
+	color:#f44336;
+}
+.school_table label {
+	color: red;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+	font-weight: 300;
+	width: 100%;
+}
+#terms_condition-error {
+	float: right;
+	margin-top: 10px;
+	margin-right: -44px;
+	color: red;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+	font-weight: 300;
+	width: 100%;
+}
+.school_form label.error, .school_no_kid-right label.error, .school_no_kid-left label.error {
+	color: red;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+	font-weight: 300;/*  width: 100%;*/
+}
+/****************** faq page ******************/
+.faq_nav_tab {
+	padding-top: 50px;
+}
+.faq_nav_tab .nav-tabs {
+ // border-bottom: 1px solid #ddd;
+	display: table;
+	margin-bottom: 30px;
+	list-style: outside none none;
+}
+.faq_nav_tab .nav-tabs > li {
+	float: left;
+	margin-bottom: -1px;
+	padding-right: 30px;
+}
+.faq_nav_tab .nav-tabs > li > a {
+	color: #ff871d;
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-family: FrutigerLTCom-Roman;
+	font-style: normal;
+	text-decoration: none;
+	padding: 15px 20px;
+	border-radius: 5px;
+}
+.faq_nav_tab .nav-tabs > li > a:hover {
+	border-color: #eee #eee #ddd;
+}
+.faq_nav_tab .nav-tabs > li.active > a, .faq_nav_tab .nav-tabs > li.active > a:hover, .faq_nav_tab .nav-tabs > li.active > a:focus {
+	color: #fff;
+	cursor: default;
+	outline: medium none;
+	background-color: #ff871d;
+}
+.faq_nav_tab .tab-content > .tab-pane {
+	display: none;
+}
+.faq_nav_tab .tab-content > .active {
+	display: block;
+}
+.faq_nav_tab .fade {
+	opacity: 0;
+ -webkit-transition: opacity .15s linear;
+ -o-transition: opacity .15s linear;
+ transition: opacity .15s linear;
+}
+.faq_nav_tab .fade.in {
+	opacity: 1;
+}
+.faq_header {
+	margin-top: 95px;
+}
+.faq {
+	background-color: #f6f8fa;
+	margin: 0 auto;
+	max-width: 100%;
+ // text-align: center;
+}
+header h1.faq_h1 {
+	color: #fff;
+	font-size: 66px;
+	font-weight: 300;
+	padding-bottom: 20px;
+	padding-top: 60px;
+}
+.for_parents_faq {
+	display: inline-block;
+	letter-spacing: 1px;
+	margin-right: 0px;
+	padding-bottom: 50px;
+	text-align: left;
+	width: 100%;
+}
+.for_parents_faq h2 {
+	color: #ff871d;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+.secondDivfaq .for_parents_faq {
+	padding-bottom: 0px;
+}
+.threeDivfaq h6 {
+	color: #546e7a;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.threeDivfaq p {
+	color: #546e7a;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 28px;
+	margin: 0 0 45px;
+	padding: 0;
+}
+.firstDivfaq, .secondDivfaq, .thirdDivfaq {
+	padding-top: 90px;
+}
+.faq_detail {
+	float: left;
+	padding-left: 2px;
+	width: 100%;
+	margin-bottom: 45px;
+}
+.faq_detail ul {
+	list-style-type: disc;
+	color:#ff871d;
+	padding-left: 20px;
+}
+.faq_detail ul li:before {
+	/*    content: "·";*/
+    font-size: 30px;
+	line-height: 35px;
+	padding: 21px 15px 20px;
+	vertical-align: middle;
+	color:#ff871d;
+}
+.faq_detail ul li span {
+	color: #546e7a;
+ //font-family: OpenSans;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	line-height: 36px;
+}
+.lineImgfaq {
+	display: block;
+	margin: 0 auto;
+}
+/***************** end faq page  ******************/
+
+/****************** new faq page ******************/
+.faq_ourService_32 {
+	padding: 32px;
+}
+.faq_ourService_contain {
+	margin-bottom: 60px;
+	text-align: left;
+}
+/*.faq_ourService_contain.faq_contain_40 { margin-bottom: 40px;}*/
+.faq_row {
+	display: table-row;
+}
+.faq_ourService_left {
+	float: left;
+	/*display: inline-block;*/
+    vertical-align: top;
+	width: 474px;
+	text-align: left;
+	margin-right: 16px;
+}
+.faq_ourService_right {
+	float: right;
+	/*display: inline-block;*/
+    vertical-align: top;
+	width: 474px;
+	margin-left: 16px;
+	text-align: left;
+}
+.faq_ourServiceh2 {
+	margin-bottom: 15px;
+	margin-top: 0;
+	font-size: 26px;
+	color: #37474f;
+	text-decoration: none;
+	font-weight: 600;
+	/*border-bottom: 1px solid #37474f;*/
+    display: block;
+	text-align: left;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+.faq_ourServiceh4 {
+	margin-bottom: 10px;
+	margin-top: 0;
+	font-size: 18px;
+	color: #37474f;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+.faq_ourService_ul01 {
+	text-decoration: none;
+	list-style: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+.faq_ourService_ul01 li {
+	font-family: FrutigerLTCom-Light;
+	font-size: 14px;
+	line-height: 32px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.faq_ourService_ul01 li.faq_lastli a {
+	color:#ff871d;
+}
+.faq_ourService_ul01 li a {
+	color: #37474f;
+	text-decoration: none;
+	cursor: pointer;font-family: 'Arimo', sans-serif;
+}
+.faq_ourService_p {
+	font-family: FrutigerLTCom-Light;
+	font-size: 16px;
+	line-height: 32px;
+	margin-bottom: 40px;
+}
+.faq_ourService_ol, .faq_ourService_UL {
+	margin-left: 38px;
+}
+.faq_ourService_ol li, .faq_ourService_UL li {
+	font-family: FrutigerLTCom-Light;
+	font-size: 16px;
+	line-height: 32px;
+}
+.faq_ourService_UL li ul {
+	margin-left: 38px;
+}
+.faq_table table th {
+	border: 1px solid #e8ebed;
+	border-collapse: collapse;
+	color: #4e4d50;
+	font-family: FrutigerLTCom-Roman;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 7px 14px;
+	text-align: left;
+	line-height: 32px;
+}
+.faq_table table td {
+	border: 1px solid #e8ebed;
+	border-collapse: collapse;
+	color: #4e4d50;
+	font-family: FrutigerLTCom-Light;
+	font-size: 16px;
+	font-weight: normal;
+	padding: 7px 14px;
+	text-align: left;
+	line-height: 32px;
+}
+.faq_table table caption {
+	text-align: left;
+	font-family: FrutigerLTCom-Light;
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+.faq_ourServiceh2:hover, .faq_ourServiceh4:hover, .faq_ourService_ul01 li a:hover {
+	text-decoration: underline;
+}
+/*.faq_ourService_height { 
+    min-height:160px;
+}*/
+.faq_breadcrumb {
+	border-bottom: 1px solid #ccc;
+	list-style: outside none none;
+	margin-bottom: 40px;
+	padding-bottom: 14px;
+	text-align: left;
+}
+.faq_breadcrumb li {
+	display: inline;
+	color: #37474f;
+}
+.faq_breadcrumb li+li:before {
+	padding: 8px;
+	color: #37474f;
+	content:"\f105";
+	font-family: "FontAwesome";
+}
+.faq_breadcrumb li a {
+	color: #ff871d;
+	font-family: FrutigerLTCom-Light;
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.faq_breadcrumb li a:hover {
+	text-decoration: underline;
+}
+.faq_landingHEAD a.faq_title {
+	text-decoration: none;
+	cursor:initial;
+}
+.faq_mobile_scr {
+	width: 100%;
+	text-align: center;
+}
+.faq_mobile_scr img {
+	display: inline-block;
+	margin: 0 15px 15px;
+	vertical-align: top;
+	width: 200px;
+}
+.faq_screen_image {
+	list-style-type: none;
+	text-decoration: none;
+	padding: 0;
+	margin-bottom: 15px;
+	text-align: center;
+}
+.faq_screen_image li {
+	display: inline-block;
+	margin: 10px;
+	width: 220px;
+	vertical-align: top;
+}
+.faq_screen_image li img {
+	width: 100%;
+}
+/************ woods pricing table *******************/
+.wood_pricing {
+	margin-bottom: 0px;
+}
+.wood_pricing h1 {
+	color: #009fe3;
+	font-size: 42px;
+	font-weight: 300;
+	padding-bottom: 60px;
+	padding-top: 55px;
+	text-align: center;
+}
+.wood_table {
+	float: left;
+	width: 60%;
+}
+.wood_right_ul {
+	float: left;
+	margin-left: 2%;
+	padding: 30px;
+	width: 30%;
+}
+.wood_reserve {
+	text-align: center;
+}
+.wood_table_comment {
+	background-color: #f3f3f3;
+	margin-bottom: 25px;
+	padding: 30px 40px;
+}
+.wood_table > h2 {
+	color: #546e7a;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 100;
+	padding-bottom: 20px;
+	text-align: center;
+}
+.wood_table_ul table {
+	width: 100%;
+}
+.wood_table_detail table, .wood_table_detail th, .wood_table_detail td {
+	border: 1px solid #cecece;
+	border-collapse: collapse;
+	font-family: 'Open Sans', sans-serif;
+	color: #546e7a;
+	font-size:16px;
+}
+.wood_table_detail th, .wood_table_detail td {
+	padding: 10px;
+	text-align: left;
+}
+.wood_table_detail table tr.w_head {
+	background: rgba(220, 231, 117, 0.2);
+}
+.wood_table_detail table tr.w_body {
+	background-color: #f3f3f3;
+	color: #546e7a;
+}
+.wood_table_detail th {
+	font-weight: 600;
+}
+.wood_table_detail td {
+	font-weight: 400;
+}
+/**** wood table ul list *****/
+.wood_table_ul ul {
+	padding: 30px;
+}
+.wood_table_ul ul li, .wood_table_comment li {
+	color: #818e94;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	line-height: 26px;
+	padding-left: 10px;
+}
+.wood_table_ul ul li span {
+	font-weight: 600;
+}
+/************ END  woods pricing table *******************/
+
+
+/***************** zum seniors ******************/
+header.senior {
+	background-color: #eceff1;
+	background-image: url("../images/seniors.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	margin: 90px auto 0;
+	max-width: 100%;
+	padding-bottom: 210px;
+	text-align: left;
+}
+header.senior .mainContent h1 {
+	color: #0f0a0a;
+}
+header.senior .mainContent p {
+	color: #120c0c;
+}
+.senior_zump {
+	text-align: center;
+	background-color: #009fe3;
+}
+.senior_zump h1 {
+	padding: 55px 0;
+	color: #fff;
+	font-size: 50px;
+}
+.feature_in.senior_fea h1 {
+	padding: 50px 0;
+}
+.senior_listp {
+	color: #37474f;
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 50px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+.feature_inDivs.senior_list div.senior_w80 {
+	width: 70px;
+}
+.feature_inDivs.senior_list img {
+	border: none;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	width: 100%;
+}
+.senior_intacs {
+	text-align: center;
+	background-color: #f6f8fa;
+}
+.senior_intacs h1 {
+	font-size: 40px;
+	color:#455a64;
+	padding: 45px 0;
+}
+.senior_intacs p {
+	font-size: 24px;
+	color:#37474f;
+	padding-bottom: 60px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+.senior_intacs a {
+	color: #e7790e;
+	font-weight: 600;
+	text-decoration: none;
+}
+.let_us_helpright.senior_let h2 {
+	font-weight: normal;
+	font-size: 32px;
+	color: #fff;
+}
+.senior_leth6 h6 {
+	color: #fff;
+	font-size: 18px;
+	padding: 0;
+	margin-bottom: 45px;
+	line-height: 31px;
+}
+/***** our service page ******/
+header.header_our_service {
+	margin-top: 90px;
+}
+/******************** fare estimate  19/08/2016 *********************/
+.fare_aero {
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 2px;
+}
+.fare_p60 {
+	background-color: #f6f8fa;
+	margin-top: 90px;
+	padding-bottom: 50px;
+	padding-top: 60px;
+}
+.fare_esth1 h1 {
+	color: #455a64;
+	font-size: 42px;
+	font-style: normal;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.fare_estimate {
+	width: 40%;
+	float: right;
+}
+.fare_orange_p {
+	margin-bottom: 25px;
+}
+.fare_orange_p p {
+	color: #37474F;
+	font-size: 14px;
+	font-family: 'Arimo', sans-serif;
+	line-height: 1.8;
+}
+.fare_orange_p span {
+	font-weight: 800;
+	font-family: 'Arimo', sans-serif;
+}
+.fare_map {
+	float: left;
+	width: 52%;
+}
+.fare_map .map {
+	height: 470px;
+	width: auto;
+}
+.fare_form input {
+	border: 1px solid #e8ebed;
+	border-radius: 5px;
+	color: #4e4d50;
+	font-size: 15px;
+	height: 56px;
+	outline: medium none;
+	text-indent: 50px;
+	text-align: left;
+	width: 100%;
+	margin-bottom: 25px;
+	font-family: 'Open Sans', sans-serif;
+}
+.fare_form {
+	position: relative;
+}
+.fare_form.fare_inp03 input {
+	position: relative;
+	z-index:1;
+	float: left;
+	margin-bottom: 0px;
+	width: 100%;
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+	-moz-border-top-right-radius: 0;
+}
+/*.fare_input_group
+{
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+    display: table-cell;
+}
+*/
+.fare_form.fare_inp03 button {
+	background-color: #009fe3;
+	border: 1px solid #009fe3;
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	outline: medium none;
+	text-transform: uppercase;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-top-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 0;
+	-moz-border-top-left-radius: 0;
+}
+/******** start add on input *********/
+.InputAddOn {
+	display: flex;
+	margin-bottom: 25px;
+}
+.InputAddOn-field {
+	flex: 1;
+}
+/*.InputAddOn-field:not(:first-child) {
+  border-left: 0;
+}*/
+.InputAddOn-field:not(:last-child) {
+ border-right: 0;
+}
+.InputAddOn-item {
+	background-color: rgba(147, 128, 108, 0.1);
+	color: #666666;
+	font: inherit;
+	font-weight: normal;
+}
+.InputAddOn-field, .InputAddOn-item {
+	border: 1px solid rgba(147, 128, 108, 0.25);
+}
+.InputAddOn-item {
+	padding: 10px 12px;
+}
+.InputAddOn-field:first-child, .InputAddOn-item:first-child {
+	border-radius: 2px 0 0 2px;
+}
+.InputAddOn-field:last-child, .InputAddOn-item:last-child {
+	border-radius: 0 2px 2px 0;
+}
+/******** end add on input *********/
+
+
+
+.fare_input.fare_inp01 {
+	width: 50%;
+}
+.fare_input span {
+	color:#4e4d50;
+	font-size: 20px;
+	line-height: 1.8;
+}
+.fare_form img {
+	display: block;
+	float: left;
+	/*    left: 4px;*/
+    padding: 13px;
+	position: absolute;
+	top: 3px;
+	width: 17px;
+	z-index: 2;
+}
+.fare_form img.fare_drpaero {
+	display: block;
+	float: right;
+	position: absolute;
+	padding: 10px 6px;
+	right: 5px !important;
+	top: 16px;
+	width: 16px;
+	z-index: 2;
+}
+.fare_tdolllar {
+	margin-bottom: 25px;
+}
+.fare_tdolllar h4 {
+	border-bottom: 1px solid #b0bec5;
+	/*    color: #37474f;*/
+    color:#666666;
+	font-size: 20px;
+
+	margin-bottom: 14px;
+	text-transform: uppercase;
+	vertical-align: middle; font-weight:bold;
+}
+.fare_tdolllar h4 span {
+	color:#009fe3;
+	font-size: 42px;
+	padding-left: 20px;
+	vertical-align: middle;
+}
+.fare_tdolllar p {
+	color:#4e4d50;
+	font-size: 14px;
+	padding-bottom: 14px;
+	opacity: 0.6;
+}
+.fare_tdolllar p:last-child {
+	border-bottom: 1px solid #b0bec5;
+}
+/******** press section 30/08/2016 *********/
+.press_sec {
+	background-color: #f6f8fa;
+	padding: 15px 0;
+}
+.carpool_press {
+	border-bottom: 1px solid #f2f2f2;
+	background-color: #fff;
+}
+.press_sec ul {
+	text-decoration: none;
+	list-style-type: none;
+	margin: 0 auto;
+	text-align: center;
+}
+.press_sec ul li {
+	display: inline-block;
+	padding: 0 2px;
+	vertical-align: middle;
+}
+.new_whywe {
+	padding-bottom: 65px;
+}
+.whywe_center {
+	margin: 0 auto;
+	padding-top: 30px;
+}
+.first_WhyWeDiffer, .second_WhyWeDiffer, .third_WhyWeDiffer {
+	width: 275px;
+	background-color: #feba02;
+	padding: 30px;
+	position: relative;
+	margin-bottom: 15px;
+	/*    float: left;*/
+    display: inline-block;
+	margin: 0 6px 15px 6px;
+}
+.whywe_head {
+	position: absolute;
+	text-align: center;
+	top: -26px;
+	left: 0;
+	right: 0;
+	/*    width: 134px;*/
+    margin: 0 auto;/*background-color: #009fe3;*/
+}
+.whywe_head h2 {
+	color: #fff;
+	font-size: 24px;
+	vertical-align: middle;
+	padding: 10px 20px 5px 20px;
+	display: inline-block;
+	width: 210px;
+	background-color: #009fe3;
+}
+.first_WhyWeDiffer h4, .second_WhyWeDiffer h4, .third_WhyWeDiffer h4 {
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	padding-top: 30px;
+}
+.first_WhyWeDiffer p, .second_WhyWeDiffer p, .third_WhyWeDiffer p {
+	font-size: 16px;
+	color: #fff;
+	font-weight: 300;
+	margin-top: 10px;
+	/*letter-spacing: 1px;*/
+    line-height: 2.0;
+}
+/**** what we offer *****/
+.what_we_offer {
+	background-color: #fff;
+	padding: 65px 0;
+	text-align: center;
+}
+.what_weh1 {
+	font-size: 42px;
+	color: #37474f;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+.what_we_pricingh1 {
+	font-size: 42px;
+	color: #37474f;
+	/*    margin-bottom: 30px;*/
+    font-weight: 300;
+}
+.what_weh6 {
+	font-size: 20px;
+	color: #37474f;
+	padding-top: 30px;
+	padding-bottom: 40px;
+	line-height: 32px;
+}
+.firstHeaderwhat1 {
+	margin-right: 15px;
+}
+.firstHeaderwhat {
+	width: 460px;
+	background-color: #fff;
+	border: 1px solid #455a64;
+	display: inline-block;
+	vertical-align: top;
+}
+.firstHeaderwhat img:first-child {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.firstHeaderwhat h4 {
+	font-size: 20px;
+	color: #37474f;
+	margin-bottom: 5px;
+	line-height: 28px;
+}
+.firstHeaderwhat h4.pricingh4 {
+	font-size: 28px;
+}
+.firstHeaderwhat h5 {
+	font-size: 20px;
+	font-weight: 300;
+	margin-top: 15px;
+	color: #37474f;
+}
+.firstHeaderwhat p {
+	font-size: 14px;
+	font-weight: 300;
+	color: #37474f;
+	margin-top: 15px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 30px;
+	line-height: 32px;
+}
+.firstHeaderwhat2 p {
+	margin-bottom: 60px;
+}
+.firstHeaderwhat .secondDivIcons {
+	margin-bottom: 40px;
+	margin-right: 25px;
+}
+.firstHeaderwhat .secondDivIconsLast {
+	margin-right: 0px;
+}
+.what_pricing {
+	padding: 40px 0 0 0;
+	text-align: center;
+}
+.what_pricing h6 {
+	font-size: 20px;
+	font-weight: 300;
+	margin-top: 15px;
+	color: #37474f;
+}
+.what_pricing a {
+	color:#ff871d;
+}
+.read1 {
+	background-color: #fff;
+	margin-bottom: 60px;
+}
+.watch1 {
+	background-color: #fff;
+	margin-bottom: 60px;
+	padding-top: 60px;
+}
+.arrow_box {
+	position: relative;
+	background: #fff;
+	/*background-color: transparent;*/
+    border: medium none;
+	border-radius: 2px;
+	color: #455a64;
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	height: 39px;
+	letter-spacing: 2px;
+	margin-bottom: 0;
+	outline: medium none;
+	width: 141px;
+	margin-right: 10px;
+	border: 4px solid #c2e1f5;
+}
+.learn_btn {
+	text-align: center;
+	margin-bottom: 80px;
+}
+.learn_btn button {
+	display: inline-block;
+	padding: 10px 30px;
+	border-radius: 3px;
+	background-color: #009fe3;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	border: none;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.ourservices_bg {
+	background-color: #eceff1;
+	background-image: url("../images/ourservice_bg.png");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	margin: 90px auto 0;
+	max-width: 100%;
+	text-align: center;
+	position: relative;
+	height: 780px;
+}
+/*.ourservices_bg h1 {
+        padding: 300px 0 350px 0;
+    text-shadow: 3px 6px 3px #000;
+    
+}*/
+.ourservice_text {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 160px;
+	text-align: center;
+}
+.ourservice_text h1 {
+	text-shadow: 3px 6px 3px #000;
+}
+.ourservice_text h6 {
+	color: #fff;
+	line-height: 2;
+	letter-spacing: 2px;
+}
+/**** ritu"s story *****/
+.ritu_story {
+	background-color: #fff;
+	padding: 140px 0 80px 0;
+	text-align: center;
+}
+.leftDivritustory {
+	width: 410px;
+	display: inline-block;
+	margin: 0 auto;
+	/*    float: left;*/
+    margin-right: 100px;
+	margin: 0 100px 50px auto;
+}
+.leftDivritustory .ritu_video {
+	border-top: 25px solid #f6f8fa;
+	border-bottom: 25px solid #f6f8fa;
+	border-left: 15px solid #f6f8fa;
+	border-right: 15px solid #f6f8fa;
+	width: 356px;
+	height: 200px;
+	background:transparent url('../video/ritu_video.png') no-repeat 0 0;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	display: block;
+	cursor: pointer;
+}
+.video_ritu {
+	position: relative;
+	width: 100%;
+}
+.playpause {
+	background-image:url("../images/ritu_play.png");
+	background-repeat:no-repeat;
+	width:20%;
+	/*height:50%;*/
+    position:absolute;
+	left:0%;
+	right:0%;
+	top:-15%;
+	bottom:0%;
+	margin:auto;
+	background-size:contain;
+	background-position: center;
+	cursor: pointer;
+}
+.rightDivritustory {
+	display: inline-block;
+	/* float: left;*/
+    margin: 0 auto;
+	position: relative;
+	text-align: left;
+	width: 530px;
+}
+.rightDivritustory h1 {
+	font-size: 42px;
+	font-weight: 600;
+	color: #37474f;
+	text-align: left;
+	margin-bottom: 20px;
+}
+.rightDivritustory p {
+	font-size: 14px;
+	font-weight: 300;
+	color: #37474f;
+	text-align: left;
+	line-height: 32px;
+	margin-top: 30px;
+}
+.ritu_what_we {
+	padding: 50px 0;
+	background-color: #f6f8fa !important;
+}
+.rightDivStandFor.what_we {
+	text-align: left;
+	display: inline-block;
+	/*float: left;*/
+    top:0;
+	margin-bottom: 50px;
+	vertical-align: top;
+}
+.rightDivStandFor.what_we h2 {
+	font-size: 42px;
+	font-weight: 600;
+	color: #37474f;
+	text-align: left;
+	margin-bottom: 20px;
+}
+.rightDivStandFor.what_we p {
+	margin-top: 30px;
+}
+.leftDivStandFor.what_we {
+/*    margin-left: 120px;
+        margin-right: 0px;*/
+}
+.ritu_feature {
+	text-align: center;
+	padding-top: 60px;
+}
+.ritu_feature h2 {
+	font-size: 42px;
+	font-weight: 600;
+	color: #37474f;
+	padding-bottom: 10px;
+	text-align: center;
+}
+.ritu_feature h6 {
+	font-size: 20px;
+	font-weight: 300;
+	color: #37474f;
+	margin-top: 40px;
+	margin-bottom: 70px;
+	text-align: center;
+}
+/**** join conver 31/08/2016 ******/
+.join_conver {
+	padding: 80px 0;
+	background-color: #f6f8fa;
+}
+.join_converHead h2 {
+	font-size: 42px;
+	font-weight: 300;
+	color: #37474f;
+	padding-bottom: 40px;
+	text-align: center;
+}
+/**** jsequoiabenefits  18/10/2016 ******/
+.promo_repeat {
+	position: relative;
+	/*display:inline-block;*/
+
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) -66%, rgba(231, 234, 235, 1) 45%, rgba(243, 245, 247, 1) 109%);
+	background: -moz-linear-gradient(to left, rgba(255, 255, 255, 0) -66%, rgba(231, 234, 235, 1) 45%, rgba(243, 245, 247, 1) 109%);
+	/* Chrome10+,Safari5.1+ */
+    background: -webkit-linear-gradient(to left, rgba(255, 255, 255, 0) -66%, rgba(231, 234, 235, 1) 45%, rgba(243, 245, 247, 1) 109%);
+	/* Opera 11.10+ */
+    background: -o-linear-gradient(to left, rgba(255, 255, 255, 0) -66%, rgba(231, 234, 235, 1) 45%, rgba(243, 245, 247, 1) 109%);
+	/* IE10+ */
+    background: -ms-linear-gradient(to left, rgba(255, 255, 255, 0) -66%, rgba(231, 234, 235, 1) 45%, rgba(243, 245, 247, 1) 109%);
+	/*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);*/
+    margin: 0 auto;
+	max-width: 100%;
+	text-align: center;
+	padding-bottom: 40px;
+	padding-top: 60px;
+}
+.promo_repeat_detail h1 {
+	font-size: 42px;
+	color: #37474f;
+	padding-top: 25px;
+	margin-bottom: 15px;
+	font-weight: 300;
+}
+.promo_repeat_detail p {
+	font-size: 20px;
+	color: #37474f;
+	margin-top: 23px;
+	margin-bottom: 30px;
+	margin-right: 50px;
+	margin-left: 50px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+.promo_repeat_logo img {
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+}
+.promo_repeat_mlink1 {
+	margin-bottom: 10px;
+}
+.promo_repeat_mlink1 img {
+	width: 18%;
+	display: inline-block;
+}
+.promo_repeat img.father_kids {
+	position: absolute;
+	width: 50%;
+	right: 0;
+	top:0;
+	bottom: 0;
+	z-index: -1;
+}
+/**************** trust and safety page 21/10/2016 *************/
+.drive_detail {
+	padding: 20px 0;
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+}
+.drive_head {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.drive_head h1 {
+	padding-top: 55px;
+	font-size: 42px;
+	font-weight: bold;
+	color: #37474f;
+}
+.drive_head p {
+	font-size: 20px;
+	font-weight: 300;
+	color: #37474f;
+	margin: 0 70px;
+	margin-top: 15px;
+	margin-bottom: 45px;
+	line-height: 32px;
+}
+.media_left {
+	padding-right: 50px;
+}
+.media_left img {
+	width: 70px;
+}
+.media_left, .media_body {
+	display: table-cell;
+	vertical-align: top;
+}
+.drive_media .media_body h4 {
+	color:#455A64;
+	font-size: 18px;
+	
+	line-height: 1.8;
+	text-transform: uppercase;
+}
+.drive_media .media_tr {
+	margin-bottom: 40px;
+}
+.drive_media .media_body p, .drive_media .media_body ul li {
+	color:#455A64;
+	font-size: 14px;
+font-family: 'Arimo', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	
+	line-height: 30px;
+}
+.drive_media .media_body ul {
+	padding-left: 50px;
+}
+.trust_safety_kids {
+	position: relative;
+	/*display:inline-block;*/
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 28%, rgba(255, 255, 255, 0) 0, #EEE 40%) repeat scroll 0px 0px transparent;
+	background: -webkit-linear-gradient(to left, rgba(255, 255, 255, 0) 28%, rgba(255, 255, 255, 0) 0, #EEE 40%) repeat scroll 0px 0px transparent;
+	/* Opera 11.10+ */
+    background: -o-linear-gradient(to left, rgba(255, 255, 255, 0) 28%, rgba(255, 255, 255, 0) 0, #EEE 40%) repeat scroll 0px 0px transparent;
+	/* IE10+ */
+    background: -ms-linear-gradient(to left, rgba(255, 255, 255, 0) 28%, rgba(255, 255, 255, 0) 0, #EEE 40%) repeat scroll 0px 0px transparent;
+	/*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);*/
+    margin: 0 auto;
+	max-width: 100%;
+	text-align: center;
+	padding-bottom: 30px;
+	padding-top: 40px;
+}
+.trust_safety_kids_detail {
+	width: 548px;
+	text-align: left;
+}
+.trust_safety_kids_detail h1 {
+	font-size: 24px;
+	color: #455A64;
+	padding-top: 50px;
+	margin-bottom: 15px;
+	font-weight: 300;
+	line-height: 36px;
+}
+.trust_safety_kids_detail p {
+	font-size: 16px;
+	color: #455A64;
+	margin-top: 23px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+.trust_safety_kids img.trust_kids {
+	position: absolute;
+	width: 40%;
+	right: 0;
+	top:0;
+	bottom: 0;
+	z-index: -1;
+}
+.trust_our_tech {
+	padding: 50px 0;
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+.our_tech_head {
+	text-align: center;
+	margin-bottom: 50px;
+}
+.our_tech_head h1 {
+	font-size: 42px;
+	color: #37474f;
+	margin-bottom: 20px;
+	padding: 0 60px;
+	margin-top: 40px; font-weight:bold;
+}
+.our_tech_info_left, .our_tech_info_right {
+	display: table-cell;
+	vertical-align: top;
+}
+.our_tech_info_left {
+	width: 350px;
+}
+.our_tech_info_left img {
+	width: 100%;
+}
+.our_tech_info_right {
+	padding-left: 70px;
+}
+.our_tech_data {
+	margin-bottom: 40px;
+}
+.our_tech_data h4 {
+	font-size: 18px;
+	color: #455A64;
+	line-height: 1.8;
+}
+.our_tech_data p {
+	font-size: 14px;
+	color: #455A64;
+	line-height: 30px;
+}
+.our_tech_line {
+	text-align: center;
+	padding: 20px 0;
+}
+.our_tech_line img {
+	width: 40%;
+}
+.our_young_ride-left {
+	float:left;
+	display: inline-block;
+}
+.our_yound_DE1 {
+	width: 260px;
+	float: left;
+}
+.our_yound_DE2 {
+	width: 320px;
+	margin-left: 110px;
+	float: right;
+}
+.our_yound_DE2 img {
+	width:100%;
+}
+.our_young_ride-right {
+	float:right;
+	display: inline-block;
+	width: 260px;
+}
+.get_link {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.get_link button {
+	margin-left: 260px;
+}
+.our_pwi {
+	width: 500px;
+	float: left;
+	margin-right: 50px;
+}
+.our_pwi .media_left {
+	padding-right: 40px;
+}
+.our_pwi .media_left img {
+	width: 70px;
+}
+.trust_safety_girl {
+	position: relative;
+	/*display:inline-block;*/
+    background: linear-gradient(to left, rgba(238, 238, 238, 1) 65%, rgba(238, 238, 238, 0) 86%, rgba(255, 255, 255, 0) 68%);
+	background: -moz-linear-gradient(to left, rgba(238, 238, 238, 1) 65%, rgba(238, 238, 238, 0) 86%, rgba(255, 255, 255, 0) 68%);
+	/* Chrome10+,Safari5.1+ */
+    background: -webkit-linear-gradient(to left, rgba(238, 238, 238, 1) 65%, rgba(238, 238, 238, 0) 86%, rgba(255, 255, 255, 0) 68%);
+	/* Opera 11.10+ */
+    background: -o-linear-gradient(to left, rgba(238, 238, 238, 1) 65%, rgba(238, 238, 238, 0) 86%, rgba(255, 255, 255, 0) 68%);
+	/* IE10+ */
+    background: -ms-linear-gradient(to left, rgba(238, 238, 238, 1) 65%, rgba(238, 238, 238, 0) 86%, rgba(255, 255, 255, 0) 68%);
+	/*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);*/
+    margin: 0 auto;
+	max-width: 100%;
+	text-align: center;
+	padding-bottom: 30px;
+	padding-top: 40px;
+}
+.trust_safety_girl_detail {
+	width: 548px;
+	text-align: left;
+	float: right;
+}
+.trust_safety_girl_detail h1 {
+	font-size: 24px;
+	color: #455A64;
+	padding-top: 50px;
+	margin-bottom: 15px;
+	font-weight: bold;
+	line-height: 36px;
+}
+.trust_safety_girl_detail p {
+	font-size: 16px;
+	color: #455A64;
+	margin-top: 23px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+.trust_safety_girl img.trust_girl {
+	position: absolute;
+	width: 35%;
+	left: 0;
+	top:0;
+	bottom: 0;
+	z-index: -1;
+}
+.girl_link {
+	text-align: center;
+	background-color: #eee;
+	padding: 40px 0;
+}
+.girl_link p {
+	color:#37474F;
+	font-size: 20px;
+}
+.girl_link a {
+	color: #e7790e;
+	text-decoration: underline;
+}
+header.trust_three {
+	max-width: 100%;
+	background-color: #eceff1;
+	background-image: url(../images/threekids_image.jpg);
+	background-position: 0 94px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding-bottom: 0px;
+	margin: 0 auto;
+	padding-top: 0;
+}
+header.trust_three .mainContent01 {
+	text-align: center;
+	margin: 240px 0;
+}
+.mainContent01 h1 {
+	font-size: 46px;
+	padding-top: 200px;
+	text-shadow: 1px 3px 8px #000;
+	padding-bottom: 70px;
+	line-height: 54px;
+	font-weight:bold;
+	color: #fff;
+}
+/********************* jserra model code  17/11/2016 **************/
+.scl_rdw {
+	text-align: left;
+	margin-bottom: 0px;
+	float: left;
+	/*height: 105px;*/
+    width: 380px;
+}
+.scl_rd_right {
+	width: 100%;
+	float: left;
+	margin-left: 0;
+	text-align: left;
+}
+.scl_rd_right .scl_label {
+	width: 60%;
+	float: left;
+}
+.scl_rd_right .school_no_kid {
+	float: left;
+	display: block;
+	margin-left: 20px;
+	width: 36%;
+}
+.scl_rd_right .school_table {
+	border: 1px solid #e8ebed;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin-top: 15px;
+	padding-bottom: 0;
+	background-color: #fff;
+	width: 100%;
+}
+.scl_rd_right .school_table table th, td {
+	border:none;
+	padding: 15px 22px;
+	/*padding: 20px 11px 22px 20px;*/
+    font-weight: 300;
+}
+.scl_rdw label, .scl_rd_right label {
+	color: #818e94;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+	font-weight: 300;
+	display: block;
+}
+.school_radio_list {
+	margin-top: 15px;
+}
+.list-group {
+	padding-left: 0;
+	margin-bottom: 20px;
+	display: block;
+}
+.list-group-item:first-child {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+.list-group-item {
+	position: relative;
+	display: block;
+	padding: 20px 15px;
+	margin-bottom: -1px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	position: relative;
+}
+.list-group-item:last-child {
+	margin-bottom: 0;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+.school_radio_list label.radio_lbl {
+	color:#4E4D50;
+	display: block;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+	font-weight: 300;
+	display: block;
+	width: 90%;
+}
+.school_radio_list label.radio_lbl:hover, .list-group li input:hover {
+	cursor: pointer;
+}
+.list-group li input {
+	float: right;
+	margin-top: 5px;
+}
+.school_no_kid-right.scl_term {
+	width: 100%;
+	float: left;
+	margin: 0 auto;
+	padding-top: 0;
+	text-align: center;
+}
+.scl_termText {
+	font-size: 15px;
+	color: #4E4D50;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+	padding-left: 10px !important;
+}
+.scl_termText:before {
+	border-radius: 10% !important;
+}
+.radio.scl_blue {
+	display: flex;
+	float: right;
+	margin-top: 0px;
+	position: absolute;
+	right: 13px;
+	top: 23px;
+}
+ .radio.scl_blue label::after {
+ left:4px;
+ top: 4px;
+ width: 16px;
+ height: 16px;
+}
+.radio.scl_blue label::before {
+ width: 22px;
+ height: 22px;
+}
+.jserra_tab_btn {
+	background-color: #fff;
+	display: block;
+	margin-top: 15px;
+}
+.jserra_tab_btn button {
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	outline: medium none;
+	margin-right: 0;
+	border: 1px solid #d8d8d8;
+	background-color: #fff;
+	color: #009fe3;
+	margin-bottom: -4px;
+	position: relative;
+	width: 100%;
+	border: none;
+	height: 44px;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+}
+.jserra_tab_btn button.active {
+	background-color: #009fe3;
+	color: #fff;
+}
+.jserra_tab_btn button.active:before {
+	content:"";
+	display:block;
+	width:0;
+	border:10px solid #009fe3;
+	border-color:#009fe3 transparent transparent transparent;
+	position:absolute;
+	top:100%;
+	left:50%;
+	margin-left:-10px;
+	z-index: 1;
+}
+.jserra_tab_btn button#jtab01 {
+	border-top-left-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-top-left-radius: 5px;
+}
+.jserra_tab_btn button#jtab02 {
+	border-top-right-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-top-right-radius: 5px;
+}
+.jserra_tab_btn ul.m-border {
+	height: 51px;
+	border: 1px solid #ddd;
+	border-bottom: 0px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.jserra_tab_btn ul li.mtab {
+	float: left;
+	width: 50%;
+	list-style-type: none;
+}
+.ml-or {
+	display: block;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	text-align: center !important;
+	color: #818e94;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+}
+.hr_line {
+	width: 100%;
+	height: 2px;
+	background-color: #e2e9d6;
+	float: left;
+	margin-bottom: 20px;
+}
+.school_table table tr td.js-tb {
+	border-right: 1px solid #e8ebed;
+}
+/********************* carpool code  1/12/2016 **************/
+.carpool-top90 {
+	margin-top: 90px;
+}
+.carpool_main {
+	background: transparent;/*margin: 80px 0;*/
+}
+.carpool_head {
+	text-align: center;
+	margin: 60px 0 40px 0;
+}
+.carpool_head h2 {
+	color: #37474f;
+	font-size: 38px;
+	font-weight: 100;
+	margin-bottom: 15px;
+	font-family: 'Open Sans', sans-serif;
+}
+.carpool_head p {
+	color: #37474f;
+	font-size: 20px;
+	font-weight: 100;
+	font-family: FrutigerLTCom-Light;
+}
+.carpool_form {
+	text-align: left;
+	margin-bottom: 25px;
+	margin-right: 70px;
+	float: left;
+	width: 46%;/*height: 105px;*/
+}
+.carpool_form.carpool_Address {
+	width: 67%;
+}
+.carpool_form.carpool_kids {
+	width: 25%;
+}
+.carpool_form:nth-child(even) {
+ margin-right: 0;
+}
+.carpool_form label, .carpool_formDrop label {
+	color: #818e94;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+	font-weight: 300;
+}
+.carpool_form label.error, .carpool_formDrop label.error {
+	color: red;
+}
+.carpool_form input {
+	background-color: #fafafa;
+}
+.carpool_form input.school_pls {
+	padding: 0 20px;
+	box-sizing: border-box;
+	text-indent: 0px !important;
+}
+.carpool_form input.school_pls.qty {
+	margin-top: 0;
+	text-align: center;
+	text-indent: 0;
+	box-sizing:content-box;
+	padding: 0;
+	border-right-width: 0px;
+}
+.carpool_form input.school_pls, .carpool_formDrop input {
+	border: 1px solid #D6D9DC;
+	border-radius: 5px;
+	color: #818E94;
+	font-size: 18px;
+	height: 56px;
+	margin-bottom: 0;
+	outline: medium none;
+	text-indent: 20px;
+	text-align: left;
+	width: 100%;
+	margin-top: 10px;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px;
+}
+.carpool_formDrop div {
+	position: relative;
+}
+.styled-select select {
+	/*background: #fff;*/
+    border: 1px solid #D6D9DC;
+	border-radius: 5px;
+	color: #818E94;
+	font-size: 18px;
+	height: 56px;
+	margin-bottom: 0;
+	outline: medium none;
+	padding-left: 20px;
+	padding-right: 30px;
+	/*text-indent: 20px;*/
+    text-align: left;
+	width: 100%;
+	margin-top: 10px;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px;
+	background: url("../images/select_drp01.png")no-repeat scroll right center;
+	background-color: #fafafa;
+	background-position: 97% center;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	box-sizing: border-box;
+}
+.styled-select select::-ms-expand {
+display: none;
+}
+.carpool_formDrop div img {
+	background-color: #fff;
+	display: block;
+	float: right;
+	padding: 10px 15px 10px 10px;
+	position: absolute;
+	right: -1px;
+	top: 17px;
+	width: 17px;
+}
+.carpool_dropLeft {
+	width: 100%;
+	display: inline-block;/*    float: left;*/
+}
+.carpool_formDrop {
+	text-align: left;
+	width: 60%;
+	margin: 0 auto;
+}
+.carpool_formDropLeft {
+	text-align: left;
+	width: 48%;
+	margin: 0 20px 15px 0;
+	display: inline-block;
+	vertical-align: top;
+}
+.Crpl_AddressInput .school_pls {
+	border: 1px solid #D6D9DC;
+	border-radius: 5px;
+	color: #818E94;
+	font-size: 18px;
+	height: 56px;
+	margin-bottom: 0;
+	outline: medium none;
+	/*text-indent: 20px;*/
+    text-align: left;
+	width: 100%;
+	box-sizing: border-box;
+	padding:0 20px;
+	margin-top: 10px;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px;
+	background-color: #fafafa;
+}
+.carpool_formDropLeft label {
+	color: #818e94;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+	font-weight: 300;
+}
+.carpool_formDropLeft label.error {
+	color:red;
+}
+.carpool_dropRight {
+	width: 25%;
+	float:left;
+	margin-left: 0;
+}
+.carpool_dropRight.carpool_dropTime {
+	width:98.3%;
+}
+/*******************   carpool_moreRide section  20/1/2017   ********************/
+.carpool_moreRide {
+	display: inline-block;
+	width: 100%;
+	background-color: #F6F8FA;
+	padding: 70px 0;
+}
+.MoreRideList {
+	text-align: center;
+	margin-bottom:50px;
+}
+.MoreRideList ul, .MoreRideList_applink ul {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+.MoreRideList ul li {
+	display: inline-block;
+	width:300px;
+	margin-right: 30px;
+	border: 1px solid #979797;
+	margin-bottom:20px;
+}
+.MoreRideList ul li:last-child {
+	margin-right: 0;
+}
+.MoreRide_Image {
+	height: 215px;
+}
+.MoreRide_Image img {
+	width:100%;
+}
+.MoreRide_Text {
+	padding: 15px;
+	background-color: #fff;
+}
+.MoreRide_Text p {
+	color:#455A64;
+	font-size: 16px;
+	line-height: 1.4;
+	text-align: left;
+}
+.MoreRideList_applink {
+	display: inline-block;
+	width: 100%;
+	margin-top:30px;
+}
+.MoreRideList_applink ul li {
+	width:45%;
+	display: inline-block;
+	vertical-align: top;
+}
+.MoreApp_image {
+	text-align: center;
+}
+.MoreApp_image img {
+	width:auto;
+}
+.MoreApp_Mobile {
+	padding-top: 70px;
+}
+.MoreApp_Mobile h2 {
+	margin-bottom: 15px;
+	color: #37474F;
+}
+.MoreApp_Mobile .thnk_go {
+	width:80%;
+	margin-bottom: 0;
+}
+ //***************** END ****************// .carpool_dropRight .scl_label {
+ color: #818e94;
+ font-size: 16px;
+font-family: 'Open Sans', sans-serif;
+ text-align: left;
+ font-weight: 300;
+}
+.carpool_dropRight .school_table {
+	/*width: auto;*/
+    border: 1px solid #D6D9DC;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin-top: 10px;
+	padding-bottom: 0;
+	background-color: #fafafa;
+}
+/*.carpool_dropRight .school_table table tr{ float: left; width:auto;}*/
+/*.carpool_dropRight .school_table table tr:first-child{border-bottom: 0px; border-right: 1px solid #e8ebed;}*/
+.carpool_dropRight .school_table table tr td {
+	font-size: 18px;
+	padding: 15px 30px;
+	color: #818E94;
+}
+.checkbox label.carpool_checkbox::before, .checkbox label.carpool_checkbox::after {
+ margin-left: 0;
+}
+.line_green {
+	display: inline-block;
+	text-align: center;
+	width: 93%;
+	margin: 30px 0 50px 0;
+}
+.line_green img {
+	width: 40%;
+}
+.carpool_submit_btn {
+	width: 40%;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.carpool_back_next {
+	margin: 0 auto;
+	margin-bottom: 50px;
+	width: 100%;
+	text-align: center;
+}
+.carpool_back_next ul {
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+}
+.carpool_back_next ul li {
+	display: inline-block;
+	width: 26%;
+	margin: 8px 15px;
+	vertical-align:top;
+}
+.carpool_radioCheck {
+	float: left;
+	width:99%;
+	height: 100%;
+	margin-right: 0;
+}
+.carpool_invit {
+	padding: 30px;
+	background-color: #fafafa;
+	border: 1px solid #D6D9DC;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin-top: 10px;
+}
+.carpool_invit p {
+	color: #37474f;
+	font-size: 16px;
+	font-weight: 100;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 15px;
+}
+.carpool_invitUL ul {
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+	display: inline-block;
+}
+.carpool_invitUL ul li {
+	float: left;
+	width:48%;
+	margin-right: 10px;
+}
+.carpool_invitUL .scl_Welmedia .media-body p {
+	font-size: 20px;
+	color: #37474F;
+}
+.invit_radio {
+	display: flex;
+	margin-top: 5px;
+}
+.invit_radio.radio label::after {
+ left:4px;
+top:4px;
+}
+.invit_input {
+	margin-bottom: 20px;
+}
+.invit_input input {
+	background-color: #fff;
+}
+.carpool_submit_btn button, .carpool_back_next button {
+	background-color: #009fe3;
+	border: 1px solid #009fe3;
+	border-radius: 3px;
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	height: 50px;
+	letter-spacing: 1px;
+	/*margin: 35px 0 0;*/
+    outline: medium none;
+	text-transform: uppercase;
+	width: 100%;
+}
+.carpool_back_next button.backbtn {
+	background-color: #fff;
+	color: #009fe3;
+	border: 2px solid #009fe3;
+}
+.carpool_nextMain {
+	display: inline-block;
+	width: 100%;
+	margin-top: 35px;
+	text-align: center;
+}
+.next_div01, next_div01 {
+	display: inline-block;
+}
+.next_divPtxt {
+	text-align: center;
+	font-size: 20px;
+	font-family: FrutigerLTCom-Light;
+	color: #37474f;
+	margin-bottom: 40px;
+}
+.next_divPtxt.next_invitem {
+	margin: 30px 0;
+}
+.next_divPtxt.next_invitem a, .next_divPtxt.next_invitem a:hover, .next_divPtxt.next_invitem a:focus {
+	color:#FF871D;
+	cursor: pointer;
+	text-decoration:underline;
+}
+.carpool_pricetb p {
+	text-align: center;
+	font-size: 20px;
+	font-family: Opensans;
+	color: #37474f;
+	margin-bottom: 40px;
+}
+.carpool_pricetb ul {
+	padding: 0;
+	border: 1px solid #D6D9DC;
+	display: inline-block;
+}
+.carpool_pricetb ul li {
+	float: left;
+	border-right:1px solid #D6D9DC;
+	list-style-type: none;
+	width: 260px;
+}
+.carpool_pricetb ul li:last-child {
+	border-right:0px;
+}
+.next_tab01 {
+	border: 1px solid #D6D9DC;
+	width: 238px;
+	text-align: center;
+	float: left;
+	margin-right: 30px;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+.next_tab01.tab_fff {
+	background-color: #fff;
+}
+.next_tab01.active {
+	border: 4px solid #99CA41;
+}
+.next_tab01.active:last-child {
+	border-color:#93989c;
+}
+.next_tab01:last-child {
+	margin-right: 0;
+}
+.next_tab01 div.next_pad {
+	text-align: center;
+	padding: 20px 20px 0 20px;
+	margin-bottom: 10px;
+}
+.crp_table {
+	text-align: center;
+	padding: 20px;
+}
+.crp_table h4, .next_tab01 h4 {
+	color: #4E4D50;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: Opensans;
+	margin-bottom: 15px;
+}
+.next_tab01 h6 {
+	font-size:14px;
+	text-transform: uppercase;
+	font-family: FrutigerLTCom-Light;
+	margin-bottom: 15px;
+	color: #4E4D50;
+}
+.crp_table p, .crp_table h6 {
+	font-size:14px;
+	text-transform: uppercase;
+	font-family: Opensans;
+	margin-bottom: 15px;
+	color: #4E4D50;
+}
+.crp_table .crp_imgmd {
+	width:42px;
+	height:42px;
+	vertical-align: middle;
+	margin: 0 auto;
+}
+.next_tab01 h5 {
+	font-size:50px;
+	font-family: FrutigerLTCom-Roman;
+	color: #4E4D50;
+}
+.next_tab01 h5 sup {
+	font-family: FrutigerLTCom-Light;
+}
+.next_tab01 h5 span {
+	font-size:16px;
+	color: #4E4D50;
+}
+.crp_table h5 {
+	font-size:40px;
+	font-family: Opensans;
+	color: #4E4D50;
+}
+.crp_table h5 span {
+	font-size:14px;
+	font-family: Opensans;
+	color: #4E4D50;
+}
+.next_btnP p {
+	font-size:20px;
+	margin-bottom: 5px;
+	font-weight: 800;
+	color: #D31212;
+}
+.next_btnP span {
+	font-size:14px;
+	font-family: FrutigerLTCom-Light;
+	color: #D31212;
+	text-transform: uppercase;
+}
+/******** next div 02 *****/
+.next_tableMain {
+	margin-bottom: 50px;
+	display: inline-block;
+}
+.next_tableMain.pricing_table {
+	margin-bottom: 30px;
+	margin-top: 50px;
+}
+.next_img {
+	margin: 0 auto;
+}
+.next_btnP {
+	background-color: #eee;
+	padding: 10px;
+	margin: 10px;
+	min-height: 40px;
+}
+.next_img ul {
+	padding:0;
+	margin-bottom: 6px;
+}
+.next_img ul li {
+	list-style-type: none;
+	display: inline-block;
+	text-decoration: none;
+}
+/******************* carpool price head 20/1/2017 ***************/
+#defaultPriceDIV {
+	position: relative;
+}
+#coverPriceDIV {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 1; /* make sure logout_box has a z-index of 2 */
+	background-color: #ddd;
+	opacity: 0.3;
+	cursor: default;
+}
+.carpool_star, .crp_validstar {
+	font-size: 12px;
+	top: -4.5px;
+}
+.crp_validstar {
+	color: red;
+}
+.CrpPrice_Head {
+	background-color: #99CA41;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+.crpPricing_Text .next_divPtxt {
+	margin-bottom: 30px;
+	color: #4E4D50;
+	font-size:16px;
+}
+.carpool_termlink {
+	font-size: 16px !important;
+	color:#4E4D50 !important;
+}
+.carpool_termlink a, .carpool_termlink a:hover, .carpool_termlink a:focus {
+	color:#FF871D;
+	text-decoration:underline;
+}
+.CrpPrice_Head p {
+	font-size: 18px;
+}
+.CrpPrice_Head p, .CrpPrice_Head span {
+	font-family: FrutigerLTCom-Light;
+}
+.CrpPrice_Head span {
+	font-style: italic;
+	font-size: 14px;
+}
+.check_text {
+	float: left;
+	width: 270px;
+	margin-left: 20px;
+}
+.check_text p {
+	font-size: 14px;
+	font-family: FrutigerLTCom-Light;
+	color:#818E94;
+}
+.check_text input {
+	border: 1px solid #D6D9DC;
+	background-color: #fff;
+	border-radius: 5px;
+	color: #4E4D50;
+	font-size: 18px;
+	height: 50px;
+	margin-bottom: 0;
+	outline: medium none;
+	text-indent: 20px;
+	text-align: left;
+	width: 100%;
+	/*margin-top: 10px;*/ font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px;
+}
+.Invite_FrdDiv {
+	padding: 0 50px;
+}
+.Invite_FrdDiv .invit_input {
+	width: 410px;
+	float: left;
+	margin-right: 50px;
+}
+.Invite_FrdDiv .invit_input:nth-child(even) {
+ margin-right: 0;
+}
+.modal_dedicated {
+	padding: 40px 20px;
+}
+.modal_dedicated p {
+	color: #37474F;
+	font-family: FrutigerLTCom-Light;
+	font-size: 20px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.modal_dedicated .thnk_go {
+	width:70%;
+	margin: 0 auto;
+}
+/********* carpool thank you ********/
+
+.carpool_thnk01 .media-body, .carpool_thnk01 .media-left {
+	display: table-cell;/*vertical-align: top;*/
+}
+.carpool_thnk01 .media-left span {
+	padding: 8px 13px;
+	color: #fff;
+	background-color: #E09F2D;
+	border-radius: 70%;
+	margin-right: 10px;
+}
+.carpool_thnk01 .media-body p {
+	color: #37474f;
+	font-size: 20px;
+	font-weight: 100;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 30px;
+}
+.carpool_thnklist {
+	padding-left: 30px;
+}
+.thnk_go {
+	width:40%;
+	margin-bottom: 50px;
+}
+.thnk_go label {
+	color: #818e94;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+	font-weight: 300;
+}
+.thnk_go input {
+	border: 1px solid #D6D9DC;
+	text-indent:20px;
+	border-top-left-radius: 5px !important;
+	border-bottom-left-radius: 5px !important;
+	-moz-border-top-left-radius: 5px !important;
+	-moz-border-bottom-left-radius: 5px !important;
+	-webkit-border-top-left-radius: 5px !important;
+	-webkit-border-bottom-left-radius: 5px !important;
+}
+.thnk_ul {
+	padding: 0;
+	display: inline-block;
+}
+.thnk_ul li {
+	list-style-type: none;
+	display: inline-block;
+	text-decoration: none;
+	float: left;
+	width: 290px;
+	text-align: center;
+	margin-right: 50px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.thnk_ul li img {
+	margin-bottom: 20px;
+}
+.thnk_ul li p {
+	font-size:16px;
+	font-family: Opensans;
+	color: #455A64;
+}
+/********** new code carpool **********/
+.fare_form.thnk_go img {
+	padding: 0 7px 0 0;
+	padding-bottom: 20px;
+	float: left;
+	position: relative;
+	width: 25px;
+	top: 0;
+}
+/*************** carpool school 3/12/2016 *********/
+.carpool_scl {
+	background: #fff;
+}
+/*            .carpool_blckDiv{
+                background-color: #000000;
+                margin-top: 100px;
+            }*/
+.carpool_blckDiv {
+	/*background: url("../images/black_img.jpg") no-repeat scroll 0 0;*/
+    /*background-size: 100%;*/
+    /*width:100%;*/
+    position: relative;
+	margin-top: 90px;
+	overflow: hidden;/*padding-bottom: 20px;*/
+}
+.carpool-landingimg {
+	position: absolute;
+	width: 100%;
+	/*    height: 100%;*/
+    object-fit: cover;
+}
+.carpool_blckDiv:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.carpool_blckText {
+	padding: 380px 90px 125px 90px;
+	/*padding: 229px 100px;*/
+    text-align: center;
+	z-index: 1;
+	position: relative;
+	box-sizing: border-box;
+}
+.carpool_blckText h1 {
+	font-size: 46px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.carpool_blckText h1 span {
+	color:#009fe3;
+}
+.carpool_blckText p {
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 25px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+.carpool_centerhead {
+	display: inline-block;
+	width: 100%;
+	background-color: #fff;
+	margin: 50px 0;
+}
+.carpool_jserrabg {
+	display: inline-block;
+	width: 100%;
+	background-color: #f0eeee
+}
+.carpool_jserrabg.we_work {
+	margin-bottom: 70px;
+}
+.carpool_welLeft {
+	float: left;
+	width:40%;
+}
+.carpool_welLeft img {
+	width:100%;
+	height: 280px;
+	object-fit: cover;
+}
+.crpl_scllogo {
+	width: 100%;
+	height: 70px;
+	background-color: #D0BC8B;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.crpl_scllogo img {
+	width: auto;
+	position: absolute;
+	top: -40px;
+	right: 60px;
+}
+.carpool_welRight {
+	float: left;
+	width:60%;
+	padding-top: 25px;
+}
+.carpool_welRight .welPad {
+	margin-left: 70px;
+}
+.carpool_cheadText {
+	text-align: center;
+	margin-bottom: 40px;
+}
+.carpool_cheadText h2 {
+	font-size: 42px;
+	color: #37474f;
+	margin-bottom: 10px;
+	font-weight: 300;
+}
+.carpool_cheadText p {
+	font-size: 20px;
+	color: #546e7a;
+	line-height: 1.4;
+	margin-bottom: 15px;
+}
+/********** .carpool_welRight ***********/
+
+.scl_zumWel p {
+	font-size: 18px;
+	color: #546e7a;
+	line-height: 1.4;
+	margin-bottom: 15px;
+}
+/*            .scl_Welmedia .media-leftWel{ padding-right: 15px;}*/
+.scl_Welmedia .media-left {
+	vertical-align: top;
+	padding-right: 15px;
+}
+.scl_Welmedia .media-left, .scl_Welmedia .media-body {
+	display: table-cell;
+}
+.scl_Welmedia img.list {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+.scl_Welmedia .media-body p {
+	font-size: 18px;
+	color: #546e7a;
+	line-height: 1.4;
+	font-family: FrutigerLTCom-Light;
+	font-weight: normal;
+}
+/********** end ***********/
+.priceP {
+	margin-bottom: 0px;
+	color:#4E4D50;
+	font-family: FrutigerLTCom-Light;
+}
+.priceX {
+	color:#D31212;
+	font-family: FrutigerLTCom-Light;
+}
+.carpool_Center {
+	background-color: #f0eeee;
+	width: 100%;
+	float: left;
+	padding-top: 50px;
+	height: 490px;
+}
+.carpool_centerDetail {
+	background-color: #fff;
+}
+.carpool_centerLEFT h1 {
+	font-size: 42px;
+	color: #37474f;
+	margin-bottom: 15px;
+}
+.carpool_centerLEFT p {
+	font-size: 20px;
+	color: #37474f;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	margin-bottom: 15px;
+}
+.carpool_centerLEFT, .carpool_centerRIGHT {
+	width:38%;
+	padding: 40px 60px;
+	display: inline-block;
+	vertical-align: top;
+}
+.carpool_centerRIGHT .ritu_video {
+	/*                     border-top: 25px solid #f6f8fa;
+                          border-bottom: 25px solid #f6f8fa;
+                          border-left: 15px solid #f6f8fa;
+                          border-right: 15px solid #f6f8fa;*/
+    width: 400px;
+	height: 226px;
+	background: transparent url("../video/ritu_video.png") no-repeat 0 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	display: block;
+	cursor: pointer;
+}
+.carpool_welRight ul {
+	list-style-type: none;
+	text-decoration: none;
+}
+.excl_main {
+	background-color: #fff;/*margin-top: 70px;*/
+}
+.excl_head {
+	text-align: center;
+	padding-top: 60px;
+}
+.excl_head h1, .scl_wenotHead h1 {
+	font-size: 42px;
+	color: #37474f;
+	margin-bottom: 15px;
+}
+.excl_head p, .scl_wenotHead p {
+	font-size: 20px;
+	color: #37474f;
+	margin-right: 50px;
+	margin-left: 50px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+.excl_head img {
+	margin: 40px 0;
+}
+.excl_main .school_pad_body {
+	padding:0;
+}
+.scl_trustbg {
+	background: url("../images/trust&safetybg01.png") no-repeat scroll 0 0;
+	background-size: 100%;
+	width:100%;
+	position: relative;
+	padding-bottom: 20px;
+}
+.scl_trustbg:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.scl_trustText {
+	text-align: center;
+	padding-top: 80px;
+	z-index: 1;
+	position: relative;
+	padding-top: 300px;
+}
+.scl_trustText h1 {
+	color: #fff;
+	font-size: 42px;
+	font-weight: 300;
+	margin-bottom: 25px;
+	text-align: center;
+}
+.scl_trustText p {
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 25px;
+	padding: 0 20px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+.trustbtn {
+	z-index: 1;
+	position: relative;
+}
+.trustbtn button {
+	color: #fff;
+	background-color: transparent;
+	border-color: #fff;
+}
+.scl_wenot {
+	padding-top: 80px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+/********* we are not like table ***********/
+.we_not {
+	margin: 0 auto;
+	text-align: center;
+	width: 75%;
+	margin-top: 45px;
+}
+.we_not .carpool_welRight {
+	display: none;
+}
+.we_not table {
+	width: 100%;
+}
+.we_not table, .we_not th, .we_not td {
+	border: 1px solid #cecece;
+	border-collapse: collapse;
+	font-family: 'Open Sans', sans-serif;
+	color: #546e7a;
+	font-size:16px;
+}
+.we_not table tr:nth-child(even) {
+ background-color: #f3f3f3;
+ color: #546e7a;
+}
+.we_not th {
+	font-weight: 600;
+	text-align: center;
+	padding: 10px 25px;
+}
+.we_not td {
+	text-align: left;
+	font-weight: 400;
+	padding: 10px 25px;
+}
+.we_not tr td img {
+	vertical-align: middle;
+}
+.we_not tr td:nth-child(n+2) {
+ text-align: center;
+}
+/************* school carpool list *************/
+.scl_table_ul {
+	padding: 50px 0;
+	background-color: #f6f8fa;
+}
+.scl_ulList ul {
+	text-decoration: none;
+	list-style-type: none;
+}
+.scl_ulList ul li {
+	float: left;
+	margin-right: 40px;
+	width: 320px;
+}
+.scl_ulList ul li:last-child {
+	margin-right: 0px;
+}
+.scl_ulhead {
+	font-size: 20px;
+	color: #546e7a;
+	line-height: 1.4;
+	margin-bottom: 20px;
+	min-height: 110px;
+}
+.scl_ulmedia .media-left {
+	padding-right: 15px;
+}
+.scl_ulmedia .media-left, .scl_ulmedia .media-body {
+	display: table-cell;
+	vertical-align: middle;
+}
+.scl_ulmedia .media-left img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+.scl_ulmedia .media-body p {
+	font-size: 18px;
+	color: #546e7a;
+	line-height: 1.4;
+	font-family: FrutigerLTCom-Light;
+	font-weight: normal;
+}
+/**************** reserve carpool btn***************/
+.carpool_headtop {
+	margin-top: 94px;
+}
+.scl_reserve_carpool {
+	background-color: #99ca41;
+	text-align: center;
+	padding: 40px 0;
+}
+.reserve_p {
+	font-size: 20px;
+	color: #fff;
+	letter-spacing: 1px;/*line-height: 1.5;*/
+}
+.crp_seabg {
+	background-image:url("../images/carpool-seacrest.png") !important;
+}
+.crp_mathbg {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #ddd;
+	background-image:url("../images/carpool-Matthewsinvite.png");
+	width:100%;
+	/*margin-top: 90px;*/
+    padding-bottom: 50px;/*height: 340px;*/
+}
+#carpool_hero img {
+	width:100%;
+	position: relative;
+	height: 400px;
+	object-fit: cover;
+}
+.mathbg_head {
+	padding: 50px 20px 0 20px;
+	text-align: center;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	right: 0;/*bottom: 60px;*/
+}
+.mathbg_head h1 {
+	font-size: 46px;
+	padding: 100px 0 50px 0;
+	text-shadow: 1px 3px 8px #000;
+	line-height: 54px;
+	letter-spacing: 3px;
+	color: #fff;
+}
+.mathbg_head button {
+	background-color: transparent;
+	border: 2px solid #fff;
+	border-radius: 3px;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	height: 50px;
+	letter-spacing: 1px;
+	outline: medium none;
+	text-transform: uppercase;
+	width: 320px;
+}
+/************ sacredheart page  21/02/2017 *********/
+.sacred-image {
+	position: relative;
+	width:100%;
+	margin-top: 95px;
+	background: url("../css/images/camp.png")no-repeat scroll 0 0;
+	height: 700px;
+	background-position: 0 -80px;
+	background-size: 100%;
+}
+.sacred-head {
+	position:absolute;
+	top:0;
+	right:0;
+	left:0;
+	text-align: center;
+	background-color: #930123;
+	opacity: 0.9;
+	padding: 20px;
+	border-bottom: 2px solid #979797;
+}
+.sacred-head img {
+	width:440px;
+}
+.sacred-reserve {
+	background-color: #fff;
+	padding: 25px 0px;
+	text-align: center;
+	width:100%;
+	display: inline-block;
+}
+.sacred-reserve h2 {
+	color: #37474F;
+	font-size: 42px;
+	padding: 0 100px;
+	margin-bottom: 10px;
+}
+.sacred-btn {
+	background-color: #e7790e;
+	border: 1px solid #e7790e;
+	border-radius: 3px;
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	outline: medium none;
+	text-transform: uppercase;
+	padding: 15px 40px;
+	width:314px;
+}
+.sacred-kidsleft {
+	width:22%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.sacred-kidsright {
+	width:77%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.sacred-thk {
+	color: #37474F;
+	font-size: 38px;
+	font-weight: 400;
+	line-height: 48px;
+	margin: 40px 70px;
+	text-align: center;
+}
+/*.sacred-kidsright .school_no_kid-right.scl_term{text-align: right;}*/
+
+
+/************* liveoak page ************/
+.liveoak-bg {
+	position: relative;
+	width: 100%;
+	margin-top: 95px;
+	background: url(../css/images/camp.png)no-repeat scroll 0 0;
+	height: 700px;
+	background-position: 0 -200px;
+	background-size: 100%;
+}
+.liveoak-head {
+	background-color: rgba(255, 255, 255, 0.85);
+	padding: 20px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	text-align: center;
+}
+.liveoak-ul {
+	text-decoration: none;
+	list-style-type: none;
+	margin-bottom: 15px;
+}
+.liveoak-ul li {
+	display: inline-block;
+	padding: 0 25px;
+	border-right: 2px solid #74C4BA;
+	vertical-align: middle;
+}
+.liveoak-ul li:last-child {
+	border-right:0;
+}
+.liveoak-ul li img {
+	width: auto;
+}
+.liveoak-litext h2 {
+	color: #37474F;
+	font-size: 42px;
+	margin-bottom: 0px;
+	text-align: left;
+}
+.liveoak-litext p {
+	color: #37474F;
+	font-size: 32px;
+	margin-bottom: 0px;
+	text-align: left;
+}
+.liveoak-pricing {
+	padding: 50px 0;
+}
+.liveoak-pricing h1 {
+	color: #455A64;
+	font-size: 42px;
+	font-weight: 300;
+	text-align: center;
+}
+.liveoak-pricing p {
+	color: #455A64;
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.liveoak_table {
+	float: none;
+	display: inline-block;
+	vertical-align: top;
+	width: 65%;
+}
+.liveoak_table_detail table caption {
+	background-color: #98C840;
+	padding: 10px;
+	color: #fff;
+	border: 1px solid #979797;
+	border-bottom: 0px;
+	font-family: FrutigerLTCom-Light;
+	font-size: 20px;
+}
+.liveoak_table_detail table caption span {
+	font-size: 14px;
+}
+.liveoak_table_detail tbody tr:nth-of-type(even) {
+ background-color: #f9f9f9;
+}
+.liveoak_table_detail table {
+	border-bottom: 1px solid #979797;
+}
+.liveoak_table_detail th {
+	color: #37474F;
+	font-family: FrutigerLTCom-Roman;
+}
+.liveoak_table_detail td {
+	color: #455A64;
+	font-family: FrutigerLTCom-Light;
+}
+.liveoak_table_detail table, .liveoak_table_detail th, .liveoak_table_detail td {
+	border-left: 1px solid #979797;
+	border-right: 1px solid #979797;
+	border-collapse: collapse;
+	font-size: 16px;
+}
+.liveoak_table_detail th, .liveoak_table_detail td {
+	padding: 15px;
+	text-align: center;
+}
+.liveoak_table_ul ul {
+	padding: 5px 20px 20px 35px;
+}
+.liveoak_table_ul {
+	display: inline-block;
+	text-align: left;
+	width: 100%;
+	float: none;
+}
+.liveoak_table_ul h3 {
+	color: #455A64;
+	font-size: 14px;
+	font-family: FrutigerLTCom-Light;
+	text-transform: uppercase;
+}
+.liveoak_table_ul ul li {
+	color: #455A64;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: FrutigerLTCom-Light;
+}
+.liveoak_right_ul {
+	float: none;
+	margin-left: 2%;
+	padding: 0 0px 20px 20px;
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+}
+.liveoak_table_comment {
+	background-color: #eeeeee;
+	margin-bottom: 25px;
+	padding: 30px 30px;
+}
+.liveoak_table_comment li {
+	color: #818e94;
+	font-family: FrutigerLTCom-Light;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	line-height: 26px;
+	padding-left: 0;
+	margin-bottom: 8px;
+	list-style-type: none;
+}
+.liveoak_table_comment li .media-left {
+	padding-right: 15px;
+}
+.liveoak_table_comment li .media-left, .liveoak_table_comment li .media-body {
+	display: table-cell;
+	vertical-align: top;
+}
+.liveoak-groupcheck {
+	background-color: #fff;
+	border: 1px solid #e8ebed;
+	border-radius: 5px;
+	color: #4e4d50;
+	font-size: 18px;
+	height: 60px;
+	margin-bottom: 0;
+	outline: medium none;
+	/*text-indent: 20px;*/
+    text-align: left;
+	width: 100%;
+	margin-top: 10px;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px;
+}
+.group-moaft {
+	text-decoration: none;
+	list-style-type: none;
+}
+.group-moaft li {
+	display: block;
+	width: 50%;
+	float: left;
+	border-right: 1px solid #e8ebed;
+	padding-left: 35px;
+	box-sizing: border-box;
+	height: 60px;
+}
+.group-moaft li:last-child {
+	border-right: 0;
+}
+.liveosk-kidsleft {
+	width: 22%;
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 30px;
+	margin-bottom: 15px;
+}
+.liveosk-kidsright {
+	width: 72%;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 15px;
+}
+.checkbox.live-checkmaft {
+	margin-top: 16px;
+	padding-left: 0;
+}
+.checkbox.live-checkmaft label {
+	padding-left: 20px;
+}
+.checkbox.live-checkmaft label:before {
+	top:0;
+}
+.checkbox.live-checkmaft label:after {
+	padding-left: 3px;
+	padding-top: 8px;
+}
+.liveosk-ridetime {
+	color: #818e94;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	padding-right: 10px;
+}
+.thank-liveoskp {
+	font-size: 20px;
+	color: #455A64;
+	text-align: left;
+	font-family: FrutigerLTCom-Light;
+	margin-bottom: 40px;
+	margin-top: 15px;
+}
+.thank-livelist {
+	text-decoration: none;
+	list-style-type: none;
+}
+.thank-livelist li {
+	margin-bottom: 40px;
+}
+.thank-livelist li:last-child {
+	margin-bottom: 20px;
+}
+.thank-livelist .media-left, .thank-livelist .media-body {
+	display: table-cell;
+	vertical-align: top;
+}
+.thank-livelist .media-left {
+	padding-right: 20px;
+}
+.thank-livelist .media-left p {
+	font-size: 16px;
+	color: #fff;
+	background-color: #92C53C;
+	font-family: FrutigerLTCom-Light;
+	width:30px;
+	height: 30px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 1.9;
+}
+.thank-livelist .media-body {
+	font-size: 20px;
+	color: #455A64;
+	text-align: left;
+	font-family: FrutigerLTCom-Light;
+	width:100%;
+}
+.live-thnximg {
+	text-align: center;
+	margin-top: 20px;
+}
+.live-thnximg a {
+	margin: 5px 10px 5px 0;
+	text-decoration: none;
+	display: inline-block;
+}
+/******* pricing html - 06/04/2017 *******/
+.pricing_tab {
+	padding: 50px 10px 0 10px;
+}
+.pricing_tab ul {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+	display: inline-block;
+}
+.pricing_tab ul li {
+	display: inline-block;
+	margin: 0;
+	float: left;
+}
+.pricing_tab ul li.active a {
+	color:#99CA41;
+	border-color: #99CA41;
+}
+.pricing_tab ul li a {
+	color:#818E94;
+	text-decoration: none;
+	width:178px;
+	padding: 12px 14px;
+	background-color: #fff;
+	border: 1px solid #D6D9DC;
+	font-family: FrutigerLTCom-Roman;
+	font-size: 18px;
+	display: inline-block;
+}
+.school_pad_body.pricing_input {
+	padding-top: 50px;
+}
+.all_requied {
+	margin-top: 10px;
+}
+.all_requied label {
+	color: red;
+	font-family: opensans;
+}
+/****** liveosk page 5-may-2017 *****/
+h4.modal-title.modaltitle-liveoak {
+	line-height: 40px;
+}
+.modalspan-liveoak {
+	font-size: 18px;
+	color: #37474f;
+	font-weight: 100;
+	text-align: center;
+	display: block;
+}
+
+
+/***************** RESPONSIVE ******************/
+
+@media(max-width: 1600px) {
+    /****** home page ********/
+    header.boy {
+ padding-bottom: 105px;
+}
+ header.servitehs_bg, header.jserra_bg {
+ padding-top: 638px;
+}
+ header.jserra_bg {
+background-position:0 -100px;
+}
+ header.senior {
+padding-bottom: 185px;
+}
+ header.mathnasium {
+ background-position: 0 120px;
+ padding-top: 780px;
+}
+ header.teachrocks {
+ background-position: 0 120px;
+ padding-top: 780px;
+}
+ header.footsteps {
+padding-top: 600px;
+}
+    /****** 30/08/2016 our services ********/
+    .ourservices_bg {
+ height: 680px;
+}
+ .promo_repeat img.father_kids {
+width: 60%;
+}
+    /****** trust and safety page ********/
+    .mainContent01 h1 {
+padding-bottom:0;
+padding-top: 170px;
+}
+ .trust_safety_kids img.trust_kids {
+width: 45%;
+}
+ .trust_safety_girl img.trust_girl {
+width: 40%;
+}
+}
+@media(max-width: 1400px) {
+ header.servitehs_bg {
+ padding-top: 598px;
+}
+ header.jserra_bg {
+ padding-top: 598px;
+ background-position:0 -40px;
+}
+ header.senior {
+padding-bottom: 115px;
+background-position: 0 -50px;
+}
+ header.mathnasium {
+ padding-top: 670px;
+}
+ header.teachrocks {
+padding-top: 670px;
+}
+ header.girlsms_bg {
+padding-top: 560px;
+}
+ header.footsteps {
+padding-top: 540px;
+background-position: 0 0px;
+}
+    /****** 30/08/2016 our services ********/
+    .ourservices_bg {
+ height: 580px;
+}
+ .promo_repeat img.father_kids {
+width: 70%;
+}
+    /****** trust and safety page ********/
+    .mainContent01 h1 {
+padding-top: 90px;
+}
+ .trust_safety_kids img.trust_kids {
+ width: 50%;
+}
+ .trust_safety_girl img.trust_girl {
+ width: 45%;
+}
+    /************ carpool 6/12/2016 *************/
+
+    .scl_zumWel {
+ width: 90%;
+}
+ .carpool_welRight h2 {
+font-size: 38px;
+}
+ .scl_trustText {
+padding-top: 260px;
+}
+
+    /******* sacred Heart page 21/02/2017 *****/
+    .sacred-image {
+height: 640px;
+background-position: 0 -40px;
+}
+
+    /****** liveosk page 5-may-2017 *****/
+    .liveoak-bg {
+ background-position: 0 -140px;
+}
+}
+@media(max-width: 1280px) {
+ header.boy {
+ background-position: 0px -100px;
+ padding-bottom: 45px;
+ padding-top: 55px;
+}
+ header.boy .mainContent {
+ margin-left: 0;
+ width: 60%;
+}
+ header.boy .mainContent h1 {
+padding-top: 130px;
+ padding-bottom: 0;
+}
+ header {
+ background-position: -26px -65px;
+ background-size: 120% auto;
+ padding-bottom: 70px;
+}
+ header.senior {
+padding-bottom: 110px;
+}
+ header.senior .mainContent h1 {
+padding-top: 100px;
+}
+    /*    header .mainContent h1{
+            font-size: 60px;
+        }*/
+    .school_why_should_round.familes_m {
+ margin: 0 90px;
+}
+ .school_why_detail {
+ padding-left: 22px;
+ width: 237px;
+}
+    /*********  school page **********/
+    header.school_bg.activityhero {
+ padding-top: 445px;
+}
+ header.school_bg {
+ background-position: 0 60px;
+ background-size: 100% auto;
+ padding-bottom: 0;
+ padding-top: 540px;
+}
+ header.servitehs_bg {
+ padding-top: 500px;
+}
+ header.jserra_bg {
+background-position:0 -50px;
+padding-top: 500px;
+}
+ header.mathnasium {
+ padding-top: 610px;
+}
+ header.teachrocks {
+padding-top: 610px;
+}
+ header.mercy {
+ padding-top: 606px;
+ background-position: 0 -60px;
+}
+ header.girlsms_bg {
+ padding-top: 600px;
+}
+ header.footsteps {
+padding-top: 470px;
+}
+    /****** 30/08/2016 our services ********/
+    .ourservices_bg {
+ height: 530px;
+}
+ .ourservice_text {
+ top:90px;
+}
+    /****** trust and safety page ********/
+    header.trust_three .mainContent01 {
+margin-bottom: 225px;
+}
+ .trust_safety_kids img.trust_kids {
+ width: 54%;
+}
+ .trust_safety_girl img.trust_girl {
+ width: 50%;
+}
+    /************ carpool 6/12/2016 *************/
+    .scl_trustText {
+ padding-top: 220px;
+}
+    /******* sacred Heart page 21/02/2017 *****/
+    .sacred-image {
+height: 580px;
+}
+}
+ @media(max-width: 1100px) {
+ .nav_join {
+display: none;
+}
+ header .mainContent h1 {
+ font-size: 50px;
+}
+ .logoFooter {
+ float: left;
+ margin: 50px 20px 35px;
+}
+ .middleFooter ul {
+ margin-left: 15px;
+}
+ .middleFooter ul li {
+ margin-right: 20px;
+}
+    /***************** school page ******************/
+    header.school_bg.activityhero {
+ padding-top: 355px;
+}
+ .easy_link_btn img {
+ width: 20%;
+}
+ header.school_bg {
+ background-position: 0 66px;
+ padding-top: 440px;
+}
+ header.servitehs_bg {
+ padding-top: 410px;
+}
+ header.jserra_bg {
+background-position:0 0px;
+padding-top: 410px;
+}
+ header.senior {
+padding-bottom: 45px;
+background-position: 0 -40px;
+}
+ header.mathnasium {
+ background-position: 0 160px;
+ padding-top: 550px;
+}
+ header.teachrocks {
+background-position: 0 160px;
+padding-top: 550px;
+}
+ header.mercy {
+ padding-top: 546px;
+ background-position: 0 -20px;
+}
+ header.girlsms_bg {
+ background-position: 0 90px;
+}
+ header.footsteps {
+ padding-top: 385px;
+}
+ .senior_zump h1 {
+font-size: 40px;
+}
+ .senior_intacs p {
+font-size: 22px;
+}
+ .school_why_should_detail {
+ margin: 0 auto 0 22px;
+}
+    /***************** end school page ******************/
+
+    .mainContent button {
+ display: none;
+}
+ nav .mainNavList li.last_li {
+ display: none;
+}
+ .mobile-link {
+ display:block;
+}
+    /********* faq page *******/
+    .faq_header {
+ margin-top: 90px;
+}
+ .faq {
+ padding: 0 30px;
+}
+    /********  index page ******/
+    header.boy {
+ padding-bottom: 40px;
+ background-position: 0 -78px;
+}
+ header.boy .mainContent {
+ margin-left: 80px;
+}
+    /****** 30/08/2016 our services ********/
+    .ourservices_bg {
+ height: 440px;
+}
+ .ourservice_text {
+ top:60px;
+}
+ .leftDivritustory {
+ margin: 0 0 50px auto;
+ width: 520px;
+}
+ .video_ritu {
+width: 76%;
+}
+ header.sequoibenefits .mainContent h1 {
+padding-top: 170px;
+}
+ .promo_repeat img.father_kids {
+width: 85%;
+}
+    /*********** trust and safety **********/
+    header.trust_three .mainContent01 {
+ margin-bottom: 140px;
+}
+ .mainContent01 h1 {
+ padding-top: 50px;
+ font-size: 40px;
+}
+ .drive_detail {
+padding: 20px 25px;
+}
+ .trust_safety_kids {
+padding-left: 25px;
+padding-right: 25px;
+}
+ .trust_safety_kids img.trust_kids {
+ width: 64%;
+}
+ .our_pwi {
+width:480px;
+}
+ .trust_our_tech {
+padding: 50px 25px;
+}
+ .trust_safety_girl {
+padding-right: 25px;
+}
+ .trust_safety_girl img.trust_girl {
+ width: 60%;
+}
+    /************ carpool 6/12/2016 *************/
+    .carpool_blckText {
+ padding: 350px 90px 125px 90px;
+}
+ .scl_trustbg {
+background-size: cover;
+}
+ .scl_trustText {
+ padding-top: 160px;
+}
+ .carpool_centerRIGHT .video_ritu {
+ width:100%;
+}
+ .crp_mathbg {
+ background-position: -250px 0;
+}
+    /******* sacred Heart page 21/02/2017 *****/
+    .sacred-image {
+height: 510px;
+background-position: 0 -10px;
+}
+
+    /****** liveosk page 5-may-2017 *****/
+    .liveoak-bg {
+ margin-top: 85px;
+ height: 550px;
+ background-position: 0 -120px;
+}
+}
+@media(max-width: 1080px) {
+ .carpool_blckText {
+ padding: 300px 90px 85px 90px;
+}
+}
+ @media(max-width: 1067px) {
+    /***************** surfcamppacifica page ******************/
+    nav.nav_sufcamps, nav.nav_deanzacollage {
+ height: 80px;
+}
+ .phoneNumber.phone_btm {
+ margin-right: 15px;
+}
+    /***************** school page ******************/
+    nav.nav_school {
+ height: 75px;
+}
+ nav .phoneNumber {
+ margin: 0 auto;
+ float: left;
+ display: block;
+ width: 120px;
+ position: absolute;
+ top: 70px;
+ left: 33%;
+ margin-right: 15px;
+}
+ nav .phoneNumber p {
+ display: none;
+}
+ nav .mainNavList li {
+padding: 0;
+}
+ .phoneNumber.phone_btm .phoneNumberShape {
+ display: none;
+}
+ .phoneNumber .phoneNumberShape {
+ display: block;
+ position: absolute;
+ right: -530px;
+ top: -17px;
+}
+ header.school_bg {
+ background-position: 0 68px;
+ padding-top: 420px;
+}
+ header.servitehs_bg {
+ background-position: 0 80px;
+ padding-top: 390px;
+}
+ header.jserra_bg {
+background-position:0 30px;
+padding-top: 390px;
+}
+ header .mainContent {
+margin-left: 20px;
+}
+ .school_zummer_img {
+ margin-right: 18px;
+}
+ .school_easy_pool img {
+ border-radius: 50%;
+ height: 110px;
+ width: 110px;
+}
+ .school_easy_pool h1 {
+ font-size: 50px;
+}
+ .school_why_should_round {
+ padding: 35px 5px;
+ width: 230px;
+}
+ .school_why_should p {
+ padding: 0 40px;
+ font-size: 19px;
+ margin-bottom: 60px;
+}
+ .school_why_should_detail {
+ margin: 0 auto 0 55px;
+}
+ .school_why_should_round p {
+ margin-bottom: 0px;
+}
+ .school_why_detail {
+ padding-left: 38px;
+ width: 210px;
+}
+ .school_why_detail ul li span {
+ font-size:12px;
+}
+ .feature_inschool {
+ margin-bottom: 25px;
+ margin-left: 45px;
+}
+ .feature_inschool img {
+ width: 150px;
+}
+    /***************** end school page ******************/
+    nav {
+ text-align: left;
+ height: 41px;
+ padding-bottom: 60px !important;
+}
+ nav .logo {
+ padding-left: 10px;
+}
+ nav .mainNav {
+ float: left;
+ margin-top: -10px;
+}
+ .startedZum p {
+ margin: 0 20px;
+ margin-bottom: 20px;
+ margin-top: 20px;
+}
+ .whyWeDiffer .circleOfTrust .topic1 p, .whyWeDiffer .notJustARide .topic2 p {
+ padding-bottom: 20px;
+}
+ .whyWeDiffer .circleOfTrust .topic1, .whyWeDiffer .notJustARide .topic2, .whyWeDiffer .dedicatedFamily .topic3 {
+ position: static;
+ margin: 0 auto;
+}
+ .whyWeDiffer .circleOfTrust img, .whyWeDiffer .notJustARide img, .whyWeDiffer .dedicatedFamily img {
+ margin: 0;
+ margin-bottom: 20px;
+}
+ .whyWeDiffer .dedicatedFamily .topic3 p {
+ padding-bottom: 20px;
+ margin-bottom: 0px;
+}
+ .dedicatedFamily {
+ padding-bottom: 40px;
+}
+ nav {
+ padding-bottom: 30px;
+}
+ header {
+        /*        text-align: center;*/
+        max-width: 100%;
+ margin: 0 auto;
+ background-color: #eceff1;
+        /*        background-image: url("images/header.jpg");*/
+        /*background:linear-gradient(to bottom, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 1) 100%) repeat scroll 0 0%, url(../images/header.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+        background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ padding-bottom: 50px;
+ margin-top: 100px;
+}
+ header.boy {
+        /*text-align: center;*/
+        max-width: 100%;
+ background-color: #eceff1;
+        /*background-image: url("images/header_old_new.jpg");*/
+        /*background:linear-gradient(to bottom, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 1) 100%) repeat scroll 0 0%, url(../images/header.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+        background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ margin-top: 30px;
+}
+ .whyWeDiffer .topic1Div, .whyWeDiffer .notJustARide .topic2Div, .whyWeDiffer .topic3Div {
+ position: static;
+ margin: 0 auto;
+ float: none;
+ margin-bottom: 40px;
+}
+ .desktop-link {
+ display: none;
+}
+ .mobile-link, .mobile-link1 {
+ display: block;
+}
+ header.senior {
+ padding-bottom: 20px;
+}
+ .senior_zump h1 {
+padding: 55px 40px;
+}
+    /******* fare estimate ******/
+    .fare_estimate {
+ float: left;
+ padding-left: 15px;
+ padding-right: 40px;
+ width: 46%;
+}
+ .fare_map {
+ float: right;
+ padding-right: 15px;
+ width: 47%;
+}
+    /**** 30/08/2016 ******/
+    .press_sec ul li {
+padding: 0 15px;
+}
+ .press_sec ul li img {
+width: 100%;
+}
+ .first_WhyWeDiffer, .second_WhyWeDiffer, .third_WhyWeDiffer {
+ width: 405px;
+ margin: 0 10px 55px 10px;
+}
+    /****** 30/08/2016 our services ********/
+    .ourservices_bg {
+ height: 410px;
+}
+ .ourservice_text {
+ top:40px;
+}
+ header.mercy {
+ padding-top: 536px;
+background-position: 0 -40px;
+}
+ header.girlsms_bg {
+ background-position: 0 70px;
+}
+    /****** faq new page 24/09/2016 ******/
+    .faq_ourService_left, .faq_ourService_right {
+width:462px;
+}
+
+    /************ carpool 6/12/2016 *************/
+    .carpool_Center {
+height: auto;
+}
+ .carpool_centerLEFT, .carpool_centerRIGHT {
+width:36%;
+}
+ .carpool_detail, .carpool_thnkyou, .scl_ulList {
+ padding: 20px;
+}
+ .carpool_welLeft {
+ margin: 0 30px;
+}
+ .carpool_welRight {
+width:53%;
+}
+ .carpool_welRight .welPad {
+margin-left: 30px;
+}
+ .carpool_centerRIGHT .ritu_video {
+width: 100%;
+background-size: 100%;
+height: 205px;
+}
+    /*.carpool_form{ width: 46%;}*/
+    .line_green {
+width: 92%;
+}
+    /*.carpool_dropLeft{ width: 62%;}*/
+    .carpool_pricetb ul li {
+width:240px;
+}
+ .next_tab01 {
+width: 260px;
+margin-bottom: 20px;
+float: none;
+}
+ .excl_main .school_pad_body {
+padding: 0 20px;
+}
+ .school_pad_body.pricing_input {
+padding: 50px 20px 0px 20px;
+}
+    /*.next_btnP{min-height: 110px;}*/
+    .scl_ulList ul li {
+width: 290px;
+}
+ .mathbg_head {
+top:120px;
+}
+ .mathbg_head h1 {
+padding: 40px 0 40px 0;
+}
+ .check_text {
+width:220px;
+margin-left: 0;
+}
+ .Invite_FrdDiv .invit_input {
+width: 360px;
+}
+ .carpool_dropRight.carpool_dropTime {
+width:98.9%;
+}
+ .carpool_headtop {
+margin-top:90px;
+}
+
+    /******* sacred Heart page 21/02/2017 *****/
+    .sacred-image {
+margin-top: 85px;
+}
+
+    /****** liveosk page 5-may-2017 *****/
+    .liveoak-pricing {
+ padding: 50px 20px;
+}
+}
+@media(max-width: 989px) {
+    /**** phone img 9/8/2016 ******/
+    .phoneNumber .phoneNumberShape {
+ right: -480px;
+}
+
+    /***************** school page ******************/
+
+    header.school_bg.activityhero {
+ padding-top: 285px;
+}
+ header.mathnasium {
+padding-top: 520px;
+}
+ header.teachrocks {
+padding-top: 520px;
+}
+ header.mercy {
+ padding-top: 505px;
+}
+ header.girlsms_bg {
+ padding-top: 570px;
+}
+ header.footsteps {
+ padding-top: 365px;
+}
+ .easy_scl_get_text {
+ padding-bottom: 15px;
+ padding-top: 27px;
+ text-align: center;
+}
+ .easy_scl_get_text h1 {
+ font-size: 25px;
+}
+ .easy_scl_get_text p {
+ font-size:18px;
+}
+ .school_zummer_img {
+ margin-right: 15px;
+}
+ .school_why_should_detail {
+ margin: 0 auto 0 40px;
+}
+ .school_why_detail {
+ padding-left: 34px;
+ width: 203px;
+}
+ .membersDiv_school_who {
+ margin: 0 100px 30px 70px;
+}
+ .feature_inschool {
+ margin-left: 55px;
+}
+ .feature_inschool img {
+ width: 140px;
+}
+    /***************** end school page ******************/
+    header {
+ background-position: 0 -51px;
+ background-size: 131% auto;
+}
+ .logoFooter {
+ float: none;
+ margin: 35px auto 25px;
+ text-align: center;
+ width: 200px;
+}
+ .middleFooter, .middleFooter ul {
+ width: 90%;
+ text-align: center;
+ margin: 0 auto;
+ float: none;
+ height: 35px;
+}
+ .middleFooter ul li {
+ display: inline-block;
+ margin-right: 20px;
+ margin-top: 3px;
+}
+ .socialsFooter {
+ margin: 0 auto;
+ float: none;
+ text-align: center;
+ margin-top: 20px;
+ margin-bottom: 20px;
+}
+ .socialsFooter a:last-child img {
+ margin-right: 0;
+}
+ .socialsFooter img {
+ margin-right: 15px;
+ margin-top: 0;
+}
+ .moreThan p {
+ margin: 0 auto;
+ padding: 20px 0;
+ width: 95%;
+}
+ .feature_inDivs {
+ margin-left: 35px;
+}
+ .feature_inDivs img {
+ margin-bottom: 30px;
+ margin-right: 21px;
+ width: 110px;
+}
+    /***** senior page *****/
+    header.senior .mainContent h1 {
+ padding-top: 90px;
+}
+ .senior_intacs h1 {
+padding: 40px 0;
+}
+ .senior_intacs p {
+ font-size: 20px;
+ padding: 0 15px 60px;
+}
+    /******* fare estimate ******/
+    .fare_estimate {
+width: 40%;
+}
+    /****** 30/08/2016 our services ********/
+    .ourservices_bg {
+ height: 400px;
+}
+    /****** faq new page 24/09/2016 ******/
+    .faq_ourService_left, .faq_ourService_right {
+width:442px;
+}
+ .promo_repeat img.father_kids {
+width: 90%;
+}
+ header.trust_three .mainContent01 {
+ margin-bottom: 110px;
+}
+    /****** trust and safety ******/
+    .mainContent01 h1 {
+padding-top: 20px;
+}
+ .trust_safety_kids img.trust_kids {
+ width: 70%;
+}
+ .our_pwi {
+ width: 410px;
+}
+ .our_yound_DE2 {
+margin-left: 35px;
+}
+ .get_link button {
+margin: 0 auto;
+display: inline-block;
+}
+ .trust_safety_kids {
+ background: linear-gradient(to left, rgba(255, 255, 255, 0) -66%, rgba(246, 248, 250, 0) 26%, rgb(238, 238, 238) 57%);
+ background: -moz-linear-gradient(to left, rgba(255, 255, 255, 0) -66%, rgba(246, 248, 250, 0) 26%, rgb(238, 238, 238) 57%);
+        /* Chrome10+,Safari5.1+ */
+        background: -webkit-linear-gradient(to left, rgba(255, 255, 255, 0) -66%, rgba(246, 248, 250, 0) 26%, rgb(238, 238, 238) 57%);
+        /* Opera 11.10+ */
+        background: -o-linear-gradient(to left, rgba(255, 255, 255, 0) -66%, rgba(246, 248, 250, 0) 26%, rgb(238, 238, 238) 57%);
+        /* IE10+ */
+        background: -ms-linear-gradient(to left, rgba(255, 255, 255, 0) -66%, rgba(246, 248, 250, 0) 26%, rgb(238, 238, 238) 57%);
+}
+ .trust_safety_girl {
+ background: linear-gradient(to left, rgba(238, 238, 238, 1) 45%, rgba(238, 238, 238, 0) 86%, rgba(255, 255, 255, 0) 68%);
+ background: -moz-linear-gradient(to left, rgba(238, 238, 238, 1) 45%, rgba(238, 238, 238, 0) 86%, rgba(255, 255, 255, 0) 68%);
+        /* Chrome10+,Safari5.1+ */
+        background: -webkit-linear-gradient(to left, rgba(238, 238, 238, 1) 45%, rgba(238, 238, 238, 0) 86%, rgba(255, 255, 255, 0) 68%);
+        /* Opera 11.10+ */
+        background: -o-linear-gradient(to left, rgba(238, 238, 238, 1) 45%, rgba(238, 238, 238, 0) 86%, rgba(255, 255, 255, 0) 68%);
+        /* IE10+ */
+        background: -ms-linear-gradient(to left, rgba(238, 238, 238, 1) 45%, rgba(238, 238, 238, 0) 86%, rgba(255, 255, 255, 0) 68%);
+}
+ .trust_safety_girl img.trust_girl {
+ width: 65%;
+}
+ .Invite_FrdDiv .invit_input {
+width: 350px;
+}
+
+    /****** liveosk page 5-may-2017 *****/
+    .liveoak-bg {
+height: 500px;
+}
+ .liveoak-litext h2 {
+font-size: 38px;
+}
+ .liveoak-litext p {
+font-size: 28px;
+}
+}
+@media(max-width: 985px) {
+ header .mainContent {
+ margin-left: 43px;
+}
+ header .mainContent h1 {
+ font-size: 50px;
+}
+ header .mainContent p {
+ font-size: 15px;
+}
+ header.servitehs_bg, header.jserra_bg {
+ padding-top: 370px;
+}
+ .talkToUsImages {
+ float: none;
+ margin: 0 auto;
+ width: 290px;
+}
+ .talkToUsText {
+ float: none;
+ margin: 0 auto;
+ width: 550px;
+ margin-bottom: 50px;
+}
+ .feature_headtext {
+ height: 122px;
+ overflow: hidden;
+}
+ .firstHeaderwhat {
+ margin: 0;
+ margin-bottom: 20px;
+}
+    /****** 30/08/2016 *****/
+    .press_sec ul li {
+ padding: 0 5px;
+}
+    /************ carpool 6/12/2016 *************/
+    .carpool_blckText {
+ padding: 260px 90px 65px 90px;
+}
+ .carpool-landingimg {
+height:100%;
+}
+ .carpool_cheadText h2 {
+ font-size: 40px;
+}
+ .carpool_pricetb ul li {
+width:220px;
+}
+ .next_tab01 {
+width: 240px;
+}
+ .carpool_centerLEFT, .carpool_centerRIGHT {
+ width: 38%;
+padding: 40px 55px;
+}
+ .carpool_dropRight .school_table table tr td {
+padding: 15px 25px;
+}
+ .carpool_back_next {
+margin-bottom: 20px;
+}
+ .scl_ulList ul li {
+ width: 400px;
+ margin-bottom: 40px;
+}
+ .scl_ulList ul li:last-child {
+margin-bottom: 10px;
+}
+ .scl_ulhead {
+min-height: 100%;
+}
+ .scl_rd_right .school_table table th, td {
+padding: 15px 15px;
+}
+
+    /******* sacred Heart page 21/02/2017 *****/
+    .sacred-image {
+height: 440px;
+background-position: 0 -40px;
+}
+ .sacred-head img {
+width: 300px;
+}
+}
+@media(max-width: 925px) {
+ .threeDivsCustomersSaying {
+ margin-right: 0;
+}
+ .threeDivsCustomersSaying1 {
+ margin-right: 60px;
+}
+ .threeDivsCustomersSayingLast {
+ margin: 0 60px;
+}
+}
+@media(max-width: 861px) {
+    /**** toggle menu 9/8/2016 ******/
+    .mobile {
+ display: block;
+ margin-top: -20px;
+ margin-right: 15px;
+ cursor: pointer;
+}
+ nav .zumLogo {
+ background-image: url(../images/zum_logo_mobile.jpg);
+ width: 67px;
+ height: 24px;
+ margin: 0 auto;
+ float: none;
+}
+ nav .mainNav {
+ display: none;
+ margin-top: -5px;
+ margin-left: 0;
+ width: 150px;
+ background-color: #fff;
+ position: relative;
+ z-index: 999;
+}
+ nav .mainNavList li {
+ float: none;
+ margin-bottom: 40px;
+ margin: 10px;
+ padding: 0;
+}
+ nav .mainNavList li a {
+ padding-bottom: 3px;
+}
+ nav .logo {
+ padding-top: 50px;
+}
+ .phoneNumber .phoneNumberShape {
+ right: -380px;
+}
+    /******************  school page ************/
+    header.school_bg.activityhero {
+ padding-top: 270px;
+}
+ header.mathnasium {
+padding-top: 460px;
+}
+ header.teachrocks {
+padding-top: 460px;
+}
+ header.mercy {
+ padding-top: 415px;
+ background-position: 0 0px;
+}
+ header.girlsms_bg {
+ padding-top: 470px;
+}
+ header.footsteps {
+ padding-top: 300px;
+}
+ nav.nav_school {
+ height: 70px;
+}
+ header.school_bg {
+ background-position: 0 59px;
+ padding-top: 345px;
+}
+ header.servitehs_bg {
+ padding-top: 300px;
+ background-position: 0 70px;
+}
+ header.jserra_bg {
+padding-top: 300px;
+}
+ .school_zummer_img {
+ float: right;
+ margin-bottom: 20px;
+ margin-top: -21px;
+ width: 530px;
+}
+ .school_zummer_img img {
+ width: 70px;
+ height: 70px;
+}
+ .school_zummer_img h3 {
+ font-size: 12px;
+}
+ .school_zummer_img p {
+ font-size: 14px;
+}
+ .school_easy_pool img {
+ border-radius: 50%;
+ height: 80px;
+ width: 80px;
+}
+ .school_easy_pool h1 {
+ font-size: 35px;
+ padding: 28px 0;
+}
+ .school_why_should h1 {
+ font-size: 36px;
+ padding-bottom: 30px;
+ padding-top: 70px;
+}
+ .school_why_should p {
+ font-size: 16px;
+ margin-bottom: 60px;
+ padding: 0 50px;
+}
+ .school_why_should_detail {
+ margin: 0 auto 0 112px;
+}
+ .school_why_should_round.familes_m {
+ margin: 0 90px;
+}
+ .school_why_should_round {
+ margin-bottom: 60px;
+}
+ .school_why_should_round p {
+ margin-bottom: 0 !important;
+}
+ .school_why_should_round:last-child {
+ margin-left: -80px;
+}
+ .school_why_detail {
+ margin-bottom: 30px;
+ padding-left: 48px;
+ width: 203px;
+}
+ .school_why_carpool {
+ padding-bottom: 30px;
+}
+ .school_who .carousel {
+ margin: 0 19%;
+ position: relative;
+}
+ .membersDiv_school_who {
+ margin-left: 90px;
+}
+ .memberDiv_school_right {
+ padding-top: 0px;
+}
+ .school_dot_see h1 {
+ font-size: 42px;
+ padding: 50px 65px 30px 45px;
+}
+ .school_dot_see p {
+ padding-bottom: 55px;
+}
+    /****************** end school page ************/
+
+    .firstDivWhyWeDiffer, .secondDivWhyWeDiffer, .thirdDivWhyWeDiffer {
+ text-align: center;
+}
+ .firstDivWhyWeDiffer .leftDivInner, .secondDivWhyWeDiffer .leftDivInner, .thirdDivWhyWeDiffer .leftDivInner {
+ margin-top: 00px;
+ margin-right: 0;
+ margin-bottom: 20px;
+}
+ .firstDivWhyWeDiffer .rightDivInner, .secondDivWhyWeDiffer .rightDivInner, .thirdDivWhyWeDiffer .rightDivInner {
+ margin: 0 auto;
+ margin-bottom: 10px;
+ float: none;
+ text-align: center;
+}
+ .firstDivWhyWeDiffer .rightDivInner h4, .secondDivWhyWeDiffer .rightDivInner h4, .thirdDivWhyWeDiffer .rightDivInner h4 {
+ text-align: center;
+ float: none;
+ display: block;
+ margin: 0 auto;
+}
+    /******** 8/4/2016  || vishal patel*********/
+    header {
+ background-position: 0 -36px;
+ background-size: 135% auto;
+ padding-bottom: 58px;
+}
+ header .mainContent h1 {
+ padding-top: 150px;
+ font-size: 40px;
+}
+ header .mainContent p {
+ font-size: 12px;
+}
+ .let_us_helpImage {
+ float: none;
+ margin-left: 0;
+}
+ .let_us_helpright {
+ margin-left: 100px;
+}
+    /******** senior page ********/
+    header.senior {
+ background-image: url("../images/seniors800.jpg");
+ padding-bottom: 65px;
+}
+ .senior_zump h1 {
+ font-size: 32px;
+ padding: 45px 5px;
+}
+ .feature_in.senior_fea h1 {
+ padding: 40px 0;
+}
+ .senior_intacs h1 {
+ padding: 35px 0;
+}
+ .senior_intacs p {
+ padding: 0 30px 50px;
+}
+ .senior_listp {
+padding: 0 30px;
+}
+    /***** fare estimate ******/
+    .fare_estimate {
+ padding: 0 20px 35px;
+ width: auto;
+}
+ .fare_map {
+ float: left;
+ padding: 0 20px;
+ width: 95%;
+}
+    /****** 30/08/2016 *****/
+    .press_sec ul li {
+ padding: 0 2px;
+}
+    /****** 30/08/2016 our services ********/
+    .ourservices_bg {
+ background-size: cover;
+}
+ .rightDivStandFor.what_we {
+width: 530px;
+}
+ .leftDivStandFor.what_we {
+ margin-left: 0;
+}
+    /****** faq new page 24/09/2016 ******/
+    .faq_ourService_left, .faq_ourService_right {
+width:100%;
+margin: 0;
+}
+ .promo_repeat img.father_kids {
+width: 100%;
+top: 40%;
+}
+ .promo_repeat {
+ background: linear-gradient(to top, rgba(255, 255, 255, 0) -66%, rgba(231, 234, 235, 1) 65%, rgba(243, 245, 247, 1) 109%);
+ background: -webkit-linear-gradient(to top, rgba(255, 255, 255, 0) -66%, rgba(231, 234, 235, 1) 65%, rgba(243, 245, 247, 1) 109%);
+ background: -o-linear-gradient(to top, rgba(255, 255, 255, 0) -66%, rgba(231, 234, 235, 1) 65%, rgba(243, 245, 247, 1) 109%);
+ background: -moz-linear-gradient(to top, rgba(255, 255, 255, 0) -66%, rgba(231, 234, 235, 1) 65%, rgba(243, 245, 247, 1) 109%);
+ background: -ms-linear-gradient(to top, rgba(255, 255, 255, 0) -66%, rgba(231, 234, 235, 1) 65%, rgba(243, 245, 247, 1) 109%);
+}
+    /****** trust and safety ******/
+    header.trust_three .mainContent01 {
+ margin-bottom: 80px;
+}
+ .mainContent01 h1 {
+ padding-top: 0;
+}
+ .drive_head h1, .our_tech_head h1, .drive_head h1 {
+font-size: 40px;
+}
+ .trust_safety_kids img.trust_kids {
+ width: 90%;
+}
+ .our_tech_info {
+text-align: center;
+}
+ .our_tech_info_left img {
+margin-bottom: 30px;
+}
+ .our_tech_info_left, .our_tech_info_right {
+display: inline-block;
+}
+ .our_tech_info_right {
+ padding-left: 0;
+}
+ .our_young_ride-left {
+float: none;
+text-align: center;
+ margin: 0 auto;
+}
+ .our_yound_DE2 {
+float: none;
+width: auto;
+margin-left: 0;
+}
+ .our_yound_DE2 img {
+ width: 40%;
+}
+ .our_yound_DE1 {
+ width: auto;
+ float: none;
+}
+ .our_young_ride-right {
+ float: none;
+ display: inline-block;
+ width: auto;
+ text-align: center;
+}
+ .our_pwi {
+width: 690px;
+margin-right: 0;
+}
+ .trust_safety_girl img.trust_girl {
+ width: 80%;
+}
+
+    /************ carpool 6/12/2016 *************/
+    .carpool_centerhead {
+margin: 40px auto 40px;
+text-align: center;
+}
+ .carpool_welLeft, .carpool_welRight {
+display: inline-block;
+float: none;
+}
+ .carpool_welRight {
+width:90%;
+text-align: left;
+}
+ .carpool_pricetb ul {
+width:501px;
+}
+ .carpool_pricetb ul li:nth-child(even) {
+border-right: 0px;
+}
+ .carpool_pricetb ul li {
+width: 250px;
+}
+ .carpool_pricetb ul li:nth-child(-n+2) {
+border-bottom: 1px solid #D6D9DC;
+}
+ .next_tab01 {
+width: 290px;
+margin-bottom: 30px;
+float: none;
+margin-right: 0;
+}
+ .carpool_blckDiv {
+margin-top: 90px;
+background-size: cover;
+}
+ .carpool_blckText h1 {
+font-size: 40px;
+}
+ .scl_zumWel {
+width: 100%;
+}
+ .carpool_Center {
+padding-top: 0px;
+}
+ .carpool_centerLEFT {
+ width: 90%;
+padding: 30px 35px;
+}
+ .carpool_centerRIGHT {
+ width: 48%;
+padding: 30px 35px;
+}
+ .carpool_form {
+width:45%;
+}
+ .carpool_form.carpool_radioCheck {
+width:100%;
+}
+ .carpool_dropRight .school_table table tr td {
+padding: 15px;
+}
+ .carpool_centerRIGHT .ritu_video {
+height: 212px;
+}
+ .carpool_centerRIGHT {
+margin-bottom: 20px;
+}
+    /*.next_btnP { min-height: 100px; }*/
+    .scl_trustText {
+padding-top: 100px;
+}
+ .we_not {
+width:90%;
+}
+ .scl_ulList {
+text-align: center;
+}
+ .next_tab01:last-child {
+margin-bottom: 0px;
+}
+ .scl_table_ul {
+padding: 20px 0;
+}
+ .scl_ulList ul li {
+display: inline-block;
+margin-right: 0;
+text-align: left;
+float: none;
+}
+ .carpool_form.carpool_Address {
+width:100%;
+}
+/*.check_text{width:140px;}*/
+}
+@media(max-width: 800px) {
+ .mobile {
+ position: absolute;
+ top: 50px;
+ left: 20px;
+ margin: 0;
+}
+ nav.nav_sufcamps, nav.nav_deanzacollage {
+ height: 70px;
+}
+ .our_story_p15 {
+ padding-bottom: 0;
+}
+ .carpool_dropRight .school_table table tr td {
+ font-size: 16px;
+}
+ .scl_rd_right .school_table table th, td {
+ padding: 15px 7px;
+}
+ .crpl_scllogo img {
+right:40px;
+}
+ .carpool_welLeft {
+margin-bottom: 30px;
+}
+
+    /******* sacred Heart page 21/02/2017 *****/
+    .sacred-image {
+height: 400px;
+background-position: 0 0;
+}
+ .sacred-reserve h2 {
+font-size: 36px;
+padding: 0 30px;
+}
+ .carpool_blckText {
+padding: 200px 60px 65px 60px;
+}
+
+    /****** liveosk page 5-may-2017 *****/
+    .liveoak-bg {
+ height: 440px;
+ background-position:0 -70px;
+}
+ .liveoak-ul li img {
+width: 160px;
+}
+ .liveoak-litext h2 {
+font-size: 30px;
+}
+ .liveoak-litext p {
+font-size: 24px;
+}
+ .liveoak_table {
+margin-bottom: 20px;
+width: 100%;
+overflow: auto;
+}
+ .liveoak_right_ul {
+ margin-left: 0;
+ padding: 0 0px 20px 0px;
+ width: 100%;
+}
+}
+ @media(max-width: 768px) {
+ .phoneNumber .phoneNumberShape {
+ right: -370px;
+}
+    /**************  school page  ***********/
+    header.school_bg.activityhero {
+ padding-top: 260px;
+}
+ header.mathnasium {
+ background-position: 0 140px;
+ padding-top: 440px;
+}
+ header.teachrocks {
+background-position: 0 140px;
+ padding-top: 440px;
+}
+ header.mercy {
+ padding-top: 385px;
+}
+ header.footsteps {
+ background-position: 0 30px;
+}
+ header.school_bg {
+ background-position: 0 70px;
+ padding-top: 340px;
+}
+ header.servitehs_bg, header.jserra_bg {
+ padding-top: 465px;
+}
+ .school_why_should p {
+ margin-bottom: 50px;
+}
+ .school_why_should_detail {
+ margin: 0 auto 0 120px;
+}
+ .school_why_should_round {
+ padding: 25px 5px;
+ width: 200px;
+}
+ .school_why_detail {
+ padding-left: 40px;
+}
+ .school_why_should_round > img {
+ padding: 18px 0;
+}
+ .school_why_should_round:last-child {
+ margin-left: -62px;
+}
+ .feature_inschool img {
+ width: 130px;
+}
+
+    /************** end school page  ***********/
+    header {
+ max-width: 100%;
+ margin: 0 auto;
+ background-color: #eceff1;
+        /*        text-align: center;*/
+        /*        background:linear-gradient(to bottom, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 1) 100%) repeat scroll 0 0%, url(../images/header.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+        background: url("images/header.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ padding-bottom: 50px;
+ margin-top: 100px;
+}
+ header.boy {
+        /*background-image: url("images/header_old_new.jpg");*/
+        max-width: 100%;
+ margin: 0 auto;
+ background-color: #eceff1;
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ margin-top: 76px;
+}
+
+    /******** senior page ********/
+    header.senior {
+padding-bottom: 50px;
+}
+
+    /****** trust and safety ******/
+    header.trust_three .mainContent01 {
+ margin-bottom: 70px;
+ margin-top: 220px;
+}
+ .our_tech_info_left img {
+ width: 90%;
+}
+ .our_yound_DE2 img {
+width: 60%;
+}
+ .trust_safety_girl img.trust_girl {
+ width: 90%;
+}
+ .mainContent01 h1 {
+font-size: 36px;
+line-height: 44px;
+}
+ .drive_head h1, .our_tech_head h1, .drive_head h1 {
+font-size: 36px;
+}
+
+    /************ carpool 6/12/2016 *************/
+    .carpool_formDrop {
+width:90%;
+}
+ .carpool_welRight {
+width:100%;
+}
+ .scl_rd_right .school_table table th, td {
+ padding: 15px 6px;
+}
+ .carpool_centerRIGHT .ritu_video {
+ height: 204px;
+}
+
+    /****** liveosk page 5-may-2017 *****/
+    .liveoak-bg {
+height: 400px;
+}
+ .liveoak-litext h2 {
+ font-size: 28px;
+}
+ .liveoak-litext p {
+ font-size: 20px;
+}
+}
+@media(max-width: 743px) {
+ nav .phoneNumber {
+ font-size: 10px;
+ margin-top: -20px;
+}
+ nav .phoneNumber p {
+ padding-top: 5px;
+ padding-bottom: 7px;
+ padding-right: 15px;
+ padding-left: 10px;
+}
+ nav .phoneNumberShape1 {
+ width: 14px;
+ height: 14px;
+ margin-right: 8px;
+}
+}
+@media(max-width: 700px) {
+ .threeDivsCustomersSaying {
+ display: block;
+ margin: 0 auto;
+ float: none;
+}
+ header .mainContent h1 {
+ padding-top: 20px;
+}
+ header {
+ padding-bottom: 20px;
+}
+    /******** 8/4/2016  || vishal patel*********/
+    .mainContent .mobile-link {
+ margin-left: 40px;
+}
+ .mobile-link img {
+ width: 35%;
+}
+ .mobile-link img.mobile_appbtn {
+ width: 32%;
+}
+    /*************** carpool 7/1/2017 ********/
+    .carpool_form, .carpool_invitUL ul li {
+width:100%;
+margin-right: 0;
+}
+ .carpool_back_next ul li {
+width:80%;
+}
+}
+ @media(max-width: 677px) {
+ .firstDivCustomers, .secondDivCustomers {
+ margin: 0 auto;
+ margin-bottom: 10px;
+ margin-top: 10px;
+}
+    /************ carpool 6/12/2016 *************/
+    .carpool_welLeft {
+ width: 90%;
+ margin: 0;
+ margin-bottom: 30px;
+}
+ .carpool_welRight {
+padding-top: 0;
+}
+ .carpool_form, .carpool_dropLeft {
+width: 100%;
+}
+ .line_green {
+width: 100%;
+margin: 10px 0 35px 0;
+}
+ .thnk_go {
+width: 100%;
+}
+ .thnk_go {
+width: 100%;
+}
+ .carpool_submit_btn {
+width: 80%;
+}
+ .thnk_ul {
+text-align: center;
+}
+ .thnk_ul li {
+float: none;
+margin-right: 0;
+}
+ .carpool_blckText h1 {
+font-size: 32px;
+}
+ .carpool_blckText p {
+margin-bottom: 0;
+}
+ .carpool_centerLEFT {
+ width: 90%;
+padding: 30px 35px 0px 35px;
+}
+ .carpool_centerRIGHT {
+ padding: 30px 35px 0px 35px;
+ width: 58%;
+}
+ .carpool_welRight h2, .carpool_centerLEFT h1, .excl_head h1, .scl_wenotHead h1 {
+ font-size: 36px;
+}
+ .carpool_centerLEFT p, .excl_head p, .scl_wenotHead p, .carpool_pricetb p, .next_divPtxt, .scl_trustText p, .scl_ulhead {
+ font-size: 18px;
+}
+ .scl_ulmedia .media-body p {
+font-size: 16px;
+}
+ .excl_head img {
+margin: 30px 0;
+}
+ .reserve_p {
+font-size: 18px;
+padding: 0 10px;
+}
+ .carpool_centerRIGHT {
+margin-bottom: 40px;
+}
+ .carpool_dropRight {
+width:50%;
+}
+ .scl_wenotHead {
+padding: 0 10px;
+}
+ .scl_wenot {
+padding-top: 50px;
+}
+ .carpool_dropRight .school_table {
+width:75%;
+}
+ .scl_rd_right .school_table table th, td {
+padding: 15px 20px;
+}
+ .MoreRideList_applink ul {
+ margin: 0 20px;
+}
+ .MoreRideList_applink ul li, .MoreApp_Mobile .thnk_go {
+width:100%;
+}
+ .MoreRideList ul li, .MoreRideList ul li:last-child {
+margin: 10px;
+}
+ .carpool_form.carpool_kids {
+ width: 35%;
+}
+ .carpool_formDropLeft {
+ margin-right:0;
+ width:100%;
+}
+ .mathbg_head {
+top:80px;
+}
+    /********** sacred heart page 21/02/2017 *********/
+    .sacred-reserve h2 {
+font-size: 32px;
+}
+ .sacred-head img {
+width: 200px;
+}
+
+    /****** liveosk page 5-may-2017 *****/
+    .liveoak-bg {
+height: 580px;
+}
+}
+@media(max-width: 630px) {
+ .whyWeDiffer .circleOfTrust img, .whyWeDiffer .notJustARide img, .whyWeDiffer .dedicatedFamily img {
+ width: 90%;
+}
+ .whyWeDiffer .circleOfTrust .topic1, .whyWeDiffer .notJustARide .topic2, .whyWeDiffer .dedicatedFamily .topic3 {
+ width: 90%;
+}
+ section h1 {
+ margin-right: 20px;
+ margin-left: 20px;
+}
+ .whyWeDiffer .topic1Div, .whyWeDiffer .notJustARide .topic2Div, .whyWeDiffer .topic3Div {
+ width: 90%;
+ margin: 0 auto;
+ margin-bottom: 40px;
+ float: none;
+}
+    /*****************  jserra model code 17/11/2016 ********************/
+    .scl_rd_right {
+float: left;
+margin-left: 0;
+}
+ .scl_rdw {
+width: 100%;
+}
+}
+@media(max-width: 619px) {
+ header h1.zero_tolerance_h1 {
+ font-size: 40px !important;
+}
+ .logoFooter {
+ margin-bottom: 10px;
+}
+ .middleFooter ul li {
+ display: block;
+ margin: 10px 0;
+}
+ .middleFooter, .middleFooter ul {
+ height: auto;
+}
+    /*    .socialsFooter {
+            margin-top: 10px;
+        }*/
+    /******* school page *******/
+    .easy_scl_get_text {
+ padding-bottom: 6px;
+ padding-top: 12px;
+ text-align: center;
+}
+ .easy_active_line {
+ font-size: 18px;
+ padding-bottom: 2px;
+}
+ .easy_scl_get_text h1 {
+ font-size: 18px;
+}
+ .easy_scl_get_text p {
+ font-size: 12px;
+ padding: 5px;
+}
+ header.school_bg.activityhero {
+ padding-top: 284px;
+}
+ header.servitehs_bg, header.jserra_bg {
+ padding-top: 385px;
+}
+ .modal-dialog.school_model {
+ margin: 0 auto;
+ width: 470px;
+}
+ .easy_scl_get_text h1 {
+ font-size: 18px;
+}
+ .easy_scl_get_text p {
+ font-size: 12px;
+ padding: 10px;
+}
+ .school_form {
+ float: left;
+ margin-bottom: 25px;
+ text-align: left;
+ width: 384px;
+}
+ .school_form.form_right1 {
+ margin-left: 0;
+}
+ .school_no_kid-left {
+ float: left;
+ margin-top: 10px;
+ width: 387px;
+}
+ .school_no_kid-left .input-group {
+ width: 256px;
+}
+ nav.nav_sufcamps, nav.nav_deanzacollage {
+ height: 85px;
+}
+ .phoneNumber.phone_btm .phoneNumberShape {
+ display: block;
+}
+    /****** fare estimate ******/
+    .fare_map {
+width: 93%;
+}
+    /****** faq new page ******/
+    .faq_ourService_height {
+width: 540px;
+}
+
+    /****** trust and safety page ******/
+    header.trust_three {
+background-position: -152px 67px;
+background-size: cover;
+}
+ header.trust_three .mainContent01 {
+margin-bottom: 120px;
+}
+ .mainContent01 h1 {
+font-size: 30px;
+}
+ .drive_head h1, .drive_head h1 {
+padding-top: 45px;
+}
+ .our_tech_head h1 {
+padding-top: 45px;
+margin: 0;
+padding-left: 0;
+padding-right: 0;
+}
+ .trust_our_tech {
+ padding: 30px 25px;
+}
+ .drive_head p {
+margin: 15px 0 auto;
+}
+ .trust_safety_kids {
+ background-color: #eee;
+ padding-bottom: 0;
+ padding-left: 0;
+ padding-right: 0;
+/*        background: linear-gradient(to top, rgba(168, 182, 194, 0) 47%, #eee 0, rgb(238, 238, 238) 57%);
+                background: -webkit-linear-gradient(to top, rgba(168, 182, 194, 0) 47%, #eee 0, rgb(238, 238, 238) 57%);
+                background: -o-linear-gradient(to top, rgba(168, 182, 194, 0) 47%, #eee 0, rgb(238, 238, 238) 57%);
+                background: -moz-linear-gradient(to top, rgba(168, 182, 194, 0) 47%, #eee 0, rgb(238, 238, 238) 57%);
+                background: -ms-linear-gradient(to top, rgba(168, 182, 194, 0) 47%, #eee 0, rgb(238, 238, 238) 57%);*/
+    }
+ .trust_safety_kids_detail {
+width: auto;
+text-align: left;
+padding: 0 25px;
+}
+ .trust_safety_kids_detail h1, .trust_safety_girl_detail h1 {
+padding-top: 20px;
+}
+ .trust_safety_kids_detail p, .trust_safety_girl_detail p {
+margin-bottom: 20px;
+}
+ .trust_safety_kids img.trust_kids {
+ z-index: 1;
+ position: relative;
+ width: 100%;
+}
+ .our_tech_info_left, .our_pwi {
+width: auto;
+}
+ .trust_safety_girl {
+padding-bottom: 0;
+padding-right: 0;
+background: #eee;
+}
+ .trust_safety_girl_detail {
+ width: auto;
+ padding: 0 25px;
+}
+ .our_tech_info_left img {
+ width: 60%;
+}
+ .trust_safety_girl img.trust_girl {
+position: relative;
+width: 100%;
+z-index: 1;
+}
+ .scl_rd_right .scl_label {
+width: 100%;
+margin-bottom: 15px;
+}
+ .scl_rd_right .school_no_kid {
+width: 100%;
+margin-left: 0;
+}
+ .school_radio_list label.radio_lbl {
+font-size: 14px;
+width: 87%;
+}
+ .jserra_tab_btn button {
+font-size: 14px;
+}
+ .sacred-kidsleft, .sacred-kidsright {
+width:100%;
+}
+
+    /****** liveosk page 5-may-2017 *****/
+    .liveoak-ul li {
+ border-right:0px;
+}
+ .liveosk-kidsleft {
+width:50%;
+}
+ .liveosk-kidsright {
+width:100%;
+}
+ h4.modal-title.modaltitle-liveoak {
+font-size: 32px;
+}
+}
+@media(max-width: 602px) {
+ header.boy .mainContent {
+ margin-left: 20px;
+}
+ header .mainContent h1 {
+ font-size: 26px;
+ margin: 50px 40px 0;
+}
+ header .mainContent p {
+ font-size: 7px;
+ margin: 0 40px;
+ margin-top: 20px;
+}
+ .whyWeDifferFirstP {
+ margin: 20px 20px;
+}
+ .moreThanDivs p {
+ padding-bottom: 40px;
+ margin: 0;
+}
+ .moreThanDivs3 {
+ margin-bottom: 40px;
+}
+ .firstDivWhyWeDiffer .leftDivInner, .secondDivWhyWeDiffer .leftDivInner, .thirdDivWhyWeDiffer .leftDivInner {
+ margin-top: 20px;
+}
+ .customers h1 {
+ margin-left: 10px;
+ margin-right: 10px;
+}
+ header, header.boy {
+        /*        background:linear-gradient(to bottom, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 1) 100%) repeat scroll 0 0%, url(../images/responsiveHeader1.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+        background-size: cover;
+ background-position: center center;
+ margin-top: 40px;
+}
+ header.boy .mainContent h1 {
+ padding-top: 40px;
+}
+ .phoneNumber .phoneNumberShape {
+ right: -240px;
+ top: -14px;
+}
+    /*********** school page **********/
+    nav.nav_school {
+ height: 87px;
+}
+ .school_zummer_img img {
+ height: 60px;
+ width: 60px;
+}
+ .school_zummer_img {
+ float: right;
+ margin-bottom: 20px;
+ margin-top: -10px;
+ width: 500px;
+}
+ .school_zummer_img h3 {
+ font-size: 11px;
+}
+ .school_zummer_img p {
+ font-size: 13px;
+}
+ header.school_bg {
+ background-position: 0 110px;
+ background-size: 100% auto;
+ padding-top: 425px;
+}
+ .school_easy_pool img {
+ height: 60px;
+ width:60px;
+}
+ .school_easy_pool h1 {
+ font-size: 22px;
+ padding: 24px 0;
+}
+ .school_easy_pool button {
+ width: 120px;
+ height: 45px;
+}
+ .school_why_should h1 {
+ font-size: 36px;
+ padding-bottom: 30px;
+ padding-top: 60px;
+}
+ .school_why_should p {
+ font-size: 14px;
+}
+ .school_why_should_detail {
+ margin: 0 auto 0 120px;
+}
+ .school_why_should_round:first-child, .school_why_should_round:last-child {
+ margin-left: 80px;
+}
+ .school_why_should_round.familes_m {
+ margin: 0 80px 60px;
+}
+ .school_why_detail {
+ margin-bottom: 30px;
+ padding-left: 63px;
+ width: 203px;
+}
+ .school_who .carousel {
+ margin: 0 9%;
+}
+ .membersDiv_school_who {
+ margin-left: 110px;
+}
+ .school_who .carousel-inner {
+ height: 480px !important;
+ overflow: hidden;
+ position: relative;
+ width: 280px;
+}
+ .membersDiv_school_who h1 {
+ padding-top: 15px;
+}
+ .school_who .carousel-caption {
+ position: initial !important;
+}
+ .school_who .carousel-indicators {
+ bottom: 30px;
+}
+ .feature_school {
+ font-size: 14px;
+}
+
+    /********** senior page *********/ 
+    header.senior .mainContent h1 {
+ padding-top: 30px;
+}
+ .senior_zump h1 {
+ font-size: 25px;
+}
+ .senior_listp, .senior_intacs p {
+font-size: 16px;
+}
+ .feature_inDivs.senior_list div.senior_w80 {
+ width: 50px;
+}
+ .let_us_helpright.senior_let {
+ word-wrap: break-word;
+}
+ .let_us_helpright.senior_let h2 {
+font-size: 34px;
+}
+ .senior_leth6 h6 {
+padding-right: 50px;
+}
+ header.mathnasium {
+ padding-top: 440px;
+}
+ header.teachrocks {
+padding-top: 436px;
+}
+ header.mercy {
+ padding-top: 350px;
+ background-position: 0 50px;
+}
+ header.girlsms_bg {
+ padding-top: 370px;
+}
+ header.footsteps {
+ background-position: 0 60px;
+ padding-top: 270px;
+}
+ .leftDivritustory, .rightDivritustory, .rightDivStandFor.what_we {
+width: 500px;
+}
+ .leftDivritustory img {
+width: 90%;
+}
+ .promo_repeat img.father_kids {
+top:50%;
+}
+ .carpool_centerRIGHT {
+ width: 62%;
+}
+    /****** liveosk page 5-may-2017 *****/
+    .liveoak-bg {
+height: 560px;
+}
+}
+@media(max-width: 580px ) {
+ header.servitehs_bg, header.jserra_bg {
+ padding-top: 370px;
+}
+ header.school_bg {
+ padding-top: 415px;
+}
+    /********** senior page *********/ 
+    header.senior .mainContent h1 {
+ padding-top: 20px;
+}
+ header.footsteps {
+ background-position: 0 70px;
+}
+    /****** faq new page ******/
+    .faq_ourService_height {
+ width: 515px;
+}
+ .carpool_centerRIGHT .ritu_video {
+ height: 198px;
+}
+ .scl_rd_right .school_table table th, td {
+padding: 15px 18px;
+}
+ .carpool_welRight .welPad {
+margin: 0 20px;
+}
+ .Invite_FrdDiv .invit_input {
+width:340px;
+}
+ .modal_dedicated .thnk_go {
+width:100%;
+}
+
+    /******* sacred Heart page 21/02/2017 *****/
+    .sacred-image {
+ height: 320px;
+ background-position: 0 20px;
+}
+ .carpool_blckText p {
+font-size: 16px;
+}
+    /****** liveosk page 5-may-2017 *****/
+    .liveoak-litext h2, .liveoak-litext p {
+text-align: center;
+}
+}
+@media(max-width: 575px ) {
+ .customers h1 {
+ margin-left: 10px;
+ margin-right: 10px;
+}
+ .phoneNumber .phoneNumberShape {
+ right: -220px;
+}
+}
+@media(max-width: 567px ) {
+ .talkToUs {
+ overflow: hidden;
+}
+ .talkToUsText {
+ margin-left: 10px;
+ width: 95%;
+ text-align: center;
+}
+ .firstDivWhyWeDiffer .rightDivInner, .secondDivWhyWeDiffer .rightDivInner, .thirdDivWhyWeDiffer .rightDivInner {
+ width: 100%;
+ margin: 0 auto;
+}
+ .firstDivWhyWeDiffer .rightDivInner p, .secondDivWhyWeDiffer .rightDivInner p, .thirdDivWhyWeDiffer .rightDivInner p {
+ margin-right: 10px;
+ margin-left: 10px;
+}
+ .firstHeaderwhat {
+ width: 90%;
+ margin-left: 5px;
+}
+}
+@media(max-width: 530px) {
+ .phoneNumber .phoneNumberShape {
+ right: -180px;
+}
+}
+@media(max-width: 502px) {
+ header form button {
+ bottom: 25px;
+}
+}
+@media(max-width: 500px) {
+ header .mainContent h1, .startedZum h1, .whyWeDiffer h1, .moreThan h1, .customers h1, .customersSaying h1, section h1 {
+ font-size: 28px;
+}
+ .mobile-link img, .mobile-link1 img {
+ width: 50%;
+}
+ .feature_inDivs {
+ width: 427px;
+}
+ section h1 {
+ line-height: 38px;
+}
+ .talkToUs_1 h1 {
+ font-size: 35px;
+}
+ .talkToUs_1Divs p {
+ margin-bottom: 0;
+}
+    /********* school page ********/
+    header.school_bg.activityhero {
+ padding-top: 372px;
+}
+ .easy_link_btn img {
+ width: 30%;
+}
+ .easy_scl_get_text p {
+ font-size: 13px;
+ padding: 5px;
+}
+ .easy_scl_get_text {
+ padding-bottom: 4px;
+ padding-top: 12px;
+}
+ .easy_active_line {
+ font-size: 16px;
+ padding-bottom: 4px;
+}
+ nav.nav_school {
+ height: 84px;
+}
+ .school_zummer_img {
+ margin-bottom: 0;
+ margin-top: -12px;
+ width: 440px;
+}
+ header.school_bg {
+ background-position: 0 120px;
+ padding-top: 372px;
+}
+ .school_easy_pool img {
+ height: 40px;
+ width: 40px;
+}
+ .school_easy_pool h1 {
+ font-size: 20px;
+ padding: 18px 0;
+}
+ .school_easy_pool button {
+ height: 35px;
+ width: 110px;
+ font-size: 14px;
+}
+ .school_why_should h1 {
+ font-size: 28px;
+ padding-bottom: 20px;
+ padding-top: 30px;
+}
+ .school_why_should p {
+ font-size: 11px;
+}
+ .school_why_should_round:first-child, .school_why_should_round:last-child {
+ margin-left: 10px;
+}
+ .school_why_should_round.familes_m {
+ margin: 0 10px 30px;
+}
+ .school_why_should_round {
+ margin-bottom: 30px;
+}
+ .school_why_carpool h1 {
+ font-size: 28px;
+ padding-bottom: 50px;
+ padding-top: 45px;
+}
+ .school_why_detail {
+        /*        margin-bottom: 20px;
+                padding-left: 140px;
+                width: 203px;*/
+        margin-bottom: 20px;
+ padding-left: 65px;
+ width: 340px;
+}
+ .school_why_detail p {
+ min-height: 100px;
+}
+ .school_round {
+ margin-bottom: 15px;
+}
+ .school_why_detail ul li:before {
+ line-height: 25px;
+}
+ .school_who h1 {
+ font-size: 28px;
+ padding-bottom: 40px;
+ padding-top: 45px;
+}
+ .school_who .carousel {
+ margin: 0 8%;
+}
+ .membersDiv_school_who {
+ margin-left: 60px;
+ margin-right: 50px;
+}
+ .school_who .carousel-inner {
+ height: 530px !important;
+}
+ .memberDiv_school_right {
+ float: left;
+ padding-top: 40px;
+ width: 406px;
+}
+ .threeDivs_1 img {
+ float: left;
+ margin-bottom: 40px;
+ margin-right: 20px;
+}
+ .threeDivs_1 p {
+ font-size: 14px;
+}
+ .feature_inschool {
+ margin-left: 85px;
+}
+ .school_dot_see h1 {
+ font-size: 32px;
+ padding: 35px 45px 13px;
+}
+ .school_dot_see p {
+ padding: 0 50px 35px;
+ font-size:15px;
+}
+ .membersDiv_school_who h1 {
+ padding-bottom: 0 !important;
+ padding-top: 15px !important;
+}
+ .school_who .carousel-inner {
+ height: 450px !important;
+}
+ .memberDiv_school_right {
+ float: left;
+ padding-top: 10px;
+ width: 406px;
+}
+    /****** school model code  ******/
+    .modal-dialog.school_model {
+ margin: 0 auto;
+ width: 380px;
+}
+ h4.modal-title {
+ font-size: 28px;
+ margin: 19px 0 0;
+}
+ .school_form {
+ width: 100%;
+}
+ .school_no_kid-left {
+ width: 100%;
+}
+ .school_table {
+ overflow: scroll;
+}
+ .school_no_kid-left .input-group {
+ width: 100%;
+}
+ .school_no_kid-left label {
+ margin-bottom: 10px;
+}
+ .school_no_kid-right {
+ width: 60%;
+}
+    /******** faq page *******/
+    header h1.faq_h1 {
+ font-size: 50px;
+ padding-bottom: 0;
+ padding-top: 30px;
+}
+ .firstDivfaq, .secondDivfaq, .thirdDivfaq {
+ padding-top: 70px;
+}
+ .for_parents_faq {
+ padding-bottom: 20px;
+}
+ .faq_nav_tab .nav-tabs > li {
+ padding-right: 15px;
+}
+ header.mathnasium {
+ background-position: 0 185px;
+ padding-top: 380px;
+}
+ header.teachrocks {
+background-position: 0 185px;
+ padding-top: 380px;
+}
+ header.mercy {
+ padding-top: 300px;
+}
+ header.girlsms_bg {
+ padding-top: 369px;
+}
+ header.footsteps {
+ background-position: 0 90px;
+}
+}
+/******** 8/4/2016  || vishal patel*********/
+@media(max-width:480px) {
+ header.boy {
+ padding-bottom: 90px;
+ padding-top: 0;
+ background-image: url("images/responsiveHeader01.png");
+/*background: url("../images/responsiveHeader1.png");*/
+    }
+ header.boy .mainContent {
+width: 80%;
+margin-left: 15px;
+}
+ header.boy .mainContent h1 {
+padding-top: 100px;
+}
+ header.boy .mainContent p {
+margin: 0 30px 0;
+ padding-bottom: 20px;
+}
+ header .mainContent h1 {
+ font-size: 26px;
+ margin: 76px 30px 0;
+}
+ header .mainContent p {
+ font-size: 8px;
+ margin: 20px 30px 0;
+}
+ .mainContent .mobile-link {
+ margin-left: 30px;
+}
+ header .mainContent {
+ margin-left: 15px;
+ width: 80%;
+}
+ .let_us_helpright {
+ margin-left: 28px;
+ width: 408px;
+}
+ .mobile-link1 img {
+ width: 45%;
+}
+    /*    .feature_inDivs h2{
+            text-overflow: clip;
+            white-space: normal;
+        }*/
+    .feature_inDivs img {
+ margin-bottom: 35px;
+}
+ .feature_inDivs p {
+        /*        padding-bottom: 30px;
+                height: 40px;*/
+        line-height: 22px;
+}
+    /***** wood table ******/
+    .wood_pricing h1 {
+ padding-bottom: 40px;
+}
+ header.servitehs_bg {
+ padding-top: 390px;
+}
+ header.jserra_bg {
+ padding-top: 260px;
+}
+    /******** senior page ********/
+    header.senior {
+ background-image: url("../images/seniors480.jpg");
+ background-position: center center;
+ background-size: cover;
+}
+ .senior_zump h1 {
+ font-size: 28px;
+ padding: 45px 20px;
+}
+ .ourservice_text h1 {
+top:0;
+padding-bottom: 10ox;
+padding-top: 60px;
+}
+ .ourservice_text h6 {
+ font-size: 12px;
+}
+ .feature_in h1 {
+font-size: 40px;
+}
+ .senior_intacs h1 {
+font-size: 36px;
+}
+    /******* fare estimate ******/
+    .fare_map {
+ width: 91%;
+}
+ ul.mainNavList li ul.dropdown li {
+padding: 5px 9px;
+}
+    /***** 30/08/2016 ******/
+    .first_WhyWeDiffer, .second_WhyWeDiffer, .third_WhyWeDiffer {
+ width: 375px;
+}
+ .new_whywe {
+ padding-bottom: 25px;
+}
+ .ourservices_bg {
+ height: 300px;
+}
+ .ritu_story {
+padding: 80px 0;
+}
+ .leftDivritustory, .rightDivritustory, .rightDivStandFor.what_we {
+ width: 400px;
+}
+ .rightDivStandFor.what_we p {
+margin-left: 0px;
+margin-right: 0px;
+}
+ .join_conver {
+ padding: 40px 0 20px 0;
+}
+ .join_content p {
+padding-right: 5px;
+}
+ .video_ritu {
+width: 100%;
+}
+    /****** faq new page ******/
+    .faq_ourService_height {
+ width: 415px;
+}
+ .faq_table {
+ overflow: auto;
+}
+ .faq_breadcrumb {
+padding-bottom: 8px;
+}
+ .faq_breadcrumb li {
+line-height: 25px;
+}
+ .promo_repeat_detail h1 {
+font-size: 35px;
+padding-top: 0;
+}
+ .promo_repeat_detail p {
+font-size: 18px;
+margin-left: 20px;
+margin-right: 20px;
+margin-bottom: 20px;
+}
+ .promo_repeat_mlink1 img {
+width: 35%;
+margin-bottom: 0;
+}
+ .promo_repeat_logo img {
+width: 130px;
+height: 130px;
+}
+    /******** trust and safety *********/
+    header.trust_three {
+ background-image: url(../images/threekids_image_mobile.jpg);
+ background-position: 0 0;
+ margin: 84px 0 0 auto;
+ background-size: 100%
+}
+ header.trust_three .mainContent01 {
+margin-bottom: 100px;
+}
+ .mainContent01 h1 {
+ font-size: 40px;
+ padding: 0 20px;
+}
+ .drive_media .media_tr {
+text-align: center;
+}
+ .drive_media .media_tr .media_left {
+padding: 0;
+display: inline-block;
+margin-bottom: 20px;
+}
+ .drive_media .media_tr .media_left img {
+width: 90px;
+}
+ .drive_media .media_tr .media_body {
+display: inline-block;
+text-align: left;
+}
+ .drive_media .media_body h4 {
+text-align: center;
+}
+ .drive_media .media_tr.our_pwi .media_body {
+text-align: center;
+}
+ .trust_safety_kids_detail h1, .trust_safety_girl_detail h1 {
+font-size: 20px;
+}
+    /********** jserra model *******/
+    .school_table table tr td.js-tb {
+border-right: 0px;
+}
+ .scl_rd_right .school_table {
+width: 55%;
+}
+    /************ carpool 6/12/2016 *************/
+
+    .carpool_head h2, .carpool_cheadText h2 {
+font-size: 36px;
+}
+ .styled-select select {
+padding-right: 40px;
+}
+ .carpool_dropRight {
+width: 50%;
+}
+ .carpool_head p, .carpool_pricetb p, .next_divPtxt, .carpool_thnk01 .media-body p {
+font-size: 18px;
+}
+ .carpool_thnklist {
+padding-right: 30px;
+}
+ .carpool_pricetb ul {
+width: 250px;
+}
+ .carpool_pricetb ul li {
+border-bottom: 1px solid #D6D9DC;
+}
+ .carpool_pricetb ul li:last-child {
+border-bottom: 0;
+}
+ .carpool_centerLEFT {
+width: 85%;
+}
+ .carpool_centerRIGHT {
+width: 73%;
+}
+ .excl_head {
+padding-top: 40px;
+}
+ .carpool_head {
+margin-top: 30px;
+}
+ .excl_head p, .scl_wenotHead p {
+margin-left: 30px;
+margin-right: 30px;
+}
+ .scl_trustbg {
+ background-position: -350px 0;
+}
+ .carpool_blckDiv {
+background-position: -230px 0;
+margin-top: 70px;
+}
+ .carpool_dropRight .school_table {
+ width: 100%;
+ overflow: hidden;
+}
+ .carpool_invitUL ul li {
+width:85%;
+}
+ .mathbg_head h1 {
+font-size: 36px;
+line-height: 46px;
+}
+ .carpool_form.carpool_kids {
+ width: 60%;
+}
+ .we_not .carpool_welRight {
+display: block;
+}
+ .we_not table {
+display: none;
+}
+ .Invite_FrdDiv {
+padding: 0 10px;
+}
+ .Invite_FrdDiv .invit_input {
+width: 300px;
+margin-right: 0;
+}
+ .carpool_headtop {
+margin-top:70px;
+}
+
+    /******* sacred Heart page 21/02/2017 *****/
+    .sacred-image {
+ height: 350px;
+ background-position: -20px 30px;
+ background-size: cover;
+}
+ .sacred-reserve h2 {
+font-size: 28px;
+}
+ .sacred-btn {
+font-size: 14px;
+}
+ .sacred-thk {
+margin: 30px 10px;
+}
+ .carpool-landingimg {
+position: relative;
+}
+ .carpool_blckText {
+ padding: 30px 10px 30px 10px;
+}
+ .carpool_blckText h1 {
+ font-size: 30px;
+ margin-bottom: 10px;
+ color: #37474F;
+}
+ .carpool_blckText p {
+color: #37474F;
+}
+ .carpool_press {
+border-bottom: 1px solid #f4f4f4;
+background-color: #f4f4f4;
+}
+ .press_sec ul li {
+ padding: 0 40px;
+ margin-bottom: 20px;
+}
+ .press_sec ul li:last-child {
+margin-bottom: 0;
+}
+ .press_sec ul li img {
+ width:100%;
+}
+ .next_div02 {
+padding: 0 20px;
+}
+ .carpool_welLeft img {
+height: auto;
+}
+
+    /****** liveosk page 5-may-2017 *****/
+    .liveoak-bg {
+height: 530px;
+background-position: 0 -50px;
+}
+ .liveoak-head {
+padding: 10px 10px 20px 10px;
+}
+ .liveosk-kidsleft {
+width:100%;
+margin-bottom:0;
+}
+ .liveoak-groupcheck {
+height: 120px;
+}
+ .group-moaft li {
+width:100%;
+border-right: 0px;
+border-bottom: 1px solid #e8ebed;
+}
+ .group-moaft li:last-child {
+border-bottom:0;
+}
+ h4.modal-title.modaltitle-liveoak {
+line-height: 36px;
+}
+ .thank-liveoskp, .thank-livelist .media-body {
+font-size: 18px;
+}
+}
+@media(max-width: 470px) {
+ .phoneNumber .phoneNumberShape {
+ right: -150px;
+}
+}
+@media(max-width: 445px ) {
+ section h1 {
+ margin-left: 20px;
+ margin-right: 20px;
+ font-size: 40px;
+}
+ .phoneNumber .phoneNumberShape {
+ right: -120px;
+}
+ .feature_inDivs {
+ width: 357px;
+ margin-left: 20px;
+}
+ .feature_inDivs img {
+ width: 120px;
+ margin-bottom: 50px;
+}
+ .customers img.how_our {
+ width: 78%;
+}
+    /******** 8/4/2016  || vishal patel*********/
+    header .mainContent {
+ margin-left: 15px;
+ width: 90%;
+}
+ header .mainContent p {
+ font-size: 10px;
+ margin: 20px 90px 0 30px;
+}
+ .firstDivlet_us_help {
+ padding-top: 60px;
+}
+ .let_us_helpImage > img {
+ width: 80%;
+}
+ .let_us_helpright {
+ margin-left: 5px;
+ width: 370px;
+ padding-bottom: 0;
+ text-align: center;
+}
+ .let_us_helpright h2 {
+ font-size: 35px;
+}
+ .secondDivlet_us_help h6 {
+ padding: 0 30px;
+}
+ .mobile-link img.mobile_appbtn {
+ width: 38%;
+}
+ .mobile-link1 {
+ margin-left: 25px;
+}
+    /******* school page ******/
+    nav.nav_school {
+ height: 58px;
+}
+ .school_zummer_img {
+ margin-bottom: 0;
+ margin-top: -14px;
+ width: 350px;
+ margin-right: 10px;
+}
+ .school_zummer_img img {
+ height: 40px;
+ width: 40px;
+ margin-left: 12px;
+}
+ .school_zummer_img h3 {
+ font-size: 8px;
+}
+ .school_zummer_img p {
+ font-size: 9px;
+}
+ .feature_inDivs.senior_list {
+ margin-bottom: 30px;
+}
+}
+@media(max-width: 414px ) {
+ header.boy .mainContent {
+ margin-left: 10px;
+ width: 90%;
+}
+ header.school_bg.activityhero {
+ padding-top: 317px;
+}
+ .easy_scl_get_text {
+ padding-bottom: 4px;
+ padding-top: 10px;
+}
+ .easy_scl_get_text h1 {
+ font-size: 16px;
+}
+ .easy_scl_get_text p {
+ font-size: 11px;
+}
+ .easy_link_btn img {
+ width: 33%;
+}
+ header.school_bg {
+ background-position: 0 100px;
+ padding-top: 317px;
+}
+ header.servitehs_bg {
+ background-position: 0 71px;
+ padding-top: 347px;
+}
+ .firstHeaderwhat p {
+margin-left: 15px;
+margin-right: 15px;
+}
+ .what_weh1 {
+font-size: 30px;
+}
+ .school_easy_pool h1 {
+ font-size: 16px;
+ padding: 18px 0;
+}
+ .school_easy_pool button {
+ height: 35px;
+ width: 110px;
+ font-size: 12px;
+}
+ .school_why_should p {
+ margin-bottom: 30px;
+}
+ .school_why_should_detail {
+ margin: 0 auto 0 90px;
+}
+ .school_why_should h1 {
+ font-size: 25px;
+ padding-bottom: 20px;
+ padding-top: 30px;
+}
+ .school_why_carpool h1 {
+ font-size: 25px;
+ padding-bottom: 40px;
+ padding-top: 40px;
+}
+ .school_why_detail {
+ margin-bottom: 20px;
+ padding-left: 35px;
+ width: 350px;
+}
+ .school_who h1 {
+ font-size: 25px;
+ padding-bottom: 30px;
+ padding-top: 35px;
+}
+ .school_who .carousel {
+ margin: 0 4%;
+}
+ .memberDiv_school_right {
+ float: left;
+ padding-top: 10px;
+ width: 375px;
+}
+ .feature_inschool {
+ margin-left: 51px;
+}
+ .feature_in h1 {
+ font-size: 38px;
+ padding-bottom: 30px;
+ padding-top: 40px;
+}
+ .school_dot_see h1 {
+ font-size: 30px;
+ padding: 35px 45px 13px;
+}
+    /****** faq page ******/
+    .threeDivfaq h6 {
+ font-size: 18px;
+}
+ .threeDivfaq p {
+ font-size: 14px;
+}
+ .faq_detail ul li span {
+ font-size: 14px;
+ line-height: 30px;
+}
+ .faq_nav_tab .nav-tabs > li > a {
+ padding: 12px 16px;
+ font-size: 16px;
+}
+ .faq {
+ padding: 0 20px;
+}
+    /***************** surfcamppacifica page ******************/
+    nav.nav_sufcamps, nav.nav_deanzacollage {
+ height: 60px;
+}
+ .feature_headtext {
+height: auto;
+}
+ header.mathnasium {
+ background-position: 0 135px;
+ padding-top: 290px;
+}
+ header.teachrocks {
+background-position: 0 135px;
+ padding-top: 290px;
+}
+ header.mercy {
+ padding-top: 316px;
+}
+ header.girlsms_bg {
+ padding-top: 345px;
+}
+ header.footsteps {
+ padding-top: 240px;
+}
+    /******* fare estimate ******/
+    .fare_map {
+ width: 90%;
+}
+    /****** 30/08/2016 *****/
+
+    .first_WhyWeDiffer, .second_WhyWeDiffer, .third_WhyWeDiffer {
+ width: 285px;
+}
+ .leftDivritustory, .rightDivritustory, .rightDivStandFor.what_we {
+ width: 340px;
+}
+ .leftDivritustory .ritu_video {
+width: 300px;
+height: 169px;
+}
+    /****** faq new page 24/09/2016 ******/
+    .faq_ourService_32 {
+ padding: 32px 20px;
+}
+ .faq_ourService_left, .faq_ourService_right, .faq_ourService_contain, .faq_ourService_height {
+width:370px;
+}
+ .faq_ourService_contain {
+ margin-bottom: 40px;
+}
+ .faq_ourService_height {
+ min-height: 140px;
+}
+ .promo_repeat img.father_kids {
+top:60%;
+}
+ .promo_repeat {
+ background: linear-gradient(to top, rgba(255, 255, 255, 0) -66%, rgba(231, 234, 235, 1) 40%, rgba(243, 245, 247, 1) 125%);
+ background: -webkit-linear-gradient(to top, rgba(255, 255, 255, 0) -66%, rgba(231, 234, 235, 1) 40%, rgba(243, 245, 247, 1) 125%);
+ background: -o-linear-gradient(to top, rgba(255, 255, 255, 0) -66%, rgba(231, 234, 235, 1) 40%, rgba(243, 245, 247, 1) 125%);
+ background: -moz-linear-gradient(to top, rgba(255, 255, 255, 0) -66%, rgba(231, 234, 235, 1) 40%, rgba(243, 245, 247, 1) 125%);
+ background: -ms-linear-gradient(to top, rgba(255, 255, 255, 0) -66%, rgba(231, 234, 235, 1) 40%, rgba(243, 245, 247, 1) 125%);
+}
+    /********* trust safety ******/
+    header.trust_three .mainContent01 {
+ margin-bottom: 100px;
+ margin-top: 150px;
+}
+ .our_tech_line {
+padding: 10px 0;
+}
+ .drive_media .media_tr .media_left img {
+width: 70px;
+}
+ .our_yound_DE2 img, .our_tech_info_left img, .our_tech_line img {
+ width: 70%;
+}
+ .girl_link p {
+padding: 0 20px;
+}
+
+    /************ carpool 6/12/2016 *************/
+
+    .carpool_blckText h1 {
+font-size: 28px;
+}
+ .carpool_welRight h2, .excl_head h1, .scl_wenotHead h1 {
+ font-size: 32px;
+}
+ .carpool_centerLEFT h1 {
+font-size: 28px;
+text-align: center;
+}
+ .carpool_centerLEFT p {
+font-size: 20px;
+text-align: center;
+}
+ .carpool_centerLEFT {
+width: 83%;
+}
+ .carpool_centerRIGHT .ritu_video {
+ height: 170px;
+}
+ .carpool_dropRight {
+width: 100%;
+}
+    /*.next_btnP { min-height: 90px;}*/
+    .we_not td {
+padding: 10px 15px;
+}
+ .carpool_dropRight .school_table table tr {
+float: none;
+}
+ .carpool_dropRight .school_table table tr:first-child {
+ border-bottom: 1px solid #e8ebed;
+ border-right: 0;
+}
+ .check_text {
+width:200px;
+}
+ .mathbg_head h1 {
+font-size: 30px;
+}
+ #carpool_hero img {
+height: 340px;
+}
+ .mathbg_head {
+top:50px;
+}
+
+    /******* sacred Heart page 21/02/2017 *****/
+    .sacred-image {
+background-position: -50px 30px;
+}
+ .sacred-reserve h2 {
+font-size: 25px;
+padding: 0 20px;
+}
+ .press_sec ul li {
+padding: 0 30px;
+}
+ .carpool_cheadText h2 {
+font-size: 28px;
+padding: 0 40px;
+}
+ .scl_Welmedia .media-body p {
+font-size: 16px;
+}
+ .pricing_tab {
+padding: 50px 0;
+}
+ .pricing_tab ul li {
+margin: 0;
+}
+ .pricing_tab ul li a {
+width:140px;
+}
+
+    /****** liveosk page 5-may-2017 *****/
+    .liveoak-bg {
+height: 490px;
+}
+ .liveoak-pricing h1 {
+font-size: 36px;
+}
+ .liveoak-pricing p {
+font-size: 18px;
+}
+}
+@media(max-width: 412px ) {
+ header.servitehs_bg {
+ padding-top: 346px;
+}
+}
+ @media(max-width: 390px ) {
+    /****** school page  ******/
+    header.school_bg.activityhero {
+ padding-top: 302px;
+}
+ header.school_bg {
+ background-position: 0px 100px;
+ padding-top: 241px;
+}
+ header.servitehs_bg {
+ padding-top: 327px;
+}
+ .school_easy_pool button {
+ height: 35px;
+ width: 93px;
+}
+ .school_why_should_detail {
+ margin: 0 auto 0 72px;
+}
+ .school_why_detail {
+ padding-left: 17px;
+}
+ .membersDiv_school_who {
+ margin-left: 44px;
+ margin-right: 50px;
+}
+ .feature_inschool {
+ margin-left: 40px;
+}
+ .school_dot_see h1 {
+ font-size: 30px;
+ padding: 35px 37px 13px;
+}
+ .memberDiv_school_right {
+ padding-top: 10px;
+ width: 358px;
+}
+    /*** school model code ****/
+    .modal-body.school_pad_body {
+ padding: 20px 30px;
+}
+ .school_form {
+ margin-bottom: 15px;
+}
+ h4.modal-title {
+ font-size: 20px;
+ margin: 19px 0 0;
+}
+ .modal-dialog.school_model {
+ width: 310px;
+}
+ .school_table > table {
+ min-width: 280px;
+}
+ .school_no_kid-right {
+ width: 72%;
+}
+    /************** senior page ********/
+    header.senior {
+margin-top: 50px;
+}
+ header.senior .mainContent h1 {
+margin-top: 50px;
+}
+ .senior_zump h1 {
+ font-size: 25px;
+ padding: 36px 20px;
+}
+ .feature_in.senior_fea h1 {
+font-size: 38px;
+padding: 40px 4px;
+}
+ .let_us_helpright.senior_let h2 {
+font-size: 28px;
+}
+ .senior_leth6 h6 {
+ padding-right: 0;
+ font-size: 16px;
+}
+    /****** 30/08/2016 our services ****/
+    .ourservices_bg {
+ height: 250px;
+ margin: 80px auto 0;
+}
+ .ourservice_text {
+top:0;
+}
+
+    /******* sacred Heart page 21/02/2017 *****/
+    .sacred-image {
+margin-top: 80px;
+background-position: -70px 30px;
+}
+ .sacred-reserve h2 {
+font-size: 23px;
+}
+ .sacred-btn {
+width:260px;
+}
+}
+@media(max-width: 380px ) {
+ .feature_inDivs {
+ margin-left: 14px;
+ width: 347px;
+ margin-bottom: 40px;
+}
+ .feature_inDivs img {
+ margin-bottom: 50px;
+ margin-right: 24px;
+ width: 93px;
+}
+ .feature_inDivs img {
+ margin-bottom: 60px;
+}
+ .faq_nav_tab .nav-tabs > li > a {
+ line-height: 4;
+}
+    /********* trust and safety ******/
+    header.trust_three .mainContent01 {
+margin-top: 150px;
+}
+ .mainContent01 h1 {
+ font-size: 32px;
+ padding: 0 5px;
+ line-height: 36px;
+}
+ .trust_safety_kids_detail h1, .trust_safety_girl_detail h1 {
+line-height: 30px;
+}
+ .drive_head h1, .our_tech_head h1, .drive_head h1 {
+ font-size: 30px;
+}
+ .mathbg_head h1 {
+line-height: 36px;
+}
+ .pricing_tab ul li a {
+width:125px;
+font-size: 16px;
+}
+}
+@media(max-width: 375px) {
+    /****** menu  9/8/2016 ******/
+    nav .logo {
+ padding-top: 40px;
+}
+ .mobile {
+ top:40px;
+}
+ nav .phoneNumber {
+ margin-top: -30px;
+}
+ header.school_bg.activityhero {
+ padding-top: 297px;
+}
+ header.mathnasium {
+ background-position: 0 155px;
+}
+ header.teachrocks {
+background-position: 0 155px;
+}
+ header.mercy {
+ padding-top: 300px;
+}
+ header.girlsms_bg {
+ padding-top: 318px;
+}
+ header.footsteps {
+ padding-top: 200px;
+ background-position: 0 60px;
+}
+ .customers img.how_our {
+ width: 68%;
+ height: 240px;
+}
+ .firstDivCustomers, .secondDivCustomers {
+ width: 95%;
+}
+ .phoneNumber .phoneNumberShape {
+ right: -100px;
+ top: -24px;
+}
+ .feature_inDivs img {
+ margin-bottom: 60px;
+}
+ header {
+ background-attachment: scroll, scroll;
+ background-clip: border-box, border-box;
+ background-color: rgba(0, 0, 0, 0);
+        /*background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 23%, rgba(255, 255, 255, 1) 60%), url("../images/responsiveHeader1.jpg");*/
+        background-image:url("images/responsiveHeader1.png");
+ background-origin: padding-box, padding-box;
+ background-position: 0 155px;
+ background-repeat: no-repeat;
+}
+ header .mainContent {
+ margin-left: 0;
+ width: 94%;
+}
+ .mobile-link img {
+ width: 40%;
+}
+ nav {
+ padding-bottom: 0 !important;
+ position: fixed;
+}
+ nav .logo {
+ text-align: center;
+}
+ header {
+ background-size: contain;
+ margin-top: -88px;
+ background-color: #1a1814;
+}
+ header.boy .mainContent h1 {
+ margin-top: 58px;
+}
+ header .mainContent h1 {
+ margin-top: 230px;
+}
+ .let_us_helpright {
+ width: 350px;
+}
+ .let_us_helpright h2 {
+ font-size: 30px;
+}
+ .secondDivlet_us_help h6 {
+ font-size: 14px;
+ margin: 0 0 25px;
+}
+ header .mainContent p {
+ font-size: 8px;
+ margin: 20px 145px 0 30px;
+}
+ header .mainContent h1, .startedZum h1, .whyWeDiffer h1, .moreThan h1, .customers h1, .customersSaying h1, section h1 {
+ font-size: 23px;
+}
+ .startedZum p, .whyWeDifferFirstP, .moreThan p, .threeDivsCustomersSaying h4, .threeDivsCustomersSaying h4 span, .threeDivsCustomersSaying p {
+ font-size: 14px;
+}
+ .firstDivWhyWeDiffer .leftDivInner, .secondDivWhyWeDiffer .leftDivInner, .thirdDivWhyWeDiffer .leftDivInner {
+ border-radius: 100%;
+ width: 110px;
+ height: 110px;
+}
+ .thirdDivWhyWeDiffer .leftDivInner p, .secondDivWhyWeDiffer .leftDivInner p, .firstDivWhyWeDiffer .leftDivInner p {
+ font-size: 14px;
+ margin-top: 18px;
+}
+ .firstDivWhyWeDiffer .rightDivInner h4, .secondDivWhyWeDiffer .rightDivInner h4, .thirdDivWhyWeDiffer .rightDivInner h4 {
+ font-size: 14px;
+}
+ .firstDivWhyWeDiffer .rightDivInner p, .secondDivWhyWeDiffer .rightDivInner p, .thirdDivWhyWeDiffer .rightDivInner p {
+ font-size: 14px;
+ margin-left: 50px;
+ margin-right: 50px;
+}
+ .moreThanDivs h2 {
+ font-size: 18px;
+}
+ .talkToUsText p {
+ font-size: 14px;
+}
+ .talkToUsText h2 {
+ font-size: 20px;
+}
+ section h1 {
+ line-height: 1;
+}
+ .roundThreeDivsCustomers {
+ width: 200px;
+ height: 200px;
+}
+ .div-shown {
+ display: block;
+}
+ .div-hidden {
+ display: none;
+}
+ #read1 .next {
+ position: absolute;
+ top: 415px;
+ right: 30px;
+ display: block;
+}
+ #read1 .previous {
+ position: absolute;
+ top: 415px;
+ left: 30px;
+ display: block;
+}
+ .watch1 {
+padding-top: 30px;
+}
+ #watch1 .next {
+ position: absolute;
+ top: 325px;
+ right: 30px;
+ display: block;
+}
+ #watch1 .previous {
+ position: absolute;
+ top: 325px;
+ left: 30px;
+ display: block;
+}
+ .customersSaying {
+ position: relative;
+}
+ .div1-shown {
+ display: block;
+}
+ .div1-hidden {
+ display: none;
+}
+ .hidden-shown {
+ display: block;
+ padding-bottom: 20px;
+}
+ .hidden-shown li {
+ list-style: square;
+ display: inline-block;
+ color: #000;
+ background-color: #cfd8dc;
+ width: 15px;
+ height: 15px;
+ border-radius: 100%;
+ cursor: pointer;
+ margin-right: 20px;
+}
+ .hidden-shown li:last-child {
+ margin-right: 0;
+}
+ .hidden-shown .highlighteeed {
+ background-color: #78909c;
+}
+ .allDivsCustomers {
+ margin-top: 17px;
+}
+ .firstDivCustomers1 {
+ margin-top: 34px;
+}
+ .fourthDivCustomers p {
+ padding-bottom: 57px;
+}
+ .lastDivCustomers {
+ margin-bottom: 27px;
+}
+ .customers h1 {
+ padding-bottom: 10px;
+}
+    /*********** school page *********/
+    nav.nav_school {
+ height: 115px;
+}
+ header.school_bg {
+ background-position: 0 100px;
+ padding-top: 297px;
+}
+ .school_why_should_detail {
+ margin: 0 auto 0 70px;
+}
+ .school_why_should p {
+ font-size: 14px;
+ margin-bottom: 60px;
+ padding: 0 20px;
+}
+ .school_why_detail {
+ margin-bottom: 20px;
+ padding-left: 30px;
+ width: 318px;
+}
+ .membersDiv_school_who {
+ margin-left: 40px;
+ margin-right: 40px;
+}
+ .memberDiv_school_right {
+ float: left;
+ padding-top: 10px;
+ width: 345px;
+}
+ .feature_inschool {
+ margin-left: 31px;
+}
+ .school_dot_see h1 {
+ font-size: 30px;
+ padding: 35px 25px 13px;
+}
+    /******* faq page *****/
+    .faq_header {
+ margin-top: 70px;
+}
+    /***************** surfcamppacifica page ******************/
+    nav.nav_sufcamps, nav.nav_deanzacollage {
+ height: 120px;
+}
+ header.servitehs_bg {
+ padding-top: 321px;
+}
+ header.jserra_bg {
+ background-position: 0 40px;
+}
+    /***** our service page *****/
+    header.header_our_service {
+ margin-top: 80px;
+}
+    /******* fare estimate ******/
+    .fare_map {
+ width: 89%;
+}
+ .firstHeaderwhat p {
+ font-size: 14px;
+}
+ .firstHeaderwhat h4 {
+ font-size: 18px;
+}
+ .firstHeaderwhat h5 {
+font-size: 16px;
+}
+ .firstHeaderwhat h4.pricingh4 {
+font-size: 18px;
+}
+    /**** 30/08/2016 ****/
+    .whywe_head {
+top:-20px;
+}
+ .whywe_head h2 {
+font-size: 20px;
+}
+ .first_WhyWeDiffer h4, .second_WhyWeDiffer h4, .third_WhyWeDiffer h4 {
+font-size: 18px;
+}
+ .first_WhyWeDiffer p, .second_WhyWeDiffer p, .third_WhyWeDiffer p {
+font-size: 14px;
+}
+ .what_weh1, .what_we_pricingh1 {
+font-size: 23px;
+}
+ .what_weh6 {
+font-size: 15px;
+}
+ .what_pricing h6 {
+font-size: 17px;
+}
+ .rightDivritustory p {
+font-size: 14px;
+}
+    /****** faq new page 24/09/2016 ******/
+    .faq_ourService_left, .faq_ourService_right, .faq_ourService_contain, .faq_ourService_height {
+ width: 340px;
+}
+ .promo_repeat {
+padding-top: 40px;
+padding-bottom: 20px;
+}
+ .promo_repeat_detail p {
+margin-left: 15px;
+margin-right: 15px;
+margin-bottom: 15px;
+}
+ .promo_repeat_logo img {
+ width: 100px;
+ height: 100px;
+}
+
+    /*****************  jserra model code 17/11/2016 ********************/
+    .scl_rd_right, .scl_rd_right .school_table {
+width: 100%;
+}
+
+    /************ carpool 6/12/2016 *************/
+    .carpool_blckDiv {
+background-position: -270px 0;
+}
+ .carpool_centerLEFT {
+width: 81%;
+}
+ .carpool_centerRIGHT .ritu_video {
+ height: 155px;
+}
+    /*.we_not{overflow-x: scroll;}*/
+    .we_not table tr th:first-child, .we_not table tr td:first-child {
+width:40%;
+word-break: break-all;
+}
+ .scl_ulList ul li {
+width: 100%;
+}
+ .excl_head p, .scl_wenotHead p {
+ margin-left: 15px;
+ margin-right: 15px;
+}
+ .carpool_invit {
+padding: 15px;
+}
+ .carpool_back_next ul li {
+width:90%;
+}
+ .Invite_FrdDiv .invit_input {
+width: 280px;
+}
+ .check_text {
+float: left;
+width: 85%;
+margin-left: 5px;
+}
+    /*    .carpool_dropRight .school_table {
+            width: 80%;
+            overflow: hidden;
+        }*/
+    .press_sec ul li {
+padding: 0 15px;
+}
+
+    /****** liveosk page 5-may-2017 *****/
+    .liveoak-bg {
+height: 470px;
+background-position: 0 -40px;
+margin-top: 80px;
+}
+ .liveoak-pricing h1 {
+font-size: 32px;
+}
+ .liveoak-pricing p {
+font-size: 16px;
+}
+}
+@media(max-width: 370px) {
+ header.boy {
+ padding-bottom: 40px;
+ padding-top: 30px;
+}
+ header form input, section form input {
+ width: 82%;
+ margin-left: 0px;
+ font-size: 18px;
+}
+ section h1 {
+ line-height: 1.8;
+}
+ .feature_inDivs {
+ margin-bottom: 30px;
+ margin-left: 30px;
+ width: 280px;
+}
+ header.trust_three .mainContent01 {
+margin-bottom: 90px;
+margin-top: 130px;
+}
+ .mainContent01 h1 {
+margin-left: 10px;
+margin-right: 10px;
+}
+}
+@media(max-width: 360px) {
+ header {
+ margin-top: -84px;
+}
+    /*---- 1/4/2016   || vishal*/
+    .feature_inDivs {
+ display: inline-block;
+ margin-bottom: 10px;
+ margin-left: 30px;
+ vertical-align: top;
+ width: 320px;
+}
+ .feature_inDivs img {
+ margin-bottom: 120px;
+ margin-right: 20px;
+ width: 80px;
+}
+ .feature_inDivs img {
+ margin-bottom: 73px;
+}
+ .talkToUs_1 h1 {
+ font-size: 26px;
+}
+    /********* school page *********/
+    header.school_bg.activityhero {
+ padding-top: 289px;
+}
+ header.servitehs_bg {
+ padding-top: 311px;
+}
+ header.jserra_bg {
+ background-position: 0 50px;
+}
+ .school_zummer_img {
+ margin-bottom: 0;
+ margin-top: -14px;
+ width: 330px;
+}
+ .school_easy_pool button {
+ font-size: 11px;
+}
+ header.school_bg {
+ background-position: 0 100px;
+ padding-top: 289px;
+}
+ .school_why_detail {
+ padding-left: 20px;
+}
+ .school_why_should h1 {
+ font-size: 23px;
+ padding-bottom: 20px;
+ padding-top: 30px;
+}
+ .school_why_should p {
+ font-size: 12px;
+ margin-bottom: 40px;
+ padding: 0 20px;
+}
+ .membersDiv_school_who {
+ margin-left: 30px;
+ margin-right: 20px;
+}
+ .memberDiv_school_right {
+ float: left;
+ padding-top: 10px;
+ width: 325px;
+}
+ .feature_inschool img {
+ width: 122px;
+}
+ .school_dot_see p {
+ font-size: 15px;
+ padding: 0 36px 35px;
+}
+    /****faq page *****/
+    .faq_nav_tab .nav-tabs > li {
+ padding-right: 6px;
+}
+ .senior_zump h1 {
+font-size: 24px;
+}
+ .senior_listp {
+ padding: 0 26px;
+}
+ .senior_intacs p {
+ padding: 0 20px 50px;
+}
+    /**** 30/08/2016 ****/
+
+    .first_WhyWeDiffer, .second_WhyWeDiffer, .third_WhyWeDiffer {
+ width: 245px;
+}
+ header.mercy {
+ padding-top: 290px;
+}
+ header.girlsms_bg {
+ padding-top: 308px;
+}
+    /****** faq new page 24/09/2016 ******/
+    .faq_ourService_32 {
+ text-align: left;
+}
+ .faq_ourService_left, .faq_ourService_right, .faq_ourService_contain, .faq_ourService_height {
+ width: 320px;
+}
+ .faq_ourServiceh2 {
+font-size: 24px;
+}
+ .faq_ourServiceh4, .faq_ourService_ul01 li {
+font-size: 16px;
+}
+
+    /************ carpool 6/12/2016 *************/
+    .carpool_cheadText h2 {
+font-size: 32px;
+padding: 0 20px;
+}
+ .carpool_centerLEFT {
+width: 80%;
+}
+ .carpool_centerRIGHT {
+ width: 83%;
+ padding: 30px;
+}
+ .carpool_centerRIGHT .ritu_video {
+ height: 169px;
+}
+ .scl_trustText {
+padding-top: 60px;
+}
+ .carpool_submit_btn {
+margin-bottom: 40px;
+}
+ .Invite_FrdDiv .invit_input {
+ width: 265px;
+}
+    /****** liveosk page 5-may-2017 *****/
+    .liveoak-bg {
+height: 440px;
+background-position: 0 -35px;
+}
+}
+@media(max-width: 350px) {
+ .phoneNumber .phoneNumberShape {
+ right: -90px;
+}
+}
+@media(max-width: 335px) {
+ .phoneNumber .phoneNumberShape {
+ right: -80px;
+}
+ header {
+ margin-top: -120px;
+}
+}
+@media(max-width: 320px) {
+ header .mainContent {
+ width: 100%;
+}
+ header.school_bg.activityhero {
+ padding-top: 268px;
+}
+ header.servitehs_bg {
+ background-position: 0 70px;
+ padding-top: 283px;
+}
+ header.jserra_bg {
+ padding-top: 230px;
+}
+ .easy_scl_get_text h1 {
+ font-size: 14px;
+}
+ .easy_scl_get_text p {
+ font-size: 10px;
+}
+ header {
+ background-attachment: scroll, scroll;
+ background-clip: border-box, border-box;
+        /*        background-color: rgba(0, 0, 0, 0);*/
+        background-image: url("images/responsiveHeader1.png");
+        /*background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 34%, rgba(255, 255, 255, 1) 50%), url("../images/responsiveHeader1.jpg");*/
+        background-origin: padding-box, padding-box;
+ background-position: 0 213px;
+ background-repeat: no-repeat;
+ margin-top: -142px;
+}
+ header.boy .mainContent h1 {
+ margin-top: 0;
+}
+ header.school_bg {
+padding-top: 268px;
+}
+ header .mainContent h1 {
+ margin-left: 22px;
+ margin-top: 255px;
+ font-size: 22px;
+}
+ header .mainContent p {
+ font-size: 8px;
+ margin: 20px 130px 0 22px;
+}
+ .mobile {
+ left: 10px;
+}
+ .phoneNumber .phoneNumberShape {
+        /*top: -35px;*/
+        right: -80px;
+}
+ nav .phoneNumber {
+ margin-top: 10px;
+}
+ .moreThan p {
+ margin-left: 10px;
+ width: 92%;
+}
+ .moreThanDivs p {
+ margin: 0 auto;
+ width: 85%;
+ margin-left: 10px;
+}
+ .customers img.how_our {
+ width: 68%;
+ height: 200px;
+}
+ .threeDivsCustomersSaying {
+ width: 200px;
+}
+ .threeDivsCustomersSaying div .video_btn {
+ bottom: 30%;
+ height: 80px;
+ left: 30%;
+ right: 30%;
+ top: 30%;
+ width: 80px;
+}
+ .firstDivCustomers div h5, .secondDivCustomers div h5 {
+ font-size: 18px;
+}
+ #read1 .next, #read1 .previous {
+ top: 434px;
+}
+ .feature_headtext {
+ height: 130px;
+ overflow: hidden;
+}
+ .feature_inDivs img {
+ margin-bottom: 118px;
+}
+ .fourthDivCustomers p {
+ padding-bottom: 30px;
+}
+ .next {
+ right: 15px;
+}
+ .previous {
+ left: 15px;
+}
+ .moreThanDivs img, .moreThanDivs h2 {
+ margin-left: -25px;
+}
+ .feature_inDivs {
+ width: 280px;
+}
+ .talkToUs_1 h1 {
+ font-size: 26px;
+ margin-left: 20px;
+ margin-right: 20px;
+}
+ .talkToUs_1Divs {
+ margin-left: 5px;
+}
+ .let_us_helpright {
+ width: 294px;
+}
+    /********* school page ********/
+    .school_zummer_img {
+ margin-bottom: 0;
+ margin-top: -20px;
+ width: 280px;
+}
+ .school_zummer_img img {
+ margin-left: 10px;
+}
+ .school_easy_pool h1 {
+ font-size: 14px;
+ padding: 23px 0;
+}
+ .school_why_should_detail {
+ margin: 0 auto 0 40px;
+}
+ .school_why_detail {
+ margin-bottom: 20px;
+ padding-left: 30px;
+ width: 266px;
+}
+ .memberDiv_school_right {
+ float: left;
+ padding-top: 10px;
+ width: 290px;
+}
+ .threeDivs_1 p {
+ font-size: 12px;
+ margin: 0 0 15px;
+}
+ .threeDivs_1 {
+ margin-bottom: 30px;
+}
+ .membersDiv_school_who {
+ margin-left: 10px;
+ margin-right: 20px;
+}
+ .feature_inschool img {
+ width: 100px;
+}
+ .school_dot_see h1 {
+ font-size: 27px;
+ padding: 35px 8px 13px;
+}
+ .school_dot_see p {
+ font-size: 14px;
+ padding: 0 33px 35px;
+}
+    /**** school model code ****/
+    .modal-dialog.school_model {
+ width: 280px;
+}
+ .school_no_kid-right {
+ width: 82%;
+}
+    /***** faq page *****/
+    .faq {
+ padding: 0 15px;
+}
+ .faq_nav_tab .nav-tabs > li > a {
+ font-size: 14px;
+ padding: 12px 15px;
+ line-height: 0
+}
+    /***************** surfcamppacifica page ******************/
+    nav.nav_sufcamps, nav.nav_deanzacollage {
+ height: 118px;
+}
+ nav.nav_sufcamps .school_zummer_img, nav.nav_deanzacollage .school_zummer_img {
+ margin-top: -15px;
+}
+    /*******senior ******/
+    .senior_zump h1 {
+font-size: 22px;
+}
+ header.mathnasium {
+ padding-top: 284px;
+}
+ header.teachrocks {
+padding-top: 323px;
+}
+ header.mercy {
+ padding-top: 260px;
+}
+ header.girlsms_bg {
+ padding-top: 282px;
+}
+ header.footsteps {
+ padding-top: 170px;
+}
+    /******* fare estimate ******/
+    .fare_input.fare_inp01 {
+ width: 60%;
+}
+ .fare_map {
+ width: 87%;
+}
+    /**** 30/08/2016 ****/
+    .first_WhyWeDiffer, .second_WhyWeDiffer, .third_WhyWeDiffer {
+ width: 225px;
+}
+ .rightDivritustory h1, .rightDivStandFor.what_we h2 {
+font-size: 32px;
+}
+ .leftDivritustory, .rightDivritustory, .rightDivStandFor.what_we {
+ width: 280px;
+}
+ .leftDivritustory .ritu_video {
+ width: 249px;
+ height: 140px;
+}
+ .firstHeaderwhat {
+ margin-left: 0;
+ width: 92%;
+ padding: 5px;
+}
+ .firstHeaderwhat p {
+ margin-left: 0;
+ margin-right: 0;
+}
+    /****** faq new page 24/09/2016 ******/
+    .faq_ourService_left, .faq_ourService_right, .faq_ourService_contain, .faq_ourService_height {
+ width: 280px;
+}
+ .promo_repeat_detail h1 {
+font-size: 26px;
+}
+ .promo_repeat_detail p {
+font-size: 14px;
+}
+ .promo_repeat_mlink1 img {
+width: 45%;
+}
+ .promo_repeat img.father_kids {
+ top: 62%;
+}
+    /********* trust and safety ***********/
+    header.trust_three .mainContent01 {
+ margin-top: 100px;
+}
+ .mathbg_head h1 {
+font-size: 30px;
+}
+ .mainContent01 h1 {
+font-size: 28px;
+line-height: 32px;
+}
+    /************ carpool 6/12/2016 *************/
+    .carpool_cheadText h2 {
+font-size: 30px;
+}
+ .line_green {
+margin: 0px 0 35px 0;
+}
+ .line_green img {
+width: 50%;
+}
+ .thnk_ul li {
+width: 220px;
+}
+ .next_tab01 {
+width: 270px;
+}
+ .excl_head {
+padding-top: 30px;
+}
+ .carpool_head {
+margin-top: 20px;
+}
+ .carpool_submit_btn {
+ width: 90%;
+}
+ .mathbg_head button {
+width:280px;
+}
+ .carpool_centerRIGHT {
+ width: 86%;
+ padding: 23px;
+}
+ .carpool_centerRIGHT .ritu_video {
+ height: 156px;
+}
+ .carpool_dropRight .school_table table tr td {
+ padding: 15px 10px;
+}
+ .Invite_FrdDiv .invit_input {
+ width: 235px;
+}
+ .we_not table tr th:first-child, .we_not table tr td:first-child, .we_not table tr th:last-child, .we_not table tr td:last-child {
+width:35%;
+word-break: break-all;
+}
+    /********** sacred heart page ************/
+    .sacred-thk {
+font-size: 32px;
+}
+ .pricing_tab ul li a {
+width:110px;
+}
+}
+/************************** PRICING ************************/
+.pricing {
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background-image: url(../images/workedOut2.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding-bottom: 50px;
+}
+.pricing h1 {
+	font-size: 42px;
+	color: #37474f;
+	font-weight: 300;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+.pricing h6 {
+	font-size: 20px;
+	color: #37474f;
+	padding-top: 30px;
+	padding-bottom: 40px;
+	font-weight: 100;
+	margin: 0 100px;
+	line-height: 32px;
+}
+.firstPricingDiv1 {
+	margin-right: 15px;
+}
+.firstPricingDiv {
+	width: 460px;
+	background-color: #fff;
+	border: 1px solid #455a64;
+	display: inline-block;
+	vertical-align: top;
+}
+.firstPricingDiv img:first-child {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.firstPricingDiv h4 {
+	font-size: 28px;
+	font-weight: 300;
+	color: #37474f;
+	margin-bottom: 5px;
+}
+.firstPricingDiv h5 {
+	font-size: 20px;
+	font-weight: 300;
+	margin-top: 15px;
+	color: #37474f;
+}
+.firstPricingDiv p {
+	font-size: 16px;
+	font-weight: 300;
+	color: #37474f;
+	margin-top: 15px;
+	line-height: 24px;
+	margin-bottom: 30px;
+	line-height: 32px;
+	margin-right: 100px;
+	margin-left: 100px;
+}
+.firstPricingDiv2 p {
+	margin-bottom: 60px;
+}
+.pricing .secondDivIcons {
+	margin-bottom: 40px;
+	margin-right: 25px;
+}
+.pricing .secondDivIconsLast {
+	margin-right: 0px;
+}
+.firstPricingDiv2 p {
+	margin-right: 30px;
+	margin-left: 30px;
+}
+/***************** RESPONSIVE ****************/
+@media(max-width: 1120px) {
+ .schedule {
+ height: 650px;
+}
+}
+ @media(max-width: 1020px) {
+ .schedule {
+ height: 600px;
+}
+}
+@media(max-width: 960px) {
+ .firstHeaderDiv {
+ margin: 0;
+ margin-bottom: 20px;
+}
+ .firstPricingDiv {
+ margin: 0 auto;
+ margin-bottom: 20px;
+}
+}
+@media(max-width: 940px) {
+ .schedule {
+ height: 550px;
+}
+}
+@media(max-width: 923px) {
+ .safetyImg1, .safetyImg2 {
+ margin: 0 auto;
+ float: none;
+ display: block;
+ margin-top: 20px;
+}
+}
+@media(max-width:901px) {
+ .howItWorksDivs2 {
+ margin-right: 0;
+}
+ .howItWorksDivsLast {
+ display: block;
+ margin: 0 auto;
+ margin-top: 30px;
+ position: static;
+}
+}
+@media(max-width: 840px) {
+ .schedule {
+ height: 500px;
+}
+}
+@media(max-width: 790px) {
+ .schedule {
+ height: 450px;
+}
+}
+@media(max-width: 700px) {
+ .schedule {
+ height: 400px;
+}
+}
+@media(max-width: 680px) {
+ .schedule {
+ height: 350px;
+}
+ .zumers p {
+ margin-right: 20px;
+ margin-left: 20px;
+}
+}
+@media(max-width: 575px) {
+ .howItWorksDivs {
+ margin: 0 auto;
+ display: block;
+ margin-bottom: 40px;
+}
+ .schedule {
+ height: 300px;
+}
+}
+@media(max-width: 560px) {
+ .pricing h6 {
+ margin-right: 20px;
+ margin-left: 20px;
+}
+}
+@media(max-width: 540px) {
+ .firstPricingDiv {
+ margin-left: 5px;
+ width: 88%;
+}
+}
+@media(max-width: 539px) {
+ .firstHeaderDiv {
+ width: 90%;
+ margin-left: 5px;
+}
+ .ourMagic h1 {
+ margin-right: 10px;
+ margin-left: 10px;
+}
+ .ourMagic p {
+ margin-right: 20px;
+ margin-left: 20px;
+}
+ .safety h1 {
+ margin-left: 10px;
+ margin-right: 10px;
+}
+ .safety p {
+ margin-left: 20px;
+ margin-right: 20px;
+}
+ .threeDivsSafety {
+ text-align: center;
+}
+ .threeDivsSafety p {
+ margin: 0;
+ margin-bottom: 10px;
+ margin-top: 10px;
+}
+ .ourDrivers, .secondDivSafety .ourDrivers {
+ text-align: center;
+ width: 100%;
+ margin: 0 auto;
+}
+ .threeDivsSafetyLast {
+ margin-bottom: 20px;
+}
+}
+@media(max-width: 500px) {
+ header h1, .howItWorks h1, .ourMagic h1, .safety h1, .pricing h1 {
+ font-size: 30px;
+}
+}
+@media(max-width: 510px) {
+ .schedule {
+ height: 250px;
+}
+}
+@media(max-width: 415px) {
+ .schedule {
+ height: 200px;
+}
+}
+@media(max-width: 475px) {
+ .firstPricingDiv p {
+ margin-right: 20px;
+ margin-left: 20px;
+}
+}
+@media(max-width: 375px) {
+    /*    header {
+            margin-top: 0;   
+        }*/
+    header h1 {
+ font-size: 23px;
+ margin-right: 30px;
+ margin-left: 30px;
+}
+ .firstPHeader {
+ font-size: 12px;
+ margin-right: 100px;
+ margin-left: 100px;
+ margin-bottom: 15px;
+}
+ .firstHeaderDiv p {
+ font-size: 14px;
+}
+ .firstHeaderDiv h4 {
+ font-size: 18px;
+}
+ .howItWorks h1 {
+ font-size: 23px;
+}
+ .howItWorksDivs h2, .howItWorksDivs p {
+ font-size: 14px;
+}
+ .ourMagic h1 {
+ font-size: 23px;
+}
+ .ourMagic p {
+ font-size: 14px;
+}
+ .safety h1, .pricing h1 {
+ font-size: 23px;
+}
+ .safety p, .pricing h6 {
+ font-size: 14px;
+}
+ .threeDivsSafety p {
+ margin-right: 10px;
+ margin-left: 10px;
+}
+ .firstPricingDiv h4 {
+ font-size: 18px;
+}
+ .firstPricingDiv h5 {
+ font-size: 16px;
+}
+ .firstPricingDiv p {
+ font-size: 14px;
+}
+}
+@media(max-width: 350px) {
+ .safetyImage img {
+ width: 90%;
+ margin-left: 5px;
+}
+}

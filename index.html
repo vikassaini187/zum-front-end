@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+       
+        <title>:: Activebunnies ::</title>
+    <link href="css/boostrap_popup.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/MyFontsWebfontsKit.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Lato:100,300,400|Open+Sans:300,400,600" rel="stylesheet"> 
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
+    <script src="js/jquery.fancybox.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scrollTop(0);
+            return false;
+        });
+        function signUp() {
+            window.location = './sign-up.html';
+        }
+    </script>
+   
+</head>
+<body onload="initPhoneNumber();">
+<style>
+        header form input,section.send_btn form input{
+            -webkit-border-bottom-colors: none;
+            -webkit-border-left-colors: none;
+            -webkit-border-right-colors: none;
+            -webkit-border-top-colors: none;
+            -moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            border-style: solid;
+            border-width: 1px 0px 1px 1px;
+            border-color: #b0bec5;
+            border-image: none;
+            -moz-border-top-right-radius: 0;
+            -moz-border-bottom-right-radius: 0;
+            -webkit-border-top-right-radius: 0;
+            -webkit-border-bottom-right-radius: 0;
+            border-radius: 2px 0px 0px 2px;
+            color:#000;
+            /*  color: #90a4ae;*/
+            font-size: 18px;
+            height: 56px;
+            margin-bottom: 50px;
+            outline: medium none;
+            padding-left: 0px;
+            text-align: center;
+            /*  padding-left: 20px;*/
+            width: 225px;
+        }
+        .add-plus > div {
+            margin-bottom: 20px;
+            margin-top: -30px;
+        }
+        #fancybox-wrap, #fancybox-wrap *{
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+        }
+        .read_watch_btn button
+        {
+            margin-right: 0;
+            border: 1px solid #d8d8d8;
+            background-color: #fff;
+            color: #009fe3;
+            margin-bottom: -4px;
+            position: relative;
+        }
+        .read_watch_btn button.active:before
+        {
+            content:"";
+            display:block;
+            width:0;
+            border:10px solid #009fe3;
+            border-color:#009fe3  transparent transparent transparent;
+            position:absolute;
+            top:100%;
+            left:50%;
+            margin-left:-10px;
+        }
+        .moreThanDivs p { margin-bottom: 10px;}
+        @media(max-width: 800px)
+        {
+            .add-on
+            {
+                padding: 21px 8px 18px;
+            }
+        }
+        @media(max-width: 480px)
+        {
+            .moreThanDivs3 {
+                margin-bottom: 0;
+            }
+            .customersSaying h1{ padding: 0 20px;}
+        }
+    </style>
+    <nav>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html"><div class='zumLogo' src="images/zum_logo.png" alt="Zum"></div></a>
+            </div> <!-- End Logo -->
+            <img class='mobile' src="images/menu-icon.png" alt="">
+
+            <div class="mainNav">
+                <ul class='mainNavList'>
+                    <li>
+                        <a href="our-services.html">our services</a>
+                    </li>
+                    <!--- dropdown menu --->
+                    <!--                    <li>
+                                            <a href="#">our services <i class="fa fa-angle-down fare_aero"></i></a>
+                                            <ul class="dropdown">
+                                                <li><a href="../our-services.html" target="_blank">how it works</a></li>
+                                                <li><a href="../zum_seniors.html" target="_blank">Senior Rides</a></li>
+                                            </ul>
+                                        </li>-->
+                    <li><a href="Trust&Safety.html">Trust & Safety</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="drive.html">drive for zum</a></li>
+                    <li><a href="our-story.html">our story</a></li>
+                    <!--<li class="last_li" data-toggle="modal" data-target="#gridSystemModal"><a>join now</a></li>-->
+                </ul> <!-- End Of MainNavList -->
+            </div> <!-- End Of Main Nav -->
+            <ul class='phone_rbtn'>
+                <li>
+                    <div class="phoneNumber">
+                        <p><img class='phoneNumberShape1' src="images/Shape-10.png" alt="">(180)-201-1200</p>
+                        <a href="tel:+19095543833"><img class='phoneNumberShape' src="images/Shape-10.png" alt=""></a>
+                    </div> <!-- End of phone number -->
+                </li>
+                <li><button class="nav_join" data-toggle="modal" data-target="#gridSystemModal">join now</button></li>
+            </ul>
+
+        </div> <!-- End Of Wrapper -->
+    </nav> <!-- End Of Nav -->
+    <header>
+
+        <div class="wrapper">
+            <div class="mainContent">
+                <h1>Lorem Ipsum <br>text the printing
+                </h1>
+                <p>Lorem Ipsum is simply dummy text of the<br> printing and typesetting industry. </p>
+                <button data-toggle="modal" data-target="#gridSystemModal"><i class="fa fa-download" aria-hidden="true"></i> join now</button>
+                <div class="mobile-link">
+                    <a href="https://itunes.apple.com/us/app/zum/id1076430968?mt=8"><img src="css/images/appstorebtn_new01.png" alt=""/></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.ridezum.zum"><img src="css/images/google-play-btn01.png" alt=""/></a>
+                </div>
+               
+
+
+
+            </div> <!-- End Of Main Content -->
+        </div> <!-- End Of Wrapper -->
+    </header> <!-- End Of Header -->
+
+  
+    <div class="startedZum">
+        <div class="wrapper">
+            <h1 class='FrutigerLTCom-Light'>Lorem Ipsum is simply</h1>
+            <img src="images/line.jpg" alt="line">
+            <p class='FrutigerLTCom-Light'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <button onclick="window.location = './our-story.html';                    return false;">LEARN MORE <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+        </div> <!-- End of Wrapper -->
+    </div> <!-- End of started Zum -->
+    <div class="whyWeDiffer new_whywe">
+        <div class="wrapper">
+            <h1 class='FrutigerLTCom-Light'>Lorem Ipsum is simply</h1>
+            <img src="images/line.jpg" alt="line">
+            <p class='whyWeDifferFirstP FrutigerLTCom-Light'>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            </p>
+
+            <div class="whywe_center"> 
+                <div class="first_WhyWeDiffer">
+                    <div class="whywe_head">
+                        <h2 class='FrutigerLTCom-Roman'>
+                            LOREM
+                        </h2>
+                    </div>
+                    <h4 class='FrutigerLTCom-Roman'>LOREM IPSUM</h4>
+                    <p class='FrutigerLTCom-Light'> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </div>
+
+                <div class="second_WhyWeDiffer">
+                    <div class="whywe_head">
+                        <h2 class='FrutigerLTCom-Roman'>
+                            LOREM
+                        </h2>
+                    </div>
+                    <h4 class='FrutigerLTCom-Roman'>LOREM IPSUM</h4>
+                    <p class='FrutigerLTCom-Light'> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+
+                <div class="third_WhyWeDiffer">
+                    <div class="whywe_head">
+                        <h2 class='FrutigerLTCom-Roman'>
+                            LOREM
+                        </h2>
+                    </div>
+                    <h4 class='FrutigerLTCom-Roman'>LOREM IPSUM</h4>
+                    <p class='FrutigerLTCom-Light'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                </div>
+            </div>
+            
+
+        </div> <!-- End of Wrapper -->
+    </div> <!-- End of Why we differ -->
+
+    <div class="what_we_offer">
+        <div class="wrapper">
+            <h1 class='FrutigerLTCom-Light what_weh1'>Lorem Ipsum is simply</h1>
+            <!--p class='FrutigerLTCom-Roman firstPHeader'>CLEVER SUPPORTING LINE GOES IN HERE</p-->
+            <!-- h6 class='FrutigerLTCom-Light'>Clever supporting line goes in here</h6-->
+            <div class="firstHeaderwhat firstHeaderwhat1">
+                <img src="images/Car-Vector-Smart-Object.png" alt="">
+                <h4 class='FrutigerLTCom-Roman'>LOREM IPSUM DOLOR SIT AMET</h4>
+                <img src="images/line.jpg" alt="">
+                <p class='FrutigerLTCom-Light'>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </p>
+            </div> <!-- End of first header div -->
+            <div class="firstHeaderwhat">
+                <img class='secondDivIcons' src="images/Car-Vector-Smart-Object.png" alt="">
+                <img class='secondDivIcons' src="images/Soccer-Vector-Smart-Object.png" alt="">
+                <img class='secondDivIcons' src="images/calenderVector.png" alt="">
+                <img class='secondDivIcons secondDivIconsLast' src="images/PaintbrushVector-Smart-Object.png" alt="">
+                <h4 class='FrutigerLTCom-Roman'>LOREM IPSUM DOLOR SIT AMET</h4>
+                <img src="images/line.jpg" alt="">
+                <p class='FrutigerLTCom-Light'>
+                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</br>
+                </p>
+            </div> <!-- End of first header div -->
+        </div> <!-- End of Wrapper -->
+    </div>
+
+    <div class="moreThan" style="background-color:#f6f8fa;">
+        <div class="wrapper">
+            <h1 class="FrutigerLTCom-Light" style="color: #37474f;">Lorem Ipsum is simply</h1>
+            <img src="images/line.jpg" alt="">
+            <!--<img src="images/line4.png" alt="">-->
+            <p class="FrutigerLTCom-Light" style="color: #37474f;">
+             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been<br> the industry's standard dummy text ever since the 1500s
+            </p>
+            <div class="moreThanDivs moreThanDivs1" style="margin-top:0px;">
+                <!--<img src="images/moreThanSecondDivImg.png" alt="">-->
+                <img src="images/how_it_worknew01.png" alt="">
+                <h2 class="FrutigerLTCom-Roman" style="color: #37474f;">LOREM IPSUM DOLOR</h2>
+                <p class="FrutigerLTCom-Light" style="color: #37474f;"> Lorem Ipsum is simply dummy text of the printing <br>typesetting industry. Lorem Ipsum has been</p>
+            </div> <!-- End of more than divs -->
+            <div class="moreThanDivs moreThanDivs2">
+                <!--<img src="images/moreThanFirstDivImg.png" alt="">-->
+                <img src="images/how_it_worknew02.png" alt="">
+                <h2 class="FrutigerLTCom-Roman" style="color: #37474f;">LOREM IPSUM DOLOR</h2>
+                <p class="FrutigerLTCom-Light moreThanDivsP2" style="color: #37474f;"> Lorem Ipsum is simply dummy text of the printing <br>typesetting industry. Lorem Ipsum has been</p>
+            </div> <!-- End of more than divs -->
+            <div class="moreThanDivs moreThanDivs3">
+                <!--<img src="images/moreThanThirdDin.png" alt="">-->
+                <img src="images/how_it_worknew03.png" alt="">
+                <h2 class="FrutigerLTCom-Roman" style="color: #37474f;">LOREM IPSUM DOLOR</h2>
+                <p class="FrutigerLTCom-Light" style="color: #37474f;"> Lorem Ipsum is simply dummy text of the printing <br>typesetting industry. Lorem Ipsum has been</p>
+            </div> <!-- End of more than divs -->
+            <div class="learn_btn">
+                <button onclick="window.location = 'our-services.html';                        return false;" >Learn more <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+            </div>
+        </div> <!-- End of Wrapper -->
+    </div> <!-- End of More Than -->
+    <div class="customers">
+        <div class="wrapper">
+            <h1 class='FrutigerLTCom-Light'>Lorem Ipsum is simply dummy</h1>
+            <ul class='FrutigerLTCom-Light slider'>
+                <li class='firstDiv'>
+                    <div class='allDivsCustomers oneDivCustomers firstDivCustomers div1-shown firstDivCustomers1'>
+                        <img class="how_our" src="images/school_drop_off.png" alt="" width="437" height="298">
+                        <div>
+                            <h5 class='FrutigerLTCom-Roman'>LOREM IPSUM DOLOR SIT</h5>
+                            <!--  <h5 class='FrutigerLTCom-Roman'>SCHOOL DROP-OFFS/PICK-UPS</h5>-->
+                        </div>
+                        <p class='FrutigerLTCom-Light'> Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been</p>
+                    </div> <!-- Enf of first div customers -->
+                </li>
+                <li class='secondDiv'>
+                    <div class='allDivsCustomers twoDivCustomers secondDivCustomers div1-hidden'>
+                        <!--img src="images/451327183.png" alt=""-->
+                        <img class="how_our" src="images/one_off_rides.png" alt="" width="437" height="298">
+                        <div>
+                            <h5 class='FrutigerLTCom-Roman'>LOREM IPSUM DOLOR SIT</h5>
+                        </div>
+                         <p class='FrutigerLTCom-Light'> Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been</p>
+                    </div> <!-- Enf of second div customers -->
+                </li>
+                <li class='secondDiv'>
+                    <div class='allDivsCustomers fiveDivCustomers secondDivCustomers div1-hidden'>
+                        <img class="how_our" src="images/everyday_rides.png" alt="" width="437" height="298">
+                        <div>
+                         <h5 class='FrutigerLTCom-Roman'>LOREM IPSUM DOLOR SIT</h5>
+                        </div>
+                        <p class='FrutigerLTCom-Light'> Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been</p>
+                    </div> <!-- Enf of second div customers -->
+                </li>
+                <li class='firstDiv'>
+                    <div class='allDivsCustomers threeDivCustomers firstDivCustomers div1-hidden'>
+                        <img class="how_our" src="images/baby_sitting.png" alt="" width="437" height="298">
+                        <div>
+                         <h5 class='FrutigerLTCom-Roman'>LOREM IPSUM DOLOR SIT</h5>
+                        </div>
+                        <p class='FrutigerLTCom-Light'> Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been</p>
+                    </div> <!-- Enf of first div customers -->
+                </li>
+                <li class='firstDiv'>
+                    <div class='allDivsCustomers fourDivCustomers firstDivCustomers div1-hidden fourthDivCustomers'>
+                        <img class="how_our" src="images/ride_and_sit.png" alt="" width="437" height="298">
+                        <div>
+                            <h5 class='FrutigerLTCom-Roman'>LOREM IPSUM DOLOR SIT</h5>
+                        </div>
+                         <p class='FrutigerLTCom-Light'> Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been</p>
+                    </div> <!-- Enf of first div customers -->
+                </li>
+                <li class='secondDiv'>
+                    <div class='allDivsCustomers sixDivCustomers secondDivCustomers div1-hidden lastDivCustomers'>
+                        <img class="how_our" src="images/stay_and_watch.png" alt="" width="437" height="298">
+                        <div>
+                           <h5 class='FrutigerLTCom-Roman'>LOREM IPSUM DOLOR SIT</h5>
+                        </div>
+                          <p class='FrutigerLTCom-Light'> Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been</p>
+                    </div> <!-- Enf of second div customers -->
+                </li>
+            </ul>
+            <ul class='hidden-shown'>
+                <li class='one highlighteeed'></li>
+                <li class='two'></li>
+                <li class='three'></li>
+                <li class='four'></li>
+                <li class='five'></li>
+                <li class='six'></li>
+            </ul>
+        </div> <!-- End of wrapper -->
+    </div> <!-- End of customers -->
+    <div class="customersSaying" style="background-color: #f6f8fa;">
+        <div class="wrapper">
+            <h1 class='FrutigerLTCom-Light'>Lorem Ipsum is simply dummy text</h1>
+
+            <script>
+                jQuery(document).ready(function ($) {
+                    $(".fancybox").on("click", function () {
+                        $.fancybox({
+                            href: this.href,
+                            type: $(this).data("type")
+                        }); // fancybox
+                        return false
+                    }); // on
+                }); // ready
+                $(function () {
+                    $('button#readbtn').click(function () {
+                        if (!$(this).hasClass("active")) {
+                            $("#readbtn").addClass("active");
+                            $("#watchbtn").removeClass("active");
+                            $('#read1').show();
+                            $('#watch1').hide();
+                            $('#watchCarousel').hide();
+                            $('#readCarousel').show();
+                            $('#readDiv1').addClass("div-shown").removeClass("div-hidden").css("z-index", -10);
+                            $('#readDiv2').addClass("div-hidden").removeClass("div-shown").css("z-index", 20);
+                            $('#readDiv3').addClass("div-hidden").removeClass("div-shown").css("z-index", 20);
+                        }
+                    });
+                    //                        $("#button#readbtn").on("click", function () {
+                    $('button#watchbtn').click(function () {
+                        if (!$(this).hasClass("active")) {
+                            $("#readbtn").removeClass("active");
+                            $("#watchbtn").addClass("active");
+                            $('#read1').hide();
+                            $('#watch1').show();
+                            $('#watchCarousel').show();
+                            $('#readCarousel').hide();
+                            $('#watchDiv1').addClass("div-shown").removeClass("div-hidden").css("z-index", -10);
+                            $('#watchDiv2').addClass("div-hidden").removeClass("div-shown").css("z-index", 20);
+                            $('#watchDiv3').addClass("div-hidden").removeClass("div-shown").css("z-index", 20);
+                        }
+                    });
+                });
+            </script> 
+
+            <div class="read_watch_btn">
+                <button id="readbtn" class="active">READ</button> 
+                <button id="watchbtn">WATCH</button> 
+            </div>
+            <div id="read1" class="carousel-outer read1">
+                <a class='previous' href="#"><img src="images/previous.png" alt=""></a>
+                <div id="readCarousel" class="carousel-inner">
+                    <div id="readDiv1" class="div-shown threeDivsCustomersSaying threeDivsCustomersSaying1" style="padding-top:10px;">
+                        <h4 class='FrutigerLTCom-Roman'>Lorem  <br><span>Lorem Ipsum is simply dummy</span></h4>
+                        <!--  <img src="images/line6.png" alt="">-->
+                        <img class='roundThreeDivsCustomers' src="images/AlpaKohli.jpeg" alt="">
+                        <p class='FrutigerLTCom-Light'> “Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,".</p>
+                    </div> <!-- End Of thee divs -->
+                    <div id="readDiv1" class="div-shown threeDivsCustomersSaying threeDivsCustomersSaying1" style="padding-top:10px;">
+                        <h4 class='FrutigerLTCom-Roman'>Lorem  <br><span>Lorem Ipsum is simply dummy</span></h4>
+                        <!--  <img src="images/line6.png" alt="">-->
+                        <img class='roundThreeDivsCustomers' src="images/AlpaKohli.jpeg" alt="">
+                        <p class='FrutigerLTCom-Light'> "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,".</p>
+                    </div> <!-- End Of thee divs -->
+                    <div id="readDiv1" class="div-shown threeDivsCustomersSaying threeDivsCustomersSaying1" style="padding-top:10px;">
+                        <h4 class='FrutigerLTCom-Roman'>Lorem  <br><span>Lorem Ipsum is simply dummy</span></h4>
+                        <!--  <img src="images/line6.png" alt="">-->
+                        <img class='roundThreeDivsCustomers' src="images/AlpaKohli.jpeg" alt="">
+                        <p class='FrutigerLTCom-Light'> "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,".</p>
+                    </div> <!-- End Of thee divs -->
+                </div> <!-- End of carousel inner -->
+                <a class='next' href="#"><img src="images/next.png" alt=""></a>
+            </div> <!-- End of carousel outer -->
+            <!--<iframe src="https://drive.google.com/file/d/0B952CCXjrOOdYkQwTjRhUFduRTg/preview" width="640" height="480"></iframe>-->
+            <div id="watch1" class="carousel-outer watch1" style="display:none;">
+                <a class='previous' href="#"><img src="images/previous.png" alt=""></a>
+                <div id="watchCarousel" class="carousel-inner1">
+                    <div id="watchDiv1" class="div-shown threeDivsCustomersSaying threeDivsCustomersSaying1">
+                        <!-- http://www.youtube.com/embed/LAtwzbOi8sY?autoplay=1-->
+                        <div>
+                            <img class='roundThreeDivsCustomers' src="images/watch_video_1.png" alt="" style="border-radius:2%;">
+                            <!--<a class="fancybox video_btn" data-type="iframe" href="https://drive.google.com/file/d/0B952CCXjrOOdYkQwTjRhUFduRTg/preview" title="video mp4" ></a>-->
+                            <a class="modalButton video_btn" data-toggle="modal" data-src="https://drive.google.com/file/d/0B952CCXjrOOdYkQwTjRhUFduRTg/preview" data-width="100%" data-height="auto" data-target="#myModal" data-video-fullscreen="" title="video mp4" ></a>
+
+                        </div>
+
+                        <h4 class='FrutigerLTCom-Roman'>Lorem  <br><span>Lorem Ipsum is simply dummy</span>
+                        </h4>
+                    </div> <!-- End Of thee divs -->
+
+                    <div id="watchDiv2" class="div-hidden threeDivsCustomersSaying">
+                        <div>
+                            <img class='roundThreeDivsCustomers' src="images/watch_video_1.png" alt="" style="border-radius:2%;">
+                            <!--<a class="fancybox video_btn" data-type="iframe" href="https://drive.google.com/file/d/0B952CCXjrOOdSmRVYmppNzEtdWc/preview" title="video mp4" ></a>-->
+                            <a class="modalButton video_btn" data-toggle="modal" data-src="https://drive.google.com/file/d/0B952CCXjrOOdSmRVYmppNzEtdWc/preview" data-width="100%" data-height="auto" data-target="#myModal" data-video-fullscreen="" title="video mp4" ></a>
+                        </div>
+                        <h4 class='FrutigerLTCom-Roman'>Lorem  <br><span>Lorem Ipsum is simply dummy</span>
+                        </h4>
+                    </div> <!-- End Of thee divs -->
+                    <div id="watchDiv3" class="div-hidden threeDivsCustomersSaying threeDivsCustomersSayingLast">
+                        <div>
+                            <img class='roundThreeDivsCustomers' src="images/watch_video_1.png" alt="" style="border-radius:2%;">
+                            <!--<a class="fancybox video_btn" data-type="iframe" href="https://drive.google.com/file/d/0B952CCXjrOOdV2Foc290OVZsWWM/preview" title="video mp4" ></a>-->
+                            <a  class="modalButton video_btn" data-toggle="modal" data-src="https://drive.google.com/file/d/0B952CCXjrOOdV2Foc290OVZsWWM/preview" data-width="100%" data-height="auto" data-target="#myModal" data-video-fullscreen="" title="video mp4" ></a>
+                        </div>
+                        <h4 class='FrutigerLTCom-Roman'>Lorem  <br><span>Lorem Ipsum is simply dummy</span>
+                        </h4>
+                    </div> <!-- End Of thee divs -->
+                </div> <!-- End of carousel inner -->
+                <a class='next' href="#"><img src="images/next.png" alt=""></a>
+            </div> <!-- End of carousel outer -->
+        </div> <!-- End of wrapper -->            
+    </div> <!-- End Of Customers Saying -->  
+
+    
+    <div class="what_we_offer">
+        <div class="wrapper">
+            <h1 class='FrutigerLTCom-Light what_we_pricingh1'>Lorem Ipsum is simply dummy</h1>
+            <img src="images/line.jpg" alt="">
+            <!--p class='FrutigerLTCom-Roman firstPHeader'>CLEVER SUPPORTING LINE GOES IN HERE</p-->
+            <h6 class="FrutigerLTCom-Light what_weh6"> dummy text of the printing and typesetting industry. Lorem Ipsum<br> has been the industry's standard dummy text ever since the 1500s,<br> when an unknown printer took a galley of type and scrambled
+            </h6>
+            <div class="firstHeaderwhat FrutigerLTCom-Roman firstHeaderwhat1">
+                <img src="images/Car-Vector-Smart-Object.png" alt="">
+                <h4 class='FrutigerLTCom-Roman pricingh4'>Lorem Ipsum</h4>
+                <img src="images/line.jpg" alt="">
+                <h5 class='FrutigerLTCom-Roman'>LOREM IPSUM DOLOR</h5>
+                <p class='FrutigerLTCom-Light'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+            </div> <!-- End of first header div -->
+            <div class="firstHeaderwhat firstHeaderwhat2 FrutigerLTCom-Roman">
+                <img class='secondDivIcons' src="images/Car-Vector-Smart-Object.png" alt="">
+                <img class='secondDivIcons' src="images/Soccer-Vector-Smart-Object.png" alt="">
+                <img class='secondDivIcons' src="images/calenderVector.png" alt="">
+                <img class='secondDivIcons secondDivIconsLast' src="images/PaintbrushVector-Smart-Object.png" alt="">
+                <h4 class='FrutigerLTCom-Roman pricingh4'>Lorem Ipsum</h4>
+                <img src="images/line.jpg" alt="">
+                <h5 class='FrutigetLTCom-Roman'>LOREM IPSUM DOLOR</h5>
+              <p class='FrutigerLTCom-Light'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+            </div> 
+            <div class="what_pricing FrutigerLTCom-Roman">
+                <h6 class="FrutigetLTCom-Roman">Visit our <a href="pricing.html">Fare Estimator</a> to calculate ride-specific fares.</h6>
+            </div>
+            <!-- End of first header div -->
+        </div> <!-- End of Wrapper -->
+    </div>
+
+    <div class="let_us_help">
+        <div class="wrapper">
+            <div class="firstDivlet_us_help">
+                <div class="let_us_helpImage">
+                    <img src="css/images/let_us_help.png" alt=""/>
+                </div> <!-- End of safety image -->
+                <div class="let_us_helpright">
+                    <h2 class='FrutigerLTCom-Roman'>Lorem Ipsum is simply dummy text</h2>
+                    <div class="secondDivlet_us_help">
+                        <h6 class='FrutigerLTCom-Roman'>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT, SED DIAM NONUMMY NIBH EUISMOD</h6>
+                    </div> <!-- End of three divs safety -->
+                    <div class="mobile-link1">
+                        <a href="https://itunes.apple.com/us/app/zum/id1076430968?mt=8"><img src="css/images/appstorebtn_new01.png" alt=""/></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.ridezum.zum"><img src="css/images/google-play-btn01.png" alt=""/></a>
+                    </div>
+                </div> <!-- End of our drivers -->
+            </div> <!-- End of second div safety -->
+        </div> <!-- End of wrapper -->
+    </div> <!-- End of safety -->
+
+    <!--    <section class="send_btn">
+            <div class="wrapper">
+                <h1 class='FrutigerLTCom-Light'>Let us help take care of your kids so that <br> you can start taking care of yourself</h1>
+                <form class="desktop-link" onsubmit="sendSMS(this, 'spnPhoneStatus1');
+                        return false;" >
+                    <div class="add-plus">
+                        <input class='FrutigerLTCom-Light' name="phone" id="phone_input1" maxlength="14" pattern="([0-9]{10})|(\([0-9]{3}\)\s+[0-9]{3}\-[0-9]{4})" type="text" onkeypress="clearInformationLabel('spnPhoneStatus1')" placeholder="Enter Phone Number" >
+    
+                        <button  id="btnSendLink" class="sendSMSlinkcls" onclick="sendSMS(this, 'spnPhoneStatus1');
+                                return false;">Send App Link</button>
+                          <button type="submit" onclick="sendSMS(this); return false;">SEND APP LINK</button>
+                        <div> <span id="spnPhoneStatus1"></span>  
+                        </div>
+                    </div>
+                        <input class='FrutigerLTCom-Light' type="text" placeholder="Sign up for our service ...">
+                         input class='FrutigerLTCom-Light' type="text" placeholder="Enter your mobile to get the app"
+                         <button onclick="signUp();
+                return false;">SIGN UP</button>
+                        <button id="sign_up1" onlick="return false;">SIGN UP</button>
+    
+                </form>
+                <div class="mobile-link" style="display: none;">
+                    <a href="https://itunes.apple.com/us/app/zum/id1076430968?mt=8"><img class="mobile_appbtn" src="css/images/appstorebtn_new01.png" alt=""/></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.ridezum.zum"><img class="mobile_appbtn" src="css/images/google-play-btn01.png" alt=""/></a>
+                </div>
+            </div>  End of wrapper 
+        </section>  End of Section -->
+
+    <!--        <div class="talkToUs">
+                <div class="wrapper">
+                    <div class="talkToUsImages">
+                        <img src="images/phone.png" alt="">
+                        <img src="images/letter.png" alt="">
+                        <img src="images/Vector-Smart-Object55.png" alt="">
+                    </div>  End of talk to us iamges 
+                    <div class="talkToUsText">
+                        <h2 class='FrutigerLTCom-Light'>Talk to us. We’d love to hear from you.</h2>
+                        <p class='FrutigerLTCom-Light'>Contact us at support@ridezum.com to find out more about how we <br> can help you.</p>
+                    </div>  End Of Talk to us text 
+                </div>  End of Wrapper 
+            </div>  End of Talk To Us -->
+    <!--  Talk To Us -->
+    <div class="talkToUs_1">
+        <div class="wrapper">
+            <h1 class='FrutigerLTCom-Light'>Talk to us. We’d love to hear from you.</h1>
+            <div class="talkToUs_1Divs talkToUs_1Divs1" style="margin-top:0px;">
+                <img src="images/talk_us1.png" alt="">
+                <h2 class='FrutigerLTCom-Roman'>Call us</h2>
+                <p class='FrutigerLTCom-Light'>(180)-201-1200</p>
+            </div>  
+            <div class="talkToUs_1Divs moreThanDivs2">
+                <img src="images/talk_us2.png" alt="">
+                <h2 class='FrutigerLTCom-Roman'>Write to us</h2>
+                <p class='FrutigerLTCom-Light moreThanDivsP2'>support@myapp.com</p>
+            </div>  
+            <div class="talkToUs_1Divs talkToUs_1Divs3">
+                <img src="images/talk_us3.png" alt="">
+                <h2 class='FrutigerLTCom-Roman'>Talk to us</h2>
+                <p class='FrutigerLTCom-Light'><a onclick="Intercom('showMessages');" style="color:#009fe3;cursor: pointer;">Chat online</a></p>
+            </div>  
+        </div>      </div> 
+    <!-- End of Talk To Us -->
+    <footer>
+        <div class="wrapper">
+            <div class="logoFooter">
+                <a href="index.html"><img src="images/zumLogoFooter.png" alt=""></a>
+            </div> <!-- End of logo footer -->
+            <div class="middleFooter">
+                <ul>
+                    <!--<li><a class='FrutigerLTCom-Roman' href="our-story.html">About Us</a></li>-->
+                    <li><a class='FrutigerLTCom-Roman' href="news.html">Press</a></li>
+                    <li><a class='FrutigerLTCom-Roman' href="faq.html">FAQ</a></li>
+                    <li><a class='FrutigerLTCom-Roman' href="your-privacy.html">Privacy Policy</a></li>
+                    <li><a class='FrutigerLTCom-Roman' href="terms-condition.html">Terms of Service</a></li>
+                    <li><a class='FrutigerLTCom-Roman' href="zero_tolerance_policy.html">Zero Tolerance</a></li>
+                    <li><a class='FrutigerLTCom-Roman' href="#">Blog</a></li>
+                </ul>
+            </div> <!-- End of middle footer -->
+            <div class="socialsFooter">
+                <a href="https://www.facebook.com/"><img src="images/facebookForFooter.png" alt="www.facebook.com"></a>
+                <a href="http://instagram.com/"><img src="images/instagramForFooter.png" alt="www.instagram.com"></a>
+                <a href="https://twitter.com/"><img src="images/twitterForFooter.png" alt="www.twitter.com"></a>
+            </div> <!-- End of socials footer -->
+        </div> <!-- End of wrapper -->
+    </footer> <!-- End of footer -->
+
+    <!------------- model get the link --------------->
+    <div id="gridSystemModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="gridModalLabel">Join Now</h4>
+                </div>
+                <div class="modal-body">
+                    <h4>Enter Phone to get the link</h4>
+                    <form  class="desktop-link" onsubmit="sendSMS(this, 'spnPhoneStatus');                            return false;">
+                        <div class="model_detail" >
+                            <!--<label class="add-on"><span>+1</span></label>-->
+                            <!-- <img src="images/us-flag.png" alt=""/>-->
+
+                            <!--input class='FrutigerLTCom-Light' type="text" placeholder="Enter your mobile to get the app"-->
+                            <!-- <div class="form-wrapper">
+                        <form class="mobile-form" action="" method="POST">
+                                            <input class="form-input mobileNum" type="tel" id="mobile4" name="mobile" placeholder="ENTER PHONE NUMBER">
+                                            <input class="form-submit" type="submit" value="SEND APP LINK" disabled="disabled">
+                                        </form>
+                                        <h4>Available for Android and IOS</h4>
+                                    </div>-->
+                            <input class='phone_valid FrutigerLTCom-Light' name="phone" id="phone_input" maxlength="14" pattern="([0-9]{10})|(\([0-9]{3}\)\s+[0-9]{3}\-[0-9]{4})" type="text" onkeypress="clearInformationLabel('spnPhoneStatus')" placeholder="Enter Phone Number" >
+                            <div class="error_msg"> <span id="spnPhoneStatus"></span></div>
+                            <div class="model-btn">
+                                <button id="btnSendLink" onclick="sendSMS(this, 'spnPhoneStatus');                                        return false;">Get the Link</button>
+                                <!--  <button type="submit" onclick="sendSMS(this); return false;">SEND APP LINK</button>-->
+                            </div>
+                            <p class="apollo-seperator"> or </p>
+
+                        </div>
+                        <div class="model-link-an-ios">
+                            <a>Download App Now</a>
+                        </div>
+                        <div class="model-link1">
+                            <a href="https://itunes.apple.com/us/app/zum/id1076430968?mt=8"><img src="css/images/appstorebtn_new01.png" alt=""/></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.ridezum.zum"><img src="css/images/google-play-btn01.png" alt=""/></a>
+                        </div>
+                    </form>
+                </div>
+                <!--  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>-->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function ($) {
+
+            function iframeModalOpen() {
+
+                // impostiamo gli attributi da aggiungere all'iframe es: data-src andrà ad impostare l'url dell'iframe
+                $('.modalButton').on('click', function (e) {
+                    var src = $(this).attr('data-src');
+                    var width = $(this).attr('data-width') || 640; // larghezza dell'iframe se non impostato usa 640
+                    var height = $(this).attr('data-height') || 360; // altezza dell'iframe se non impostato usa 360
+
+                    var allowfullscreen = $(this).attr('data-video-fullscreen'); // impostiamo sul bottone l'attributo allowfullscreen se è un video per permettere di passare alla modalità tutto schermo
+
+                    // stampiamo i nostri dati nell'iframe
+                    $("#myModal iframe").attr({
+                        'src': src,
+                        'height': height,
+                        'width': width,
+                        'allowfullscreen': ''
+                    });
+                });
+
+                // se si chiude la modale resettiamo i dati dell'iframe per impedire ad un video di continuare a riprodursi anche quando la modale è chiusa
+                $('#myModal').on('hidden.bs.modal', function () {
+                    $(this).find('iframe').html("");
+                    $(this).find('iframe').attr("src", "");
+                });
+            }
+
+            $(document).ready(function () {
+                iframeModalOpen();
+            });
+
+        })(jQuery);
+    </script>
+    <!---- video popup 14/11/2016 ------->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog video_teacher modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="close-button video_tech_close">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    <!--<div class="bd-example bd-example-padded-bottom">
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#gridSystemModal">
+        Launch demo modal
+      </button>
+    </div>-->
+    <script src="js/scale.fix.js" type="text/javascript"></script>
+    <script src="js/formatter.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script>
+
+        function initPhoneNumber() {
+
+            var phoneInput = document.getElementById('phone_input');
+            phoneInput.value = "";
+            var phoneInput1 = document.getElementById('phone_input1');
+            phoneInput1.value = "";
+            window.scrollTo(0);
+        }
+        function clearInformationLabel(id) {
+
+            $('#' + id).html('');
+            $('#' + id).css('color', 'green');
+        }
+        //                                function phonenumber(inputtxt)
+        //                                {
+        //                                    //                                alert(inputtxt.value);
+        //                                    var phoneno = \([2 - 9]\d{2}\)\d{3} - \d{4}$ | ^ \(_{3}\)\ _{3}-_
+        //                                    {4}$;
+        //                                    if (inputtxt.value.match(phoneno))
+        //                                    {
+        //                                        return true;
+        //                                    }
+        //                                    else
+        //                                    {
+        //                                        alert("Enter valid number");
+        //                                        return false;
+        //                                    }
+        //                                }
+        var phoneInput = document.getElementById('phone_input');
+        var phoneInput1 = document.getElementById('phone_input1');
+        new Formatter(phoneInput, {
+            'pattern': '({{999}}) {{999}}-{{9999}}',
+            'persistent': true,
+        });
+        new Formatter(phoneInput1, {
+            'pattern': '({{999}}) {{999}}-{{9999}}',
+            'persistent': true,
+        });
+    </script>
+    <script type="text/javascript">
+        // send app link code
+        (function (b, r, a, n, c, h, _, s, d, k) {
+            if (!b[n] || !b[n]._q) {
+                for (; s < _.length; )
+                    c(h, _[s++]);
+                d = r.createElement(a);
+                d.async = 1;
+                d.src = "https://cdn.branch.io/branch-latest.min.js";
+                k = r.getElementsByTagName(a)[0];
+                k.parentNode.insertBefore(d, k);
+                b[n] = h
+            }
+        })(window, document, "script", "branch", function (b, r) {
+            b[r] = function () {
+                b._q.push([r, arguments])
+            }
+        }, {_q: [], _v: 1}, "addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setIdentity track validateCode".split(" "), 0);
+        branch.init('key_live_nmcWswFGgRHIEj4KwLz3rldlvwaWCQj0');
+
+        function sendSMS(form, id) {
+            var phone = '+1' + form.phone.value;
+            var linkData = {
+                tags: [],
+                channel: 'Website',
+                feature: 'TextMeTheApp',
+                data: {
+                    'foo': 'bar'
+                }
+            };
+            var options = {};
+            var callback = function (err, result) {
+                if (err) {
+                    $('#' + id).html('<img border="0" src="images/close.png" /> Please check your Phone number.');
+                    $('#' + id).css('color', '#d4001e');
+                    //                                        alert("Sorry, something went wrong.");
+                }
+                else {
+                    $('#' + id).html('<img border="0" src="images/right.png" /> Please check your phone, a download link should be arriving soon.');
+                    $('#' + id).css('color', '#92c53c');
+                    //                                        alert("SMS sent!");
+                }
+            };
+            branch.sendSMS(phone, linkData, options, callback);
+            form.phone.value = "";
+        }
+    </script>
+
+    <script>
+        window.intercomSettings = {
+            app_id: "yfhkly83"
+        };
+    </script>
+    <script>
+        // intercom code
+        (function () {
+            var w = window;
+            var ic = w.Intercom;
+            if (typeof ic === "function") {
+                ic('reattach_activator');
+                ic('update', intercomSettings);
+            } else {
+                var d = document;
+                var i = function () {
+                    i.c(arguments)
+                };
+                i.q = [];
+                i.c = function (args) {
+                    i.q.push(args)
+                };
+                w.Intercom = i;
+                function l() {
+                    var s = d.createElement('script');
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = 'https://widget.intercom.io/widget/yfhkly83';
+                    var x = d.getElementsByTagName('script')[0];
+                    x.parentNode.insertBefore(s, x);
+                }
+                if (w.attachEvent) {
+                    w.attachEvent('onload', l);
+                } else {
+                    w.addEventListener('load', l, false);
+                }
+            }
+        })()
+    </script>
+    <script>
+        $(function () {
+            $("#btnSendLink").on("click", function () {
+                // alert("run");
+                $("script#ga_script02").remove();
+                $("script#ga_script01").remove();
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = 'js/ga_script01.js';
+                s.id = "ga_script01";
+                var x = document.getElementsByTagName('head')[0];
+                x.appendChild(s);
+            });
+            $(".sendSMSlinkcls").on("click", function () {
+                //  alert("run");
+                $("script#ga_script02").remove();
+                $("script#ga_script01").remove();
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = 'js/ga_script02.js';
+                s.id = "ga_script02";
+                var x = document.getElementsByTagName('head')[0];
+                x.appendChild(s);
+            });
+        });
+    </script>
+    <script src='js/jquery.js'></script>
+    <script>
+        window.intercomSettings = {
+            app_id: "yfhkly83"
+        };
+    </script>
+    <script>
+        (function () {
+            var w = window;
+            var ic = w.Intercom;
+            if (typeof ic === "function") {
+                ic('reattach_activator');
+                ic('update', intercomSettings);
+            } else {
+                var d = document;
+                var i = function () {
+                    i.c(arguments)
+                };
+                i.q = [];
+                i.c = function (args) {
+                    i.q.push(args)
+                };
+                w.Intercom = i;
+                function l() {
+                    var s = d.createElement('script');
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = 'https://widget.intercom.io/widget/yfhkly83';
+                    var x = d.getElementsByTagName('script')[0];
+                    x.parentNode.insertBefore(s, x);
+                }
+                if (w.attachEvent) {
+                    w.attachEvent('onload', l);
+                } else {
+                    w.addEventListener('load', l, false);
+                }
+            }
+        })()
+    </script>
+</body>
+</html>

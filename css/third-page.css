@@ -1,0 +1,630 @@
+header {
+    background-image: url(../images/headerThirdPage.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat:  no-repeat;
+    text-align: center;
+    padding-bottom: 200px;
+}
+header.drive_zum
+{
+    padding-bottom: 100px;
+}
+header .mainContent h1 {
+    color: #fff;   
+    padding-top: 250px;
+    font-size: 46px;
+    text-shadow: 1px 1px 8px #000;
+}
+header .mainContent p {
+    color: #fff;   
+    font-size: 18px;
+    text-shadow: 1px 1px 8px #000;
+    padding-bottom: 16px;
+}
+/********************* APPLY **************************/
+.apply {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(../images/appllyBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: -40px;
+}
+.apply h1 {
+    padding-top: 65px;
+    font-size: 42px;
+    font-weight: 300;
+    color: #fff;
+}
+.apply p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    margin: 0 100px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    line-height: 32px;
+}
+.leftDivApply {
+    display: inline-block;
+    width: 200px;
+    margin: 0 auto;
+    margin-right: 50px;
+    padding-bottom: 150px;
+    position: relative;
+    top: -55px;
+    right: -30px;
+}
+.leftDivApply p {
+    margin: 0 auto;
+    font-size: 18px;
+}
+.rightDivApply {
+    width: 592px;  
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 20px;
+    border-left: 1px solid #90a4ae;
+}
+.rightDivApply p{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #37474f;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    line-height: 32px;
+}
+.rightDivApply h6 {
+    font-size: 20px;
+    line-height: 36.663px;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 40px;
+}
+/*************************** PROCESS ***************************/
+.process {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+}
+.process h1 {
+    padding-top: 80px; 
+    font-size: 42px;
+    font-weight: 300;
+    color: #37474f;
+}
+.process h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #37474f;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+.threeDivsProcess {
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+}
+.threeDivsProcess h2 {
+    font-size: 20px;
+    color: #455a64;
+    margin-top: 20px;
+}
+.threeDivsProcess p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #37474f;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+.process button, .benefits button{
+    width: 222px;
+    height: 39px;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    border: 1px solid #b0bec5;
+    border-radius: 2px;
+    background-color: #ff871d;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    display: block; 
+    box-sizing: border-box;
+}
+.mainContent button{
+    width: 222px;
+    height: 39px;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    border: 1px solid #b0bec5;
+    border-radius: 2px;
+    background-color: #ff871d;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block; 
+    box-sizing: border-box;
+}
+.mainContent button a{
+    padding: 10px 33px;   
+}
+
+.process a, .benefits a,.mainContent a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    padding-right: 41px;
+    padding-left: 41px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/************************ ZUMERS **********************/
+.zumers {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(../images/startedZum.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.zumers h1 {
+    font-size: 42px;
+    color: #fff;
+    padding-top: 50px;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+.zumers p {
+    font-size: 16px;
+    color: #fff;
+    margin: 0 110px;
+    padding-bottom: 40px;
+    margin-top: 30px;
+    font-weight: 100;
+    line-height: 24px;
+}
+.zumersP1 {
+    margin-top: 43px;   
+}
+.zumers ul li {
+    display: inline-block;
+    list-style: none;
+    vertical-align: top;
+}
+.zumers ul li:nth-child(1) {
+    width: 76px;   
+    margin-right: 98px;
+}
+.zumers ul li:nth-child(2) {
+    width: 72px;   
+    margin-right: 70px;
+}
+.zumers ul li:nth-child(3) {
+    width: 113px;
+    margin-right: 73px;
+}
+.zumers ul li:nth-child(4) {
+    width: 54px;
+    margin-right: 80px;
+}
+.zumers ul li:nth-child(5) {
+    width: 112px;
+    margin-right: 50px;
+}
+.zumers ul li:nth-child(6) {
+    width: 105px;   
+}
+.zumers ul li p {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+    margin-top: 22px;
+}
+/*************************** OUR ZUMERS ***************************/
+.ourZumers {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: rgba(224, 224, 224, 0.4);
+    text-align: center;
+}
+.ourZumers h1 {
+    font-size: 42px;
+    font-weight: 300;
+    color: #37474f;
+    padding-top: 55px;
+    padding-bottom: 10px;
+}
+.membersDivOurZumers {
+    width: 272px;
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-right: 70px;
+    margin-bottom: 80px;
+}
+.membersDivOurZumers2 {
+    width: 271px;   
+}
+.membersDivOurZumers3 {
+    width: 294px; 
+    margin-right: 0;
+}
+.membersDivOurZumers h1{
+    font-size: 20px;
+    color: #ff871d;
+}
+.membersDivOurZumers p {
+    font-size: 15px;
+    color: #546e7a;
+    transform: scale(0.999,1.002);
+    line-height: 36px;
+    margin-top: 10px;
+}
+/******************************* BENEFITS ******************************/
+.benefits {
+    max-width: 100%;
+    text-align: center;
+    background-color: #009fe3;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+.benefits h1 {
+    font-size: 42px;
+    font-weight: 300;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 45px;
+}
+.leftDivBenefits {
+    text-align: center;
+    display: inline-block;
+}
+.leftDivBenefits ul {
+    list-style: none;
+}
+.leftDivBenefits ul li {
+    margin-bottom: 50px;   
+    display: inline-block;
+    width: 280px;
+    margin-right: 30px;
+    line-height: 26px;
+}
+.leftDivBenefits ul li:nth-child(3), .leftDivBenefits ul li:nth-child(6) {
+    margin-right: 0;   
+}
+.benefitsList li h4{
+    font-size: 20px;
+    color: #fff;
+}
+.benefitsList li p {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 10px;
+}
+.benefitsList li img {
+    margin-bottom: 35px;
+}
+.benefits button {
+    margin-top: 10px;
+}
+.benefitsList2 {
+    width: 272px;   
+}
+.benefitsList3 {
+    width: 275px;   
+}
+.benefitsList4 {
+    width: 286px;   
+}
+.benefitsList5 {
+    width: 291px; 
+}
+.benefitsList6 {
+    width: 284px;  
+}
+/****************** RESPONSIVE *********************/
+@media(max-width: 999px) {
+    .membersDivOurZumers2 {
+        margin-right: 0;   
+    }
+    .membersDivOurZumers3 {
+        margin-left: 60px;  
+        margin-right: 60px;
+    }
+}
+@media(max-width: 957px ) {
+    .zumersMember {
+        position: static;
+    }
+    .ourZumers .memberImg, .memberImg2{
+        margin: 0 auto; 
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+    .memberImg2 {
+        margin: 0;   
+    }
+}
+@media(max-width: 950px) {
+    .rightDivApply {
+        margin: 0 auto;
+        margin-top: 100px;  
+        margin-bottom: 50px;
+    }
+    .leftDivApply {
+        margin: 0 auto;
+
+    }
+    .membersDivOurZumers {
+        margin-bottom: 80px;
+    }
+}
+@media(max-width: 937px) {
+    .rightDivBenefits {
+        margin-bottom: 50px;
+    }    
+}
+@media(max-width: 932px) {
+    .zumers ul li:nth-child(5) {
+        margin-right: 0;   
+    }
+    .zumers ul li:nth-child(6) {
+        margin-left: 60px;
+    }
+}
+@media(max-width: 895px) {
+    .leftDivBenefits ul li:nth-child(3) {
+        margin-right: 60px; 
+        position: relative;
+        top: -20px;
+    }
+    .leftDivBenefits ul li:nth-child(6), .leftDivBenefits ul li:nth-child(4), .leftDivBenefits ul li:nth-child(2) {
+        margin-right: 0;   
+    }
+}
+@media(max-width: 892px) {  
+    .leftDivBenefits {
+        margin-right: 0;   
+    }
+}
+@media(max-width: 837px) {
+    .rightDivBenefits {
+        position: static;
+    }
+}
+@media(max-width: 815px) {
+    .leftDivApply {
+        position: static;  
+        padding-bottom: 20px;
+    }
+    .rightDivApply {
+        margin: 0 auto; 
+        border: none;
+    }
+    .apply {
+        margin-bottom: 0; 
+        padding-bottom: 20px;
+    }
+}
+@media(max-width: 772px) {
+    .zumers ul li:nth-child(4) {
+        margin-right: 0;   
+    }
+    .zumers ul li:nth-child(5) {
+        margin-left: 60px;   
+    }
+}
+@media(max-width: 631px) {
+    .membersDivOurZumers {
+        margin: 0 auto;
+        float: none;
+        display: block;
+        padding-bottom: 30px;
+    }
+}
+@media(max-width: 616px) {
+    .rightDivApply {
+        width: 95%;   
+    }
+    .rightDivApply h6 {
+        margin: 0 auto;   
+    }
+}
+@media(max-width: 586px) {
+    .zumers ul li:nth-child(4) {
+        margin-right: 80px;   
+    }
+    .zumers ul li:nth-child(5) {
+        margin-left: 0;   
+    }
+    .zumers ul li:nth-child(3) {
+        margin-right: 0;   
+    }
+}
+@media(max-width: 581px) {
+    .leftDivBenefits ul li {
+        margin: 0 auto;
+        display: block;
+        position: static;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+    .leftDivBenefits ul li:nth-child(3) {
+        margin-right: 0;
+    }
+    header .mainContent h1 {
+        padding-top: 20px;   
+    }
+}
+@media(max-width: 580px) {
+    .apply p {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .process h4 {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+@media(max-width: 500px) {
+    header .mainContent h1, .apply h1, .process h1, .process h1, .zumers h1, .ourZumers h1, .benefits h1 {
+        font-size: 30px;   
+    }
+    .apply h1 {
+        margin-right: 10px;   
+        margin-left: 10px;
+    }
+    .benefits h1 {
+        padding-bottom: 0;   
+    }
+}
+@media(max-width: 495px) {
+    .ourZumers .memberImg, .memberImg2{
+        width: 90%;
+    }
+    .zumersMember {
+        width: 90%;   
+    }
+    header.drive_zum {
+        padding-bottom: 40px;
+    }
+    header .mainContent.drive {
+        padding-top: 200px;
+    }
+}
+@media(max-width: 454px) {
+    .zumers ul li:nth-child(1) {
+        width: 76px;   
+        margin-right: 98px;
+        margin: 0 auto; 
+        display: block;
+    }
+    .zumers ul li:nth-child(2) {
+        width: 72px;   
+        margin-right: 70px;
+        margin: 0 auto;
+        display: block;
+    }
+    .zumers ul li:nth-child(3) {
+        width: 113px;
+        margin-right: 73px;
+        margin: 0 auto;
+        display: block;
+    }
+    .zumers ul li:nth-child(4) {
+        width: 54px;
+        margin-right: 80px;
+        margin: 0 auto;
+        display: block;
+    }
+    .zumers ul li:nth-child(5) {
+        width: 102px;
+        margin-right: 50px;
+        margin: 0 auto;
+        display: block;
+    }
+    .zumers ul li:nth-child(6) {
+        width: 105px;  
+        margin: 0 auto;
+        display: block;
+    }
+    header .mainContent p {
+        color: #fff;
+        font-size: 18px;
+        padding-bottom: 16px;
+        text-shadow: 1px 1px 8px #000;
+        margin: 20px 30px 0;
+        line-height: 1.8;
+    }
+}
+@media(max-width: 409px) {
+    .zumers p{margin: 10px;}
+}
+@media(max-width: 375px) {
+    header .mainContent.drive {
+        padding-top: 90px;
+        width: 100%;
+    }
+    .ourZumers {
+        position: relative;
+    }
+    .next {
+        top: 150px;   
+    }
+    .previous {
+        top: 150px;   
+    }
+    .div-shown {
+        display: block;   
+    }
+    .div-hidden {
+        display: none;       
+    }
+    .zumers ul li:nth-child(1) {
+        width: 150px;   
+    }
+    .zumers ul li:nth-child(2) {
+        width: 150px;   
+    }
+    .zumers ul li:nth-child(3) {
+        width: 253px;
+    }
+    .zumers ul li:nth-child(4) {
+        width: 154px;
+    }    
+    .zumers ul li:nth-child(5) {
+        width: 252px;
+    }
+    .zumers ul li:nth-child(6) {
+        width: 255px;   
+    }   
+    header {
+        background-image: url(../images/responsiveHeader2.jpg);  
+        margin-top: 70px;
+    }
+    header .mainContent h1 {
+        margin-top: 150px;   
+    }
+    .apply h1, .process h1, .zumers h1, .ourZumers h1, header .mainContent h1, .benefits h1 {
+        font-size: 23px;       
+    }
+    .apply p, .rightDivApply h6, .process h4, .threeDivsProcess h2, .threeDivsProcess p, .zumers p, .membersDivOurZumers h1, .membersDivOurZumers p, header .mainContent p, .benefitsList li h4, .benefitsList li p {
+        font-size: 14px;   
+    }
+    .zumersMembersIMg {
+        width: 160px;
+        height: 160px;
+    }
+    .membersDivOurZumers2 p {
+        padding-bottom: 36px;
+    }
+    header {
+        padding-bottom: 80px;
+        margin-top: 68px;
+    }
+}
+@media(max-width: 320px) {
+    .leftDivApply .applyList li {
+        font-size: 15px;   
+    }
+}
